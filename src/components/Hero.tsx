@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin, Clock, Users } from "lucide-react";
-import heroImage from "@/assets/hero-main.jpg";
+import heroImage from "@/assets/hero-banner.jpg";
 
 const Hero = () => {
   return (

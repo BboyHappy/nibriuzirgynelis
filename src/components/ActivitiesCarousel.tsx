@@ -2,10 +2,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import ridingLessonImage from "@/assets/riding-lesson.jpg";
-import trailRidingImage from "@/assets/trail-riding.jpg";
-import horseCampImage from "@/assets/horse-camp.jpg";
-import photoSessionImage from "@/assets/photo-session.jpg";
+import ridingLessonImage from "@/assets/riding-lessons-new.jpg";
+import trailRidingImage from "@/assets/hiking-kids.jpg";
+import horseCampImage from "@/assets/camps-water.jpg";
+import photoSessionImage from "@/assets/photo-sessions-goat.jpg";
+import otherEventsImage from "@/assets/other-events-volleyball.jpg";
 
 const activities = [
   {
@@ -40,14 +41,14 @@ const activities = [
     href: "/veiklos/fotosesijos",
     price: "nuo 80€/val"
   },
-  {
-    id: 5,
-    title: "Kiti renginiai",
-    description: "Gimtadieniai, korporatyvai ir specialūs renginiai",
-    image: trailRidingImage,
-    href: "/veiklos/kiti-renginiai",
-    price: "nuo 200€"
-  }
+    {
+      id: 5,
+      title: "Kiti renginiai",
+      description: "Gimtadieniai, korporatyvai ir specialūs renginiai",
+      image: otherEventsImage,
+      href: "/veiklos/kiti-renginiai",
+      price: "nuo 200€"
+    }
 ];
 
 const ActivitiesCarousel = () => {

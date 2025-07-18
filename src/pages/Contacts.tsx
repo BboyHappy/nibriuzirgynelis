@@ -79,10 +79,10 @@ const Contacts = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Adresas</h3>
-                      <p className="text-foreground/80">
-                        Nibrių k., Jiezno sen.<br />
-                        Prienų r., Lietuva
-                      </p>
+                    <p className="text-foreground/80">
+                      Nemuno 10, Prienu raj<br />
+                      Nibriai, 59420 Prienų rajonas
+                    </p>
                     </div>
                   </div>
 
@@ -93,10 +93,10 @@ const Contacts = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Telefonas</h3>
                       <a 
-                        href="tel:+37000000000" 
+                        href="tel:+37060643952" 
                         className="text-foreground/80 hover:text-primary transition-colors"
                       >
-                        +370 000 00000
+                        +370 606 43952
                       </a>
                     </div>
                   </div>
@@ -108,10 +108,10 @@ const Contacts = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">El. paštas</h3>
                       <a 
-                        href="mailto:info@nibriuzirgynėlis.lt" 
+                        href="mailto:triusiulis@gmail.com" 
                         className="text-foreground/80 hover:text-primary transition-colors"
                       >
-                        info@nibriuzirgynėlis.lt
+                        triusiulis@gmail.com
                       </a>
                     </div>
                   </div>

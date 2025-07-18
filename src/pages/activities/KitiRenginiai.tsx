@@ -2,30 +2,30 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Clock, Users, MapPin, Camera } from "lucide-react";
-import trailRidingImage from "@/assets/hiking-kids.jpg";
+import { Clock, Users, Gift, Star } from "lucide-react";
+import eventsImage from "@/assets/other-events-volleyball.jpg";
 
-const TrailRiding = () => {
+const KitiRenginiai = () => {
   const faqItems = [
     {
-      question: "Ar reikia mokėti joti?",
-      answer: "Taip, žygiams reikia bent minimalaus jojimo patirties. Jei esate pradedantysis, rekomenduojame pirmiau paimti keletą pamokų."
+      question: "Kokius renginius galite surengti?",
+      answer: "Gimtadienis, korporatyvai, mokyklos išvykos, mergvakarius, berniukų vakarai ir kiti specialūs renginiai."
     },
     {
-      question: "Kiek trunka žygis?",
-      answer: "Žygių trukmė priklauso nuo pasirinkto maršruto - nuo 2 valandų iki visos dienos žygio su pietų pertrauka."
+      question: "Kiek žmonių gali dalyvauti?",
+      answer: "Priklausomai nuo renginio tipo, galime priimti nuo 5 iki 50 žmonių. Didesnėms grupėms aptarsime individualiai."
     },
     {
-      question: "Kas atsitiks, jei bus blogas oras?",
-      answer: "Žygiai vyksta beveik bet kokiomis oro sąlygomis. Stipraus lietaus ar audros atveju žygį nukelsineme."
+      question: "Ar galiu atsivesti savo maistą?",
+      answer: "Taip, galite atsivesti savo maistą arba užsisakyti mūsų paruoštą vietinį maistą. Turime griliaus vietą ir virtuvę."
     },
     {
-      question: "Ar galima fotografuoti?",
-      answer: "Žinoma! Mes net padarysime kelias nuotraukas jums įsimintiniausiais momentais. Tačiau prašome saugiai laikyti fotoaparatą."
+      question: "Ar renginiai vyksta bet kokiu oru?",
+      answer: "Taip, turime dengtos erdvės ir galimybę rengti veiklas viduje. Lauko veiklas derintume su oro sąlygomis."
     },
     {
-      question: "Ar yra amžiaus apribojimai?",
-      answer: "Žygiuose dalyvauti gali asmenys nuo 12 metų. Vaikams iki 16 metų privalomas suaugusiojo palydovas."
+      question: "Ar reikia mokėti joti, kad dalyvautumėte?",
+      answer: "Ne, mes turime veiklų visiems: žaidimų, žirgo priežiūros, pažintinių užsiėmimų ir kitų aktyvumų."
     }
   ];
 
@@ -35,8 +35,8 @@ const TrailRiding = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={trailRidingImage} 
-            alt="Žygiai žirgais" 
+            src={eventsImage} 
+            alt="Renginiai" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
@@ -45,13 +45,13 @@ const TrailRiding = () => {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary-foreground mb-4">
-              Žygiai žirgais
+              Kiti renginiai
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Atraskite Nemuno kilpų regioninio parko grožį jodami mūsų vadovaujamais žygiais
+              Gimtadieniai, korporatyvai ir specialūs renginiai gamtos aplinkoje
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti žygį</Link>
+              <Link to="/rezervacijos">Rezervuoti renginį</Link>
             </Button>
           </div>
         </div>
@@ -65,25 +65,22 @@ const TrailRiding = () => {
             <Card className="shadow-elegant mb-12">
               <CardContent className="p-8">
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
-                  Apie žygius
+                  Apie renginius
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Mūsų vadovaujami žygiai - tai nepakartojamapatirtis tyrinėjant 
-                    Nemuno kilpų regioninio parko grožį ant žirgo nugaros. Važinėsime 
-                    senvagėmis, miško takais ir pievų pakraščiais, kur automobilis 
-                    niekada nepasieks.
+                    Mūsų teritorija - puiki vieta ypatingiems renginiams! Siūlome išskirtinę galimybę 
+                    švęsti gimtadinius, rengti korporatyvus ar mokyklos išvykas gamtos aplinkoje su 
+                    žirgais ir kitais gyvūnais.
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Kiekvienas žygis yra unikalus - priklausomai nuo sezono, oro 
-                    sąlygų ir grupės pageidavimų parenkame tinkamiausią maršrutą. 
-                    Pavasarį ir vasarą galėsite mėgautis žydinčiomis pievomis, 
-                    rudenį - spalvingu lapinatu, o žiemą - sniego tyluma.
+                    Kiekvienas renginys yra unikalus - mes prisitaikome prie jūsų poreikių ir pageidavimų. 
+                    Galime pasiūlyti įvairių veiklų: jojimo pamokas, žirgo priežiūros mokymą, 
+                    gamtos pažinimo žaidimus ir sportinės veiklas.
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
-                    Visi žygiai vyksta su patyrusiu gidu-instruktoriumi, kuris 
-                    pasakos apie regioną, jo istorijąir gamtą. Ilgesnių žygių 
-                    metu padarysime pertraukėlę nuostabiausioje vietoje.
+                    Turime erdvų teritoriją, dengtus pastatus blogam orui ir visas reikalingas sąlygas 
+                    sėkmingam renginiui. Mūsų komanda pasirūpins, kad jūsų renginys būtų nepamirštamas!
                   </p>
                 </div>
               </CardContent>
@@ -106,74 +103,66 @@ const TrailRiding = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Grupės dydis</h3>
-                  <p className="text-muted-foreground text-sm">2-8 žmonės</p>
+                  <h3 className="font-semibold text-foreground mb-2">Dalyviai</h3>
+                  <p className="text-muted-foreground text-sm">5-50 žmonių</p>
                 </CardContent>
               </Card>
               
               <Card className="shadow-soft">
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MapPin className="w-6 h-6 text-primary" />
+                    <Gift className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Maršrutai</h3>
-                  <p className="text-muted-foreground text-sm">5+ maršrutai</p>
+                  <h3 className="font-semibold text-foreground mb-2">Renginiai</h3>
+                  <p className="text-muted-foreground text-sm">Visi tipai</p>
                 </CardContent>
               </Card>
               
               <Card className="shadow-soft">
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Camera className="w-6 h-6 text-primary" />
+                    <Star className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Nuotraukos</h3>
-                  <p className="text-muted-foreground text-sm">Įtrauktos</p>
+                  <h3 className="font-semibold text-foreground mb-2">Paslaugos</h3>
+                  <p className="text-muted-foreground text-sm">Individualiai</p>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Routes */}
+            {/* Event Types */}
             <Card className="shadow-elegant mb-12">
               <CardHeader>
                 <CardTitle className="font-serif text-2xl text-primary">
-                  Mūsų maršrutai
+                  Renginių tipai
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Trumpas žygis</h3>
-                    <p className="text-muted-foreground text-sm mb-4">2-3 valandos</p>
-                    <p className="text-foreground/80">
-                      Idealus pradedantiesiems. Važinėsime ramiais takais per mišką 
-                      ir pievų pakraščiais su gražiais vaizdais.
+                    <h3 className="font-semibold text-foreground mb-2">Gimtadieniai</h3>
+                    <p className="text-foreground/80 text-sm">
+                      Nepamirštami gimtadieniai su žirgais, žaidimais ir smagiais aktyvumais visiems amžiams.
                     </p>
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Nemuno kilpų žygis</h3>
-                    <p className="text-muted-foreground text-sm mb-4">4-5 valandos</p>
-                    <p className="text-foreground/80">
-                      Pamatysime nuostabius Nemuno vingius ir aplanksime 
-                      gražiausias parko vietas su pietų pertrauka.
+                    <h3 className="font-semibold text-foreground mb-2">Korporatyvai</h3>
+                    <p className="text-foreground/80 text-sm">
+                      Komandos formavimo renginiai gamtoje su aktyviais užsiėmimais ir bendravimu.
                     </p>
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Saulėlydžio žygis</h3>
-                    <p className="text-muted-foreground text-sm mb-4">2-3 valandos</p>
-                    <p className="text-foreground/80">
-                      Romantiškassaulėlydžio žygis su sustojimais 
-                      gražiausiose vietose fotografijoms.
+                    <h3 className="font-semibold text-foreground mb-2">Mokyklos išvykos</h3>
+                    <p className="text-foreground/80 text-sm">
+                      Edukacinės išvykos su pažintiniais užsiėmimais apie gamtą ir gyvūnus.
                     </p>
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Visos dienos žygis</h3>
-                    <p className="text-muted-foreground text-sm mb-4">5-6 valandos</p>
-                    <p className="text-foreground/80">
-                      Pilno pasinėrimo žygis su pietu gamtoje ir 
-                      daugiausiai įspūdingiausių vietų.
+                    <h3 className="font-semibold text-foreground mb-2">Mergvakario / Berniukų vakarai</h3>
+                    <p className="text-foreground/80 text-sm">
+                      Originalūs ir smagūs mergvakario ar berniukų vakarai gamtos aplinkoje.
                     </p>
                   </div>
                 </div>
@@ -207,29 +196,23 @@ const TrailRiding = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Trumpas žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">35€</p>
-                    <p className="text-sm text-muted-foreground">2-3 valandos</p>
+                    <h3 className="font-semibold text-foreground mb-2">Mažas renginys</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">200€</p>
+                    <p className="text-sm text-muted-foreground">iki 10 žmonių</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Nemuno kilpų žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">55€</p>
-                    <p className="text-sm text-muted-foreground">4-5 valandos</p>
+                    <h3 className="font-semibold text-foreground mb-2">Vidutinis renginys</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">350€</p>
+                    <p className="text-sm text-muted-foreground">11-25 žmonės</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Saulėlydžio žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">45€</p>
-                    <p className="text-sm text-muted-foreground">2-3 valandos</p>
-                  </div>
-                  
-                  <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Visos dienos žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">85€</p>
-                    <p className="text-sm text-muted-foreground">5-6 valandos</p>
+                    <h3 className="font-semibold text-foreground mb-2">Didelis renginys</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">500€+</p>
+                    <p className="text-sm text-muted-foreground">26+ žmonės</p>
                   </div>
                 </div>
               </CardContent>
@@ -238,7 +221,7 @@ const TrailRiding = () => {
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti žygį</Link>
+                <Link to="/rezervacijos">Rezervuoti renginį</Link>
               </Button>
             </div>
           </div>
@@ -248,4 +231,4 @@ const TrailRiding = () => {
   );
 };
 
-export default TrailRiding;
+export default KitiRenginiai;

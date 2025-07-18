@@ -2,30 +2,30 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Clock, Users, Award, Shield } from "lucide-react";
-import ridingLessonImage from "@/assets/riding-lessons-new.jpg";
+import { Clock, Users, Calendar, Award } from "lucide-react";
+import campsImage from "@/assets/camps-water.jpg";
 
-const RidingLessons = () => {
+const Stovyklos = () => {
   const faqItems = [
     {
-      question: "Ar reikia turėti patirties su žirgais?",
-      answer: "Ne, mes mokome tiek pradedančiuosius, tiek pažengusiuosius jojikus. Mūsų instruktoriai prisitaikys prie jūsų lygio."
+      question: "Kokiam amžiui skirtos stovyklos?",
+      answer: "Mūsų stovyklos skirtos vaikams nuo 7 iki 16 metų. Formuojame grupes pagal amžių ir patirtį."
     },
     {
-      question: "Kiek trunka viena pamoka?",
-      answer: "Standartinė pamoka trunka 45-60 minučių, įskaitant pasiruošimą ir žirgo priežiūrą."
+      question: "Ar reikia mokėti joti?",
+      answer: "Ne, stovyklose mokome nuo pat pradžių. Patyręs vaikams taip pat surengisime sudėtingesnių veiklų."
     },
     {
-      question: "Kokia ekipuotė reikalinga?",
-      answer: "Mes suteikiame visą reikalingą saugos ekipuotę. Rekomenduojame apsauti ilgus marškinėlius ir uždarą avalynę."
+      question: "Kiek vaikai gyvena stovykloje?",
+      answer: "Dienos stovyklos - vaikai grįžta namo vakare. Taip pat turime savaitgalio stovyklas su nakvyne."
     },
     {
-      question: "Nuo kokio amžiaus galima pradėti?",
-      answer: "Mes mokome vaikus nuo 6 metų. Jaunesniems vaikams siūlome specialiai pritaikytas veiklas su pončikais."
+      question: "Kokios veiklos laukia stovykloje?",
+      answer: "Jojimo pamokos, žirgo priežiūra, gamtos pažinimas, kūrybiškumo valandėlės ir sportinės veiklos."
     },
     {
-      question: "Ar galiu mokytis grupėje?",
-      answer: "Taip, siūlome tiek individualias, tiek grupės pamokas. Grupės dydis paprastai 2-4 žmonės."
+      question: "Ar yra medicinos darbuotojas?",
+      answer: "Taip, stovyklos metu visada yra kvalifikuotas medicinos darbuotojas."
     }
   ];
 
@@ -35,8 +35,8 @@ const RidingLessons = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={ridingLessonImage} 
-            alt="Jojimo pamokos" 
+            src={campsImage} 
+            alt="Vasaros stovykla" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
@@ -45,13 +45,13 @@ const RidingLessons = () => {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary-foreground mb-4">
-              Jojimo pamokos
+              Vasaros stovyklos
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Išmokite joti saugioje ir draugiškoje aplinkoje su mūsų patyrusia komanda
+              Nepamiršamos vasaros stovyklos vaikams su žirgais ir gamta
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti pamoką</Link>
+              <Link to="/rezervacijos">Rezervuoti vietą</Link>
             </Button>
           </div>
         </div>
@@ -65,22 +65,22 @@ const RidingLessons = () => {
             <Card className="shadow-elegant mb-12">
               <CardContent className="p-8">
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
-                  Apie jojimo pamokas
+                  Apie stovyklas
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Mūsų jojimo pamokos skirtos visiems - nuo visiškai pradedančiųjų iki pažengusių jojikų, 
-                    norinčių tobulinti savo įgūdžius. Kiekviena pamoka vyksta saugioje aplinkoje su 
-                    kvalifikuotais instruktoriais ir ramiais, gerai išlavintais žirgais.
+                    Mūsų vasaros stovyklos - tai puiki galimybė vaikams praleisti aktyvų, 
+                    edukacinį ir smagų laiką gamtoje. Vaikai mokysis joti, rūpintis žirgais, 
+                    pažins gamtą ir įgys vertingų įgūdžių.
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Pradedantieji mokysis pagrindinių jojimo principų: kaip sėsti ant žirgo, valdyti 
-                    pavadžius, išlaikyti pusiausvyrą ir bendrauti su žirgu. Pažengusieji galės tobulinti 
-                    techniką, mokytis šuolių ar dresažo elementų.
+                    Kiekviena stovykla yra teminio pobūdžio - vaikai ne tik mokysis joti, 
+                    bet ir sužinos apie žirgų istoriją, dalyvaus kūrybinėse veiklose, 
+                    žais lauko žaidimus ir užmegzės naują draugysčių.
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
-                    Kiekviena pamoka prasideda nuo žirgo paruošimo ir baigiasi jo priežiūra - 
-                    tai svarbi dalis mokymosi proceso, padedanti suprasti žirgo poreikius ir elgesį.
+                    Stovyklos vadovauja kvalifikuoti instruktoriai ir auklėtojai, 
+                    užtikrinantys kiekvieno vaiko saugumą ir individualų dėmesį.
                   </p>
                 </div>
               </CardContent>
@@ -91,10 +91,10 @@ const RidingLessons = () => {
               <Card className="shadow-soft">
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Clock className="w-6 h-6 text-primary" />
+                    <Calendar className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Trukmė</h3>
-                  <p className="text-muted-foreground text-sm">45-60 minučių</p>
+                  <p className="text-muted-foreground text-sm">5-10 dienų</p>
                 </CardContent>
               </Card>
               
@@ -103,8 +103,18 @@ const RidingLessons = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Dalyviai</h3>
-                  <p className="text-muted-foreground text-sm">1-4 žmonės</p>
+                  <h3 className="font-semibold text-foreground mb-2">Grupė</h3>
+                  <p className="text-muted-foreground text-sm">8-12 vaikų</p>
+                </CardContent>
+              </Card>
+              
+              <Card className="shadow-soft">
+                <CardContent className="p-6 text-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Clock className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2">Laikas</h3>
+                  <p className="text-muted-foreground text-sm">9:00-17:00</p>
                 </CardContent>
               </Card>
               
@@ -113,18 +123,8 @@ const RidingLessons = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Lygis</h3>
-                  <p className="text-muted-foreground text-sm">Visiems lygiams</p>
-                </CardContent>
-              </Card>
-              
-              <Card className="shadow-soft">
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Shield className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground mb-2">Sauga</h3>
-                  <p className="text-muted-foreground text-sm">Visa ekipuotė</p>
+                  <h3 className="font-semibold text-foreground mb-2">Amžius</h3>
+                  <p className="text-muted-foreground text-sm">7-16 metų</p>
                 </CardContent>
               </Card>
             </div>
@@ -158,21 +158,21 @@ const RidingLessons = () => {
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Individuali pamoka</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">35€</p>
-                    <p className="text-sm text-muted-foreground">45-60 minučių</p>
+                    <h3 className="font-semibold text-foreground mb-2">Dienos stovykla</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">50€</p>
+                    <p className="text-sm text-muted-foreground">už dieną</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Grupės pamoka</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">25€</p>
-                    <p className="text-sm text-muted-foreground">už žmogų (2-4 žmonės)</p>
+                    <h3 className="font-semibold text-foreground mb-2">Savaitės stovykla</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">220€</p>
+                    <p className="text-sm text-muted-foreground">5 dienos (taupote 30€)</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Pamokų paketas</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">120€</p>
-                    <p className="text-sm text-muted-foreground">5 pamokos (taupote 55€)</p>
+                    <h3 className="font-semibold text-foreground mb-2">Su nakvyne</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">85€</p>
+                    <p className="text-sm text-muted-foreground">už dieną</p>
                   </div>
                 </div>
               </CardContent>
@@ -181,7 +181,7 @@ const RidingLessons = () => {
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti jojimo pamoką</Link>
+                <Link to="/rezervacijos">Rezervuoti stovyklos vietą</Link>
               </Button>
             </div>
           </div>
@@ -191,4 +191,4 @@ const RidingLessons = () => {
   );
 };
 
-export default RidingLessons;
+export default Stovyklos;

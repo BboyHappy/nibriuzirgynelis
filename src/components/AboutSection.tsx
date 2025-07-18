@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Heart, Shield, Star } from "lucide-react";
-import horsesImage from "@/assets/horses-meadow.jpg";
+import horsesImage from "@/assets/about-family.jpg";
 
 const AboutSection = () => {
   return (
