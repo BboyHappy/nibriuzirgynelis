@@ -31,7 +31,7 @@ const activities = [
     description: "Vasaros stovyklos vaikams su žirgų priežiūros mokymu",
     image: horseCampImage,
     href: "/veiklos/stovyklos",
-    price: "nuo 50€/diena"
+    price: "nuo 35€/diena"
   },
   {
     id: 4,
@@ -41,8 +41,16 @@ const activities = [
     href: "/veiklos/fotosesijos",
     price: "nuo 80€/val"
   },
+  {
+    id: 5,
+    title: "Edukacijos",
+    description: "Susipažinimas su ūkio gyvūnais ir jų priežiūra",
+    image: photoSessionImage,
+    href: "/veiklos/edukacijos",
+    price: "10€/žmogui"
+  },
     {
-      id: 5,
+      id: 6,
       title: "Kiti renginiai",
       description: "Gimtadieniai, korporatyvai ir specialūs renginiai",
       image: otherEventsImage,

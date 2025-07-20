@@ -159,8 +159,8 @@ const RidingLessons = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Individuali pamoka</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">35€</p>
-                    <p className="text-sm text-muted-foreground">45-60 minučių</p>
+                    <p className="text-3xl font-bold text-primary mb-2">25€</p>
+                    <p className="text-sm text-muted-foreground">40 minučių</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
@@ -171,8 +171,8 @@ const RidingLessons = () => {
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Pamokų paketas</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">120€</p>
-                    <p className="text-sm text-muted-foreground">5 pamokos (taupote 55€)</p>
+                    <p className="text-3xl font-bold text-primary mb-2">60€</p>
+                    <p className="text-sm text-muted-foreground">4 pamokos (taupote 40€)</p>
                   </div>
                 </div>
               </CardContent>

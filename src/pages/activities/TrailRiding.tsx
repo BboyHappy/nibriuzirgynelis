@@ -117,7 +117,7 @@ const TrailRiding = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Maršrutai</h3>
-                  <p className="text-muted-foreground text-sm">5+ maršrutai</p>
+                  <p className="text-muted-foreground text-sm">Įvairūs</p>
                 </CardContent>
               </Card>
               
@@ -207,30 +207,8 @@ const TrailRiding = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Trumpas žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">35€</p>
-                    <p className="text-sm text-muted-foreground">2-3 valandos</p>
-                  </div>
-                  
-                  <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Nemuno kilpų žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">55€</p>
-                    <p className="text-sm text-muted-foreground">4-5 valandos</p>
-                  </div>
-                  
-                  <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Saulėlydžio žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">45€</p>
-                    <p className="text-sm text-muted-foreground">2-3 valandos</p>
-                  </div>
-                  
-                  <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">Visos dienos žygis</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">85€</p>
-                    <p className="text-sm text-muted-foreground">5-6 valandos</p>
-                  </div>
+                <div className="text-center p-6 bg-gradient-warm rounded-xl">
+                  <p className="text-lg text-foreground/80">Kaina priklauso nuo žygio.</p>
                 </div>
               </CardContent>
             </Card>
