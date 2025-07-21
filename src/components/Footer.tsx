@@ -52,6 +52,12 @@ const Footer = () => {
                 Fotosesijos
               </Link>
               <Link 
+                to="/veiklos/edukacijos" 
+                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+              >
+                Edukacijos
+              </Link>
+              <Link 
                 to="/veiklos/kiti-renginiai" 
                 className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
               >
@@ -67,26 +73,26 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin size={16} className="mt-1 text-primary-foreground/60" />
                 <div className="text-sm">
-                  <p className="text-primary-foreground/80">Nibrių k., Jiezno sen.</p>
-                  <p className="text-primary-foreground/80">Prienų r.</p>
+                  <p className="text-primary-foreground/80">Nemuno 10, Prienu raj</p>
+                  <p className="text-primary-foreground/80">Nibriai, 59420 Prienų rajonas</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-primary-foreground/60" />
                 <a 
-                  href="tel:+370000000" 
+                  href="tel:+37060643952" 
                   className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
                 >
-                  +370 000 0000
+                  +370 606 43952
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-primary-foreground/60" />
                 <a 
-                  href="mailto:info@nibriuzirgynėlis.lt" 
+                  href="mailto:triusiulis@gmail.com" 
                   className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
                 >
-                  info@nibriuzirgynėlis.lt
+                  triusiulis@gmail.com
                 </a>
               </div>
             </div>

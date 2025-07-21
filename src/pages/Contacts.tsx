@@ -143,10 +143,10 @@ const Contacts = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button asChild variant="default" className="flex-1">
-                      <a href="tel:+37000000000">Skambinti dabar</a>
+                      <a href="tel:+37060643952">Skambinti dabar</a>
                     </Button>
                     <Button asChild variant="outline" className="flex-1">
-                      <a href="mailto:info@nibriuzirgynėlis.lt">Siųsti el. laišką</a>
+                      <a href="mailto:triusiulis@gmail.com">Siųsti el. laišką</a>
                     </Button>
                   </div>
                 </CardContent>
@@ -257,13 +257,20 @@ const Contacts = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-warm rounded-xl p-8 text-center">
-                  <div className="text-6xl mb-4">🗺️</div>
-                  <h4 className="font-semibold text-foreground mb-2">Nuorodos GPS</h4>
-                  <p className="text-foreground/80 text-sm">
-                    Koordinatės: 54.1234, 24.5678<br />
-                    Nibrių k., Jiezno sen., Prienų r.
-                  </p>
+                  <div className="bg-gradient-warm rounded-xl p-8 text-center">
+                  <a 
+                    href="https://maps.app.goo.gl/rA13CwSXSixu2pLP8" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block hover:scale-105 transition-transform"
+                  >
+                    <div className="text-6xl mb-4">🗺️</div>
+                    <h4 className="font-semibold text-foreground mb-2">Atidaryti žemėlapyje</h4>
+                    <p className="text-foreground/80 text-sm">
+                      Nemuno 10, Prienu raj<br />
+                      Nibriai, 59420 Prienų rajonas
+                    </p>
+                  </a>
                 </div>
               </div>
             </CardContent>

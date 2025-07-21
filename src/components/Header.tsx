@@ -18,6 +18,7 @@ const Header = () => {
         { name: "Žygiai", href: "/veiklos/zygiai" },
         { name: "Stovyklos", href: "/veiklos/stovyklos" },
         { name: "Fotosesijos", href: "/veiklos/fotosesijos" },
+        { name: "Edukacijos", href: "/veiklos/edukacijos" },
         { name: "Kiti renginiai", href: "/veiklos/kiti-renginiai" },
       ]
     },
@@ -86,6 +87,15 @@ const Header = () => {
 
           {/* CTA Button & Mobile Menu Toggle */}
           <div className="flex items-center space-x-4">
+            <a
+              href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-accent text-primary hover:text-primary/80 transition-colors"
+            >
+              <Facebook size={24} />
+            </a>
+            
             <Button asChild variant="hero" size="default" className="hidden md:inline-flex">
               <Link to="/rezervacijos">Rezervuoti</Link>
             </Button>
