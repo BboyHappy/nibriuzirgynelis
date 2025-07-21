@@ -9,8 +9,8 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={heroImage} 
-          alt="Šeimos jojimas gamtoje" 
+          src="/lovable-uploads/8f3bf9dc-4ddd-4cae-b7ae-7cd4d7b2a5e4.png" 
+          alt="Žirgas rudens gamtoje" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>

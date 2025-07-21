@@ -59,8 +59,8 @@ const AboutSection = () => {
           <div className="animate-fade-in">
             <div className="relative">
               <img 
-                src={horsesImage} 
-                alt="Žirgai ganyklose" 
+                src="/lovable-uploads/34691918-a865-4e1c-acd3-995afedd916f.png" 
+                alt="Šeima su žirgais ir asilėliu" 
                 className="w-full h-[500px] object-cover rounded-2xl shadow-elegant"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl"></div>

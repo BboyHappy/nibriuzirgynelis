@@ -35,8 +35,8 @@ const RidingLessons = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={ridingLessonImage} 
-            alt="Jojimo pamokos" 
+            src="/lovable-uploads/8a500812-80f3-4e42-89f7-337695758600.png" 
+            alt="Jojimo pamokos - žirgas šoka per kliūtį" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>

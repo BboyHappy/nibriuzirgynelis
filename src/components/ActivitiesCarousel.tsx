@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import ridingLessonImage from "@/assets/riding-lessons-new.jpg";
 import trailRidingImage from "@/assets/hiking-kids.jpg";
 import horseCampImage from "@/assets/camps-water.jpg";
 import photoSessionImage from "@/assets/photo-sessions-goat.jpg";
@@ -13,7 +12,7 @@ const activities = [
     id: 1,
     title: "Jojimo pamokos",
     description: "Individualios pamokos pradedantiesiems ir pažengusiems jojikams",
-    image: ridingLessonImage,
+    image: "/lovable-uploads/8a500812-80f3-4e42-89f7-337695758600.png",
     href: "/veiklos/jojimo-pamokos",
     price: "nuo 25€"
   },
