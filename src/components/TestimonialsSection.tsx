@@ -73,22 +73,85 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* Trust indicators */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-8 bg-card rounded-2xl px-8 py-6 shadow-soft border border-border">
-            <div className="text-center">
-              <p className="text-2xl font-bold text-primary">500+</p>
-              <p className="text-sm text-muted-foreground">Patenkintų klientų</p>
+        {/* Photo Gallery */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="font-serif text-2xl font-bold text-primary mb-2">
+              Mūsų nuotraukos
+            </h3>
+            <p className="text-muted-foreground">Tikros akimirkos iš mūsų veiklų</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/d0bf3150-6cb0-472d-b52d-8e9709f84c97.png" 
+                alt="Žirgai pievoje" 
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <p className="text-2xl font-bold text-primary">4.9/5</p>
-              <p className="text-sm text-muted-foreground">Vidutinis įvertinimas</p>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/c1bb5dea-de9c-4267-94fe-c0bf76a39c99.png" 
+                alt="Bendravimas su žirgu" 
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <p className="text-2xl font-bold text-primary">10+</p>
-              <p className="text-sm text-muted-foreground">Metų patirties</p>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/0747d877-85d6-4cb9-a38c-1b6e47494913.png" 
+                alt="Vaikai su viščiuku" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/38646c9a-03d4-4093-a77f-ddb70ad1ecb0.png" 
+                alt="Edukacijos su ožkomis" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/c24d2a48-a839-40f2-8861-c77ed487ee6a.png" 
+                alt="Edukacijos miške" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/5e81cc57-acf8-4b03-8c68-cfeac591832e.png" 
+                alt="Jojimas vandenyje" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/4dcb0c70-4a02-4d5a-a09b-d51c1704d644.png" 
+                alt="Žygis su žirgais" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/770c6fb7-8745-4ebc-9bde-8f02e15f9da3.png" 
+                alt="Ūkio gyvūnai" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/10f69813-a6b8-40e7-a599-428a24c50036.png" 
+                alt="Stovykla prie ežero" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+              <img 
+                src="/lovable-uploads/d1860f45-3d54-41d6-a0b8-de7b5926b354.png" 
+                alt="Jojimo pamokos" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
