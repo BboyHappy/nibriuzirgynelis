@@ -1,9 +1,9 @@
+
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Clock, Users, Calendar, Award } from "lucide-react";
-import campsImage from "@/assets/camps-water.jpg";
 
 const Stovyklos = () => {
   const faqItems = [
@@ -35,8 +35,8 @@ const Stovyklos = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={campsImage} 
-            alt="Vasaros stovykla" 
+            src="/lovable-uploads/66ff45ea-6901-482a-ae10-53331ae1901c.png" 
+            alt="Vasaros stovykla - vaikai pramogauja stovyklavietėje" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>

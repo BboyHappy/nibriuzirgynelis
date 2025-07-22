@@ -1,9 +1,9 @@
+
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Clock, Users, Camera, Heart } from "lucide-react";
-import photoSessionImage from "@/assets/photo-sessions-goat.jpg";
 
 const Fotosesijos = () => {
   const faqItems = [
@@ -35,8 +35,8 @@ const Fotosesijos = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={photoSessionImage} 
-            alt="Fotosesijos su gyvūnais" 
+            src="/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png" 
+            alt="Mergaitė su ožkyte - fotosesijos su gyvūnais" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>

@@ -1,9 +1,9 @@
+
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Clock, Users, GraduationCap, Heart } from "lucide-react";
-import aboutFamilyImage from "@/assets/about-family.jpg";
 
 const Edukacijos = () => {
   const faqItems = [
@@ -35,8 +35,8 @@ const Edukacijos = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={aboutFamilyImage} 
-            alt="Edukacijos programa" 
+            src="/lovable-uploads/995c3440-5bb5-4b1b-ab97-60b66717b70e.png" 
+            alt="Vaikai su asilėliu miške - edukacijos programa" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>

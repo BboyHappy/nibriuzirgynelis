@@ -1,7 +1,8 @@
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Facebook } from "lucide-react";
+import { Menu, X, Facebook, Instagram } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Header = () => {
@@ -87,6 +88,15 @@ const Header = () => {
 
           {/* CTA Button & Mobile Menu Toggle */}
           <div className="flex items-center space-x-4">
+            <a
+              href="https://www.instagram.com/nibriu.zirgynelis/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-accent text-primary hover:text-primary/80 transition-colors"
+            >
+              <Instagram size={24} />
+            </a>
+            
             <a
               href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
               target="_blank"

@@ -1,9 +1,9 @@
+
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Clock, Users, Gift, Star } from "lucide-react";
-import eventsImage from "@/assets/other-events-volleyball.jpg";
 
 const KitiRenginiai = () => {
   const faqItems = [
@@ -35,8 +35,8 @@ const KitiRenginiai = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={eventsImage} 
-            alt="Renginiai" 
+            src="/lovable-uploads/cf5a81b6-c37a-4f49-bdf9-451ccdb32df3.png" 
+            alt="Tinklinio žaidimas stovykloje" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>

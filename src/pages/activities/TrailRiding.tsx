@@ -2,8 +2,7 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Clock, Users, MapPin, Camera } from "lucide-react";
-import trailRidingImage from "@/assets/hiking-kids.jpg";
+import { Clock, Users, MapPin, Award } from "lucide-react";
 
 const TrailRiding = () => {
   const faqItems = [
@@ -35,8 +34,8 @@ const TrailRiding = () => {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={trailRidingImage} 
-            alt="Žygiai žirgais" 
+            src="/lovable-uploads/0c8f72f0-64d5-4680-8f0c-c83111bf5298.png" 
+            alt="Žygiai miške su žirgais" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
@@ -124,7 +123,7 @@ const TrailRiding = () => {
               <Card className="shadow-soft">
                 <CardContent className="p-6 text-center">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Camera className="w-6 h-6 text-primary" />
+                    <Award className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Nuotraukos</h3>
                   <p className="text-muted-foreground text-sm">Įtrauktos</p>

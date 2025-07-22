@@ -1,4 +1,6 @@
-import { Star } from "lucide-react";
+
+import { useState } from "react";
+import { Star, X } from "lucide-react";
 
 const testimonials = [
   {
@@ -27,7 +29,80 @@ const testimonials = [
   }
 ];
 
+const galleryImages = [
+  {
+    src: "/lovable-uploads/d0bf3150-6cb0-472d-b52d-8e9709f84c97.png",
+    alt: "Žirgai pievoje"
+  },
+  {
+    src: "/lovable-uploads/c1bb5dea-de9c-4267-94fe-c0bf76a39c99.png",
+    alt: "Bendravimas su žirgu"
+  },
+  {
+    src: "/lovable-uploads/0747d877-85d6-4cb9-a38c-1b6e47494913.png",
+    alt: "Vaikai su viščiuku"
+  },
+  {
+    src: "/lovable-uploads/38646c9a-03d4-4093-a77f-ddb70ad1ecb0.png",
+    alt: "Edukacijos su ožkomis"
+  },
+  {
+    src: "/lovable-uploads/c24d2a48-a839-40f2-8861-c77ed487ee6a.png",
+    alt: "Edukacijos miške"
+  },
+  {
+    src: "/lovable-uploads/5e81cc57-acf8-4b03-8c68-cfeac591832e.png",
+    alt: "Jojimas vandenyje"
+  },
+  {
+    src: "/lovable-uploads/4dcb0c70-4a02-4d5a-a09b-d51c1704d644.png",
+    alt: "Žygis su žirgais"
+  },
+  {
+    src: "/lovable-uploads/770c6fb7-8745-4ebc-9bde-8f02e15f9da3.png",
+    alt: "Ūkio gyvūnai"
+  },
+  {
+    src: "/lovable-uploads/10f69813-a6b8-40e7-a599-428a24c50036.png",
+    alt: "Stovykla prie ežero"
+  },
+  {
+    src: "/lovable-uploads/d1860f45-3d54-41d6-a0b8-de7b5926b354.png",
+    alt: "Jojimo pamokos"
+  },
+  {
+    src: "/lovable-uploads/0c8f72f0-64d5-4680-8f0c-c83111bf5298.png",
+    alt: "Žygiai miške su žirgais"
+  },
+  {
+    src: "/lovable-uploads/66ff45ea-6901-482a-ae10-53331ae1901c.png",
+    alt: "Stovyklos - vaikai pramogauja"
+  },
+  {
+    src: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
+    alt: "Mergaitė su ožkyte - fotosesijos"
+  },
+  {
+    src: "/lovable-uploads/995c3440-5bb5-4b1b-ab97-60b66717b70e.png",
+    alt: "Vaikai su asilėliu - edukacijos"
+  },
+  {
+    src: "/lovable-uploads/cf5a81b6-c37a-4f49-bdf9-451ccdb32df3.png",
+    alt: "Tinklinio žaidimas stovykloje"
+  }
+];
+
 const TestimonialsSection = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const openLightbox = (imageSrc: string) => {
+    setSelectedImage(imageSrc);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <section className="py-20 bg-gradient-nature">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,78 +158,44 @@ const TestimonialsSection = () => {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
+            {galleryImages.map((image, index) => (
+              <div 
+                key={index}
+                className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+                onClick={() => openLightbox(image.src)}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Lightbox */}
+        {selectedImage && (
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
+            onClick={closeLightbox}
+          >
+            <div className="relative max-w-4xl max-h-[90vh] mx-4">
+              <button
+                onClick={closeLightbox}
+                className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+              >
+                <X size={20} />
+              </button>
               <img 
-                src="/lovable-uploads/d0bf3150-6cb0-472d-b52d-8e9709f84c97.png" 
-                alt="Žirgai pievoje" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/c1bb5dea-de9c-4267-94fe-c0bf76a39c99.png" 
-                alt="Bendravimas su žirgu" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/0747d877-85d6-4cb9-a38c-1b6e47494913.png" 
-                alt="Vaikai su viščiuku" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/38646c9a-03d4-4093-a77f-ddb70ad1ecb0.png" 
-                alt="Edukacijos su ožkomis" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/c24d2a48-a839-40f2-8861-c77ed487ee6a.png" 
-                alt="Edukacijos miške" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/5e81cc57-acf8-4b03-8c68-cfeac591832e.png" 
-                alt="Jojimas vandenyje" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/4dcb0c70-4a02-4d5a-a09b-d51c1704d644.png" 
-                alt="Žygis su žirgais" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/770c6fb7-8745-4ebc-9bde-8f02e15f9da3.png" 
-                alt="Ūkio gyvūnai" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/10f69813-a6b8-40e7-a599-428a24c50036.png" 
-                alt="Stovykla prie ežero" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-square rounded-lg overflow-hidden shadow-soft hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1">
-              <img 
-                src="/lovable-uploads/d1860f45-3d54-41d6-a0b8-de7b5926b354.png" 
-                alt="Jojimo pamokos" 
-                className="w-full h-full object-cover"
+                src={selectedImage} 
+                alt="Enlarged gallery image" 
+                className="max-w-full max-h-[90vh] object-contain rounded-lg"
+                onClick={(e) => e.stopPropagation()}
               />
             </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

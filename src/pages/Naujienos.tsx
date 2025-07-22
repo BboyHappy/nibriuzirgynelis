@@ -3,9 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import stovyklaImage from "@/assets/camps-water.jpg";
-import fotosesijaImage from "@/assets/photo-sessions-goat.jpg";
-import zygisImage from "@/assets/hiking-kids.jpg";
 
 const Naujienos = () => {
   const articles = [
@@ -13,7 +10,7 @@ const Naujienos = () => {
       id: 1,
       title: "Vasaros stovyklos prasideda birželio 1 d.",
       date: "2024-05-15",
-      image: stovyklaImage,
+      image: "/lovable-uploads/66ff45ea-6901-482a-ae10-53331ae1901c.png",
       excerpt: "Šią vasarą laukiame jūsų vaikų nepamirštamose stovyklose! Registracija jau prasidėjo.",
       content: "Mūsų kasmetinės vasaros stovyklos prasidės birželio 1 dieną! Šiemet paruošėme dar daugiau įdomių veiklų: jojimo pamokas, žirgo priežiūros mokymą, gamtos pažinimo žaidimus ir sportinės veiklas. Stovyklos skirtos vaikams nuo 7 iki 16 metų. Kiekviena stovykla truks 5 dienas, o registracija jau prasidėjo.",
       readTime: "3 min skaitymo"
@@ -22,7 +19,7 @@ const Naujienos = () => {
       id: 2,
       title: "Nauja fotografė prisijungia prie komandos",
       date: "2024-05-08",
-      image: fotosesijaImage,
+      image: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
       excerpt: "Džiaugiamės pristačiusi naują komandos narę - profesionalią fotografę Justę, kuri specializuojasi gyvūnų fotografijoje.",
       content: "Sveikiname Justę, kuri prisijungia prie mūsų komandos kaip profesionali fotografė! Justė turi 8 metų patirtį gyvūnų fotografijoje ir jau spėjo suorganizuoti kelias sėkmingas fotosesijas mūsų žirgynėlyje. Nuo šiol galėsime pasiūlyti dar aukštesnės kokybės fotosesijų paslaugas.",
       readTime: "2 min skaitymo"
@@ -31,7 +28,7 @@ const Naujienos = () => {
       id: 3,
       title: "Nauji žygių maršrutai Nemuno kilpų parke",
       date: "2024-04-22",
-      image: zygisImage,
+      image: "/lovable-uploads/0c8f72f0-64d5-4680-8f0c-c83111bf5298.png",
       excerpt: "Atradome naujus nuostabius maršrutus, kurie atskleis jums dar gražesnį Nemuno kilpų regioninio parko veidą.",
       content: "Po ilgų tyrinėjimų ir derinimų su parko administracija, galime pasiūlyti du naujus žygių maršrutus. Pirmasis veda prie retai lankomų Nemuno vingių su nuostabia panorama, o antrasis - per senovės miškus su archeologijos paminklais. Nauji maršrutai prieinami nuo balandžio 25 d.",
       readTime: "4 min skaitymo"
