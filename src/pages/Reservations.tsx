@@ -205,7 +205,7 @@ const Reservations = () => {
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary">
-                    2. Pasirinkite datą
+                    2. Pasirinkite norimą datą (gali keistis)
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
