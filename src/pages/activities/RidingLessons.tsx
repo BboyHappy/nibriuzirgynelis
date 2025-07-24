@@ -16,12 +16,12 @@ const RidingLessons = () => {
       answer: "Standartinė pamoka trunka 45-60 minučių, įskaitant pasiruošimą ir žirgo priežiūrą."
     },
     {
-      question: "Kokia ekipuotė reikalinga?",
-      answer: "Mes suteikiame visą reikalingą saugos ekipuotę. Rekomenduojame apsauti ilgus marškinėlius ir uždarą avalynę."
+      question: "Koks reikalingas pasiruošimas?",
+      answer: "Atsineškite gerą nuotaiką – viskuo kitu pasirūpiname mes! Tik rekomenduojame apsauti patogią avalynę ir ilgas kelnes."
     },
     {
       question: "Nuo kokio amžiaus galima pradėti?",
-      answer: "Mes mokome vaikus nuo 6 metų. Jaunesniems vaikams siūlome specialiai pritaikytas veiklas su pončikais."
+      answer: "Mes mokome vaikus nuo 6 metų. Jaunesniems vaikams siūlome kitas, specialiai pritaikytas veiklas."
     },
     {
       question: "Ar galiu mokytis grupėje?",
@@ -76,7 +76,7 @@ const RidingLessons = () => {
                   <p className="text-foreground/80 leading-relaxed mb-6">
                     Pradedantieji mokysis pagrindinių jojimo principų: kaip sėsti ant žirgo, valdyti 
                     pavadžius, išlaikyti pusiausvyrą ir bendrauti su žirgu. Pažengusieji galės tobulinti 
-                    techniką, mokytis šuolių ar dresažo elementų.
+                    techniką, mokytis šuolių ar kitų jojimo elementų.
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
                     Kiekviena pamoka prasideda nuo žirgo paruošimo ir baigiasi jo priežiūra - 
@@ -104,7 +104,7 @@ const RidingLessons = () => {
                     <Users className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Dalyviai</h3>
-                  <p className="text-muted-foreground text-sm">1-4 žmonės</p>
+                  <p className="text-muted-foreground text-sm">1-10 žmonės</p>
                 </CardContent>
               </Card>
               
@@ -124,7 +124,7 @@ const RidingLessons = () => {
                     <Shield className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Sauga</h3>
-                  <p className="text-muted-foreground text-sm">Visa ekipuotė</p>
+                  <p className="text-muted-foreground text-sm">Šalmas ir profesionalūs treneriai</p>
                 </CardContent>
               </Card>
             </div>
