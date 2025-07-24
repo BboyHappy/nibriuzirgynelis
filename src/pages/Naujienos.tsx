@@ -8,17 +8,27 @@ const Naujienos = () => {
   const articles = [
     {
       id: 1,
-      title: "Vasaros stovyklos prasideda birželio 1 d.",
-      date: "2024-05-15",
+      title: "Dienos stovykla liepos 29!",
+      date: "2025-07-22",
       image: "/lovable-uploads/66ff45ea-6901-482a-ae10-53331ae1901c.png",
-      excerpt: "Šią vasarą laukiame jūsų vaikų nepamirštamose stovyklose! Registracija jau prasidėjo.",
-      content: "Mūsų kasmetinės vasaros stovyklos prasidės birželio 1 dieną! Šiemet paruošėme dar daugiau įdomių veiklų: jojimo pamokas, žirgo priežiūros mokymą, gamtos pažinimo žaidimus ir sportinės veiklas. Stovyklos skirtos vaikams nuo 7 iki 16 metų. Kiekviena stovykla truks 5 dienas, o registracija jau prasidėjo.",
-      readTime: "3 min skaitymo"
+      excerpt: "",
+      content: "Laukiame mažų ir didelių – mišri grupė nuo 3 metų iki kiek tik norėsite! 😊 Veiklų netrūks visiems: mažieji jojimo džiaugsmą patirs ant asilės Simos, o vyresni galės pajodinėti žirgais.
+
+Jeigu orai palankūs – maudynės ir vandens mūšiai garantuoti! Taip pat susipažinsime su avytėmis, ožiukais, maitinsime žąsiukus ir tyrinėsime gamtą Nemuno kilpų regioniniame parke.
+
+🕘 Atvykimas – 9:00
+🕔 Išvykimas – 17:00
+🍽 Kaina vaikui – 35 € (įskaičiuoti pietūs ir užkandžiai)
+👫 Grupėje – 10–14 vaikų, tad dėmesio užteks kiekvienam!
+
+📍Vieta: Nemuno g. 10, Nibriai, Jiezno sen., Prienų r.
+📞 Registracija: 0606 43952,
+      readTime: "Stovykla vyks liepos 29"
     },
     {
       id: 2,
-      title: "Nauja fotografė prisijungia prie komandos",
-      date: "2024-05-08",
+      title: "Nauja svetainė!",
+      date: "2025-07-29",
       image: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
       excerpt: "Džiaugiamės pristačiusi naują komandos narę - profesionalią fotografę Justę, kuri specializuojasi gyvūnų fotografijoje.",
       content: "Sveikiname Justę, kuri prisijungia prie mūsų komandos kaip profesionali fotografė! Justė turi 8 metų patirtį gyvūnų fotografijoje ir jau spėjo suorganizuoti kelias sėkmingas fotosesijas mūsų žirgynėlyje. Nuo šiol galėsime pasiūlyti dar aukštesnės kokybės fotosesijų paslaugas.",
