@@ -104,7 +104,7 @@ Turime erdvią teritoriją, dengtus pastatus blogam orui bei visas sąlygas, kad
                     <Users className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Dalyviai</h3>
-                  <p className="text-muted-foreground text-sm">5-50 žmonių</p>
+                  <p className="text-muted-foreground text-sm">5-40 žmonių</p>
                 </CardContent>
               </Card>
               
@@ -146,9 +146,11 @@ Turime erdvią teritoriją, dengtus pastatus blogam orui bei visas sąlygas, kad
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Korporatyvai</h3>
+                    <h3 className="font-semibold text-foreground mb-2">Krikštynos</h3>
                     <p className="text-foreground/80 text-sm">
-                      Komandos formavimo renginiai gamtoje su aktyviais užsiėmimais ir bendravimu.
+Siūlome jaukią krikštynų šventę gamtos apsuptyje su gyvūnais, vaikų pramogomis ir ramybe artimųjų rate.
+
+
                     </p>
                   </div>
                   
