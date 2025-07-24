@@ -21,7 +21,7 @@ const Naujienos = () => {
       date: "2025-07-26",
       image: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
       excerpt: "",
-      content: "Džiaugiamės galėdami pristatyti naująją „Nibrių žirgynėlio“ svetainę! Čia rasite visą informaciją apie mūsų siūlomas pramogas, fotosesijas, stovyklas ir renginius.Apsilankykite, sekite naujienas ir susisiekite greitai bei patogiai",
+      content: "🎉 Džiaugiamės galėdami pristatyti naująją „Nibrių žirgynėlio“ svetainę! 🌿 Čia rasite visą informaciją apie mūsų siūlomas pramogas 🐴, fotosesijas 📸, stovyklas 🎒 ir renginius 🎈  💻 Apsilankykite, sekite naujienas 📰 ir susisiekite greitai bei patogiai 📞✉️!",
       
     },
     {
