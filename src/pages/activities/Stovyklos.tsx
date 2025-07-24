@@ -69,18 +69,19 @@ const Stovyklos = () => {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Mūsų vasaros stovyklos - tai puiki galimybė vaikams praleisti aktyvų, 
-                    edukacinį ir smagų laiką gamtoje. Vaikai mokysis joti, rūpintis žirgais, 
-                    pažins gamtą ir įgys vertingų įgūdžių.
+Mūsų stovyklos – tai galimybė vaikams smagiai ir prasmingai leisti laiką gamtoje. Kasdienybę čia praturtina jodinėjimo pamokos, žaidimai, bendravimas su gyvūnais ir pažintis su kaimo gyvenimu.
+
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Kiekviena stovykla yra teminio pobūdžio - vaikai ne tik mokysis joti, 
-                    bet ir sužinos apie žirgų istoriją, dalyvaus kūrybinėse veiklose, 
-                    žais lauko žaidimus ir užmegzės naują draugysčių.
+Kiekviena stovykla turi savo temą – vaikai ne tik mokosi joti, bet ir dalyvauja edukacijose, kūrybinėse dirbtuvėse, žaidžia komandos formavimo žaidimus ir patiria vasariškų nuotykių.
+
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
-                    Stovyklos vadovauja kvalifikuoti instruktoriai ir auklėtojai, 
-                    užtikrinantys kiekvieno vaiko saugumą ir individualų dėmesį.
+Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų saugumu, užtikrina individualų dėmesį ir šiltą bendravimo atmosferą.
+
+
                   </p>
                 </div>
               </CardContent>
