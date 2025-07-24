@@ -15,15 +15,11 @@ const AboutSection = () => {
             </h2>
             
             <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
-              „Nibrių Žirgynėlis" – tai šeimos jojimo mokykla ir gyvūnų ūkis, 
-              įsikūręs nuostabioje Nemuno kilpų regioninio parko gamtoje. Jau daugiau 
-              nei 10 metų mes dalinamės meile žirgams ir gamtai su šeimomis iš visos Lietuvos.
+              
             </p>
 
             <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-              Mūsų misija – suteikti kiekvienam svečiui nepamirštamą patirtį gamtoje, 
-              išmokyti saugiai ir atsakingai bendrauti su žirgais bei parodomi, 
-              kad aktyvus poilsis gali būti tiek jaudinantis, tiek ramus.
+Čia galima ne tik mokytis jodinėti, bet ir pažinti ūkio gyvūnus, pabūti gamtoje, dalyvauti edukacijose, stovyklose ar žygiuose
             </p>
 
             {/* Features */}
