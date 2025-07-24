@@ -8,8 +8,7 @@ const testimonials = [
     name: "Marija Tamkevičiutė",
     location: "Kaunas",
     rating: 5,
-    text: "
-",
+    text: "",
     image: "👩‍👧‍👦"
   },
   {
