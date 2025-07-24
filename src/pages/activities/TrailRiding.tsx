@@ -47,7 +47,7 @@ const TrailRiding = () => {
               Žygiai žirgais
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Atraskite Nemuno kilpų regioninio parko grožį jodami mūsų vadovaujamais žygiais
+              Leiskitės į žygį su žirgais ir atraskite Nemuno kilpų regioninio parko grožį.
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/rezervacijos">Rezervuoti žygį</Link>
