@@ -69,9 +69,9 @@ const Fotosesijos = () => {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Mūsų fotosesijos - tai puiki galimybė įamžinti ypatinga akimirkos su 
-                    gyvūnais nuostabioje gamtos aplinkoje. Siūlome profesionalias fotosesijas 
-                    šeimoms, vaikams, poroms ir individualiai.
+Mūsų fotosesijos – tai ypatinga patirtis gamtos apsuptyje, leidžianti įamžinti šiltas akimirkas kartu su gyvūnais. Siūlome profesionalias fotosesijas šeimoms, vaikams, poroms ar individualiai – kiekvienai progai, kuriai norisi jaukumo ir autentiškumo.
+
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
                     Fotosesijos vyksta su ramiais ir draugiškais gyvūnais - žirgais, 
