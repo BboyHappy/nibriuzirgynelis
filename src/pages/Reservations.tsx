@@ -193,18 +193,23 @@ const Reservations = () => {
                       <div
                         key={activity.id}
                         className={cn(
-                          "border rounded-xl p-4 cursor-pointer transition-all duration-300 hover:shadow-soft",
+                          "border rounded-xl p-4 transition-all duration-300 hover:shadow-soft",
                           selectedActivities.includes(activity.id)
                             ? "border-primary bg-primary/5 shadow-soft"
                             : "border-border hover:border-primary/50"
                         )}
-                        onClick={() => handleActivityToggle(activity.id)}
                       >
                         <div className="flex items-start justify-between mb-2">
                           <div className="text-2xl">{activity.icon}</div>
                           <Checkbox 
                             checked={selectedActivities.includes(activity.id)}
-                            onCheckedChange={() => handleActivityToggle(activity.id)}
+                            onCheckedChange={(checked) => {
+                              if (checked) {
+                                handleActivityToggle(activity.id);
+                              } else {
+                                handleActivityToggle(activity.id);
+                              }
+                            }}
                             className="mt-1"
                           />
                         </div>
