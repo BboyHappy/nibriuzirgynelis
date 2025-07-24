@@ -15,7 +15,7 @@ const newsItems = [
     id: 2,
     title: "Nauja svetainė!",
     date: "2025-07-26",
-    excerpt: "Džiaugiamės galėdami pristatyti naująją „Nibrių žirgynėlio" svetainę!",
+    excerpt: "Džiaugiamės galėdami pristatyti naująją Nibrių žirgynėlio svetainę!",
     image: "/lovable-uploads/d0bf3150-6cb0-472d-b52d-8e9709f84c97.png"
   },
   {
