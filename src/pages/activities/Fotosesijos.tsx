@@ -9,7 +9,7 @@ const Fotosesijos = () => {
   const faqItems = [
     {
       question: "Ar galiu atsivesti savo fotogrą?",
-      answer: "Taip, galite atsivesti savo fotografą arba naudotis mūsų paslaugomis. Mes turime patyrusią fotografę, kuri specializuojasi gyvūnų fotografijoje."
+      answer: "Taip, galite atsivesti savo fotografą arba naudotis mūsų paslaugomis. Mes turime patyrusius fotografus, kurie turi daug patirties fotografuojant gyvūnus."
     },
     {
       question: "Kiek nuotraukų gausiu?",
@@ -17,11 +17,11 @@ const Fotosesijos = () => {
     },
     {
       question: "Ar reikia mokėti joti fotosesijai?",
-      answer: "Ne, mes turime veiklas ir vaikams, kurie nemoka joti. Galime fotografuoti su ramiais žirgais, ožiukais ir kitais gyvūnais."
+      answer: "Ne, mes turime veiklas ir žmonėms, kurie nemoka joti. Galime fotografuoti su ramiais žirgais, ožiukais ir kitais gyvūnais."
     },
     {
-      question: "Kokią ekipuotę atsivesti?",
-      answer: "Rekomenduojame gamtiškų spalvų drabuus, vengti pernelyg ryškių spalvų. Mes turime keletą kostiumų ir priedų."
+      question: "Kaip reikia pasiruošti?",
+      answer: "Rekomenduojame klasiškus arba gamtiškų spalvų drabužius, vengti pernelyg ryškių spalvų. Svarbiausia atsivežti gerą nuotaiką!"
     },
     {
       question: "Ar fotosesija vyksta bet kokiu oru?",
@@ -115,7 +115,7 @@ Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, p
                     <Camera className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Nuotraukos</h3>
-                  <p className="text-muted-foreground text-sm">40-80 vnt.</p>
+                  <p className="text-muted-foreground text-sm">30-50 vnt.</p>
                 </CardContent>
               </Card>
               
@@ -160,19 +160,19 @@ Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, p
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Šeimos fotosesija</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">80€</p>
+                    <p className="text-3xl font-bold text-primary mb-2">50€</p>
                     <p className="text-sm text-muted-foreground">1 valanda</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Vaikų fotosesija</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">60€</p>
+                    <p className="text-3xl font-bold text-primary mb-2">30€</p>
                     <p className="text-sm text-muted-foreground">45 minutės</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Išplėstinė fotosesija</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">120€</p>
+                    <p className="text-3xl font-bold text-primary mb-2">90€</p>
                     <p className="text-sm text-muted-foreground">2 valandos</p>
                   </div>
                 </div>
