@@ -26,23 +26,23 @@ const activities = [
   {
     id: "zygiai",
     title: "Žygiai",
-    price: "nuo 35€",
+    price: "priklauso nuo žygio",
     description: "Žygiai Nemuno kilpų regioniniame parke",
-    duration: "2-4 val",
+    duration: "1-6 val",
     icon: "🌲"
   },
   {
     id: "stovyklos",
     title: "Stovyklos",
-    price: "nuo 50€ už dieną",
-    description: "Vasaros stovyklos vaikams su žirgų priežiūros mokymu",
-    duration: "Pilna diena",
+    price: "nuo 35€ už dieną",
+    description: "Nepamiršamos vasaros stovyklos vaikams su žirgais ir gamta",
+    duration: "Pagal susitarimą",
     icon: "⛺"
   },
   {
     id: "fotosesijos",
     title: "Fotosesijos",
-    price: "nuo 80€ už valandą",
+    price: "nuo 30€ už valandą",
     description: "Profesionalios fotosesijos su žirgais gamtos aplinkoje",
     duration: "1-2 val",
     icon: "📸"
@@ -50,8 +50,8 @@ const activities = [
   {
     id: "kiti-renginiai",
     title: "Kiti renginiai",
-    price: "nuo 200€",
-    description: "Gimtadieniai, korporatyvai ir specialūs renginiai",
+    price: "nuo 150€",
+    description: "Gimtadieniai, mokyklų išvykos ir specialūs renginiai",
     duration: "Pagal susitarimą",
     icon: "🎉"
   }
