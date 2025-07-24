@@ -95,7 +95,7 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
                     <Calendar className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Trukmė</h3>
-                  <p className="text-muted-foreground text-sm">5-10 dienų</p>
+                  <p className="text-muted-foreground text-sm">1-7 dienų</p>
                 </CardContent>
               </Card>
               
@@ -105,7 +105,7 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
                     <Users className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Grupė</h3>
-                  <p className="text-muted-foreground text-sm">8-12 vaikų</p>
+                  <p className="text-muted-foreground text-sm">6-12 vaikų</p>
                 </CardContent>
               </Card>
               
@@ -114,8 +114,8 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Laikas</h3>
-                  <p className="text-muted-foreground text-sm">9:00-17:00</p>
+                  <h3 className="font-semibold text-foreground mb-2">Maistas</h3>
+                  <p className="text-muted-foreground text-sm">Įskaičiuotas</p>
                 </CardContent>
               </Card>
               
@@ -125,7 +125,7 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
                     <Award className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Amžius</h3>
-                  <p className="text-muted-foreground text-sm">7-16 metų</p>
+                  <p className="text-muted-foreground text-sm">7-18 metų</p>
                 </CardContent>
               </Card>
             </div>
