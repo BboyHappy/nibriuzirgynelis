@@ -48,7 +48,7 @@ const KitiRenginiai = () => {
               Kiti renginiai
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Gimtadieniai, korporatyvai ir specialūs renginiai gamtos aplinkoje
+              Gimtadieniai, klasės išvykos ir specialūs renginiai gamtos aplinkoje
             </p>
             <Button asChild variant="hero" size="lg">
               <Link to="/rezervacijos">Rezervuoti renginį</Link>
@@ -69,18 +69,18 @@ const KitiRenginiai = () => {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Mūsų teritorija - puiki vieta ypatingiems renginiams! Siūlome išskirtinę galimybę 
-                    švęsti gimtadinius, rengti korporatyvus ar mokyklos išvykas gamtos aplinkoje su 
-                    žirgais ir kitais gyvūnais.
+Mūsų teritorija – puiki vieta ypatingoms progoms! Čia galite švęsti gimtadienius, krikštynas, organizuoti mokyklos išvykas ar net surengti giminės susitikimą gamtos apsuptyje – drauge su žirgais ir kitais mūsų ūkio gyvūnais.
+
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Kiekvienas renginys yra unikalus - mes prisitaikome prie jūsų poreikių ir pageidavimų. 
-                    Galime pasiūlyti įvairių veiklų: jojimo pamokas, žirgo priežiūros mokymą, 
-                    gamtos pažinimo žaidimus ir sportinės veiklas.
+Kiekvienas renginys yra unikalus, todėl lanksčiai prisitaikome prie jūsų poreikių ir idėjų. Galime pasiūlyti įvairių veiklų: jojimo pamokas, žirgų priežiūros užsiėmimus, gamtos pažinimo žaidimus ar lengvas sportines rungtis vaikams ir suaugusiems.
+
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
-                    Turime erdvų teritoriją, dengtus pastatus blogam orui ir visas reikalingas sąlygas 
-                    sėkmingam renginiui. Mūsų komanda pasirūpins, kad jūsų renginys būtų nepamirštamas!
+Turime erdvią teritoriją, dengtus pastatus blogam orui bei visas sąlygas, kad šventė būtų sklandi ir kupina įspūdžių. Mūsų komanda pasirūpins, kad jūsų renginys būtų ne tik smagus, bet ir įsimintinas!
+
                   </p>
                 </div>
               </CardContent>
