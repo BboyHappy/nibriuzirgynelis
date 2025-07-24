@@ -27,7 +27,7 @@ const activities = [
     id: "zygiai",
     title: "Žygiai",
     price: "nuo 35€",
-    description: "Vadovaujami žygiai Nemuno kilpų regioniniame parke",
+    description: "Žygiai Nemuno kilpų regioniniame parke",
     duration: "2-4 val",
     icon: "🌲"
   },
