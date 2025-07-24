@@ -18,10 +18,10 @@ const Naujienos = () => {
     {
       id: 2,
       title: "Nauja svetainė!",
-      date: "2025-07-29",
+      date: "2025-07-26",
       image: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
       excerpt: "",
-      content: "Sveikiname Justę, kuri prisijungia prie mūsų komandos kaip profesionali fotografė! Justė turi 8 metų patirtį gyvūnų fotografijoje ir jau spėjo suorganizuoti kelias sėkmingas fotosesijas mūsų žirgynėlyje. Nuo šiol galėsime pasiūlyti dar aukštesnės kokybės fotosesijų paslaugas.",
+      content: "Džiaugiamės galėdami pristatyti naująją „Nibrių žirgynėlio“ svetainę! Čia rasite visą informaciją apie mūsų siūlomas pramogas, fotosesijas, stovyklas ir renginius.Apsilankykite, sekite naujienas ir susisiekite greitai bei patogiai",
       
     },
     {
