@@ -159,7 +159,7 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">1-dienės stovykla</h3>
+                    <h3 className="font-semibold text-foreground mb-2">1 dienos stovykla</h3>
                     <p className="text-3xl font-bold text-primary mb-2">35€</p>
                     <p className="text-sm text-muted-foreground">už dieną</p>
                   </div>
