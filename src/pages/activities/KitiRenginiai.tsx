@@ -9,11 +9,11 @@ const KitiRenginiai = () => {
   const faqItems = [
     {
       question: "Kokius renginius galite surengti?",
-      answer: "Gimtadienis, korporatyvai, mokyklos išvykos, mergvakarius, berniukų vakarai ir kiti specialūs renginiai."
+      answer: "Gimtadieniai, krikštynos, mokyklų išvykos, mergvakariai, bernvakariai, giminės susitikimai ir kitos ypatingos progos."
     },
     {
       question: "Kiek žmonių gali dalyvauti?",
-      answer: "Priklausomai nuo renginio tipo, galime priimti nuo 5 iki 50 žmonių. Didesnėms grupėms aptarsime individualiai."
+      answer: "Priklausomai nuo renginio tipo, galime priimti nuo 5 iki 40 žmonių. Didesnėms grupėms aptarsime individualiai."
     },
     {
       question: "Ar galiu atsivesti savo maistą?",
@@ -194,26 +194,26 @@ Siūlome jaukią krikštynų šventę gamtos apsuptyje su gyvūnais, vaikų pram
             <Card className="shadow-elegant">
               <CardHeader>
                 <CardTitle className="font-serif text-2xl text-primary">
-                  Kainodara
+                  Kainodara (derinama pagal aplinkybes)
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Mažas renginys</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">200€</p>
+                    <p className="text-3xl font-bold text-primary mb-2">130€</p>
                     <p className="text-sm text-muted-foreground">iki 10 žmonių</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Vidutinis renginys</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">350€</p>
+                    <p className="text-3xl font-bold text-primary mb-2">300€</p>
                     <p className="text-sm text-muted-foreground">11-25 žmonės</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
                     <h3 className="font-semibold text-foreground mb-2">Didelis renginys</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">500€+</p>
+                    <p className="text-3xl font-bold text-primary mb-2">400€+</p>
                     <p className="text-sm text-muted-foreground">26+ žmonės</p>
                   </div>
                 </div>
