@@ -26,12 +26,12 @@ const Naujienos = () => {
     },
     {
       id: 3,
-      title: "Nauji žygių maršrutai Nemuno kilpų parke",
-      date: "2024-04-22",
+      title: "🌞 Vasaros nuotykiai Nibrių žirgynėlyje!",
+      date: "2025-07-02",
       image: "/lovable-uploads/0c8f72f0-64d5-4680-8f0c-c83111bf5298.png",
-      excerpt: "Atradome naujus nuostabius maršrutus, kurie atskleis jums dar gražesnį Nemuno kilpų regioninio parko veidą.",
-      content: "Po ilgų tyrinėjimų ir derinimų su parko administracija, galime pasiūlyti du naujus žygių maršrutus. Pirmasis veda prie retai lankomų Nemuno vingių su nuostabia panorama, o antrasis - per senovės miškus su archeologijos paminklais. Nauji maršrutai prieinami nuo balandžio 25 d.",
-      readTime: "4 min skaitymo"
+      excerpt: "",
+      content: " Smagiai leidžiame vasaros dienas su nuostabiais vaikais – prisijunk ir tu! Liko viena vieta į rugpjūčio 4–8 d. stovyklą, o į rugpjūčio 11–13 d. stovyklą dar turime daugiau vietų. Stovyklų metu vaikai:🐴 Jodinės ir prižiūrės žirgus | 🐐 Dalyvaus veiklose su ožkytėmis, avelėmis ir viščiukais | 🌿 Keliaus į žygius, žais žaidimus, plauks irklentėmis ir mėgausis kaimo gamta bei maudynėmis | 📍Vieta: Nibriai, Prienų r. | 👧 Grupėje iki 15 vaikų | 💰 Kaina: 3 d. – 170 €, 5 d. – 240 € | 📞 Registracija: +370 606 43952",
+      readTime: "Stovyklos vyks rugpjūčio 4–8 d. ir 11-13 d."
     }
   ];
 
