@@ -8,7 +8,7 @@ const TrailRiding = () => {
   const faqItems = [
     {
       question: "Ar reikia mokėti joti?",
-      answer: "answer: Ne, joti mokėti nereikia – žygiai pritaikyti ir pradedantiesiems."
+      answer: "Ne, joti mokėti nereikia – žygiai pritaikyti ir pradedantiesiems."
     },
     {
       question: "Kiek trunka žygis?",
