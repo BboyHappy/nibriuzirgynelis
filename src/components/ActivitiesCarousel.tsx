@@ -15,15 +15,15 @@ const activities = [
   {
     id: 2,
     title: "Žygiai",
-    description: "Vadovaujami žygiai Nemuno kilpų regioniniame parke",
+    description: "Žygiai Nemuno kilpų regioniniame parke",
     image: "/lovable-uploads/0c8f72f0-64d5-4680-8f0c-c83111bf5298.png",
     href: "/veiklos/zygiai",
-    price: "nuo 35€"
+    price: "Kaina priklauso nuo žygio"
   },
   {
     id: 3,
     title: "Stovyklos",
-    description: "Vasaros stovyklos vaikams su žirgų priežiūros mokymu",
+    description: "Smagios vasaros stovyklos gamtoje su žirgais",
     image: "/lovable-uploads/66ff45ea-6901-482a-ae10-53331ae1901c.png",
     href: "/veiklos/stovyklos",
     price: "nuo 35€/diena"
@@ -31,10 +31,10 @@ const activities = [
   {
     id: 4,
     title: "Fotosesijos",
-    description: "Profesionalios fotosesijos su žirgais gamtos aplinkoje",
+    description: "Profesionalios fotosesijos su žirgais gamtoje",
     image: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
     href: "/veiklos/fotosesijos",
-    price: "nuo 80€/val"
+    price: "nuo 30€/val"
   },
   {
     id: 5,
@@ -47,10 +47,10 @@ const activities = [
   {
     id: 6,
     title: "Kiti renginiai",
-    description: "Gimtadieniai, korporatyvai ir specialūs renginiai",
+    description: "Gimtadieniai, klasės išvykos ir specialūs renginiai",
     image: "/lovable-uploads/cf5a81b6-c37a-4f49-bdf9-451ccdb32df3.png",
     href: "/veiklos/kiti-renginiai",
-    price: "nuo 200€"
+    price: "nuo 5/žmogui€"
   }
 ];
 
