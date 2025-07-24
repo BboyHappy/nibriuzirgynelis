@@ -95,7 +95,7 @@ Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, p
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Trukmė</h3>
-                  <p className="text-muted-foreground text-sm">1-2 valandos</p>
+                  <p className="text-muted-foreground text-sm">iki 2 valandų</p>
                 </CardContent>
               </Card>
               
@@ -115,7 +115,7 @@ Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, p
                     <Camera className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Nuotraukos</h3>
-                  <p className="text-muted-foreground text-sm">30-50 vnt.</p>
+                  <p className="text-muted-foreground text-sm">40-80 vnt.</p>
                 </CardContent>
               </Card>
               
