@@ -8,7 +8,7 @@ import { Clock, Users, Camera, Heart } from "lucide-react";
 const Fotosesijos = () => {
   const faqItems = [
     {
-      question: "Ar galiu atsivesti savo fotogrą?",
+      question: "Ar galiu atsivesti savo fotografą?",
       answer: "Taip, galite atsivesti savo fotografą arba naudotis mūsų paslaugomis. Mes turime patyrusius fotografus, kurie turi daug patirties fotografuojant gyvūnus."
     },
     {
