@@ -68,21 +68,19 @@ const TrailRiding = () => {
                 </h2>
                 <div className="prose prose-lg max-w-none">
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Mūsų vadovaujami žygiai - tai nepakartojamapatirtis tyrinėjant 
-                    Nemuno kilpų regioninio parko grožį ant žirgo nugaros. Važinėsime 
-                    senvagėmis, miško takais ir pievų pakraščiais, kur automobilis 
-                    niekada nepasieks.
+                    Mūsų žygiai su žirgais – tai nepamirštama patirtis tyrinėjant Nemuno kilpų regioninio parko grožį iš žirgo balno.
+Keliausime lėtu žingsniu per senvages, miško takelius ir pievų pakraščius – ten, kur nepasiektų jokie automobiliai.
+Dažnai kartu keliauja ir mūsų draugiški šunys, tad kompanija – tik dar jaukesnė!
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Kiekvienas žygis yra unikalus - priklausomai nuo sezono, oro 
-                    sąlygų ir grupės pageidavimų parenkame tinkamiausią maršrutą. 
-                    Pavasarį ir vasarą galėsite mėgautis žydinčiomis pievomis, 
-                    rudenį - spalvingu lapinatu, o žiemą - sniego tyluma.
+                   Kiekvienas žygis unikalus, nes maršrutą pritaikome pagal metų laiką, orą ir grupės poreikius.
+Pavasarį ir vasarą lydės žydinčios pievos, rudenį – spalvoti lapai, o žiemą – tylus sniego kraštovaizdis.
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
-                    Visi žygiai vyksta su patyrusiu gidu-instruktoriumi, kuris 
-                    pasakos apie regioną, jo istorijąir gamtą. Ilgesnių žygių 
-                    metu padarysime pertraukėlę nuostabiausioje vietoje.
+                    Visus žygius lydi mūsų instruktorius, kuris ne tik užtikrina saugumą, bet ir papasakoja įdomybių apie gamtą, vietovės istoriją bei žirgus.
+Ilgesnių žygių metu sustosime gražiausiose vietose trumpai poilsio pertraukėlei.
+
+
                   </p>
                 </div>
               </CardContent>
