@@ -21,10 +21,10 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Giedrė ir Tomas",
-    location: "Šiauliai", 
+    name: "Jovita Galeckaite",
+    location: "Kaunas", 
     rating: 5,
-    text: "Fotosesija su žirgais buvo mūsų svajonė! Fotografas profesionalus, žirgai ramūs ir gražūs. Gavome nuostabias nuotraukas, kuriomis didžiuojamės.",
+    text: "Draugiški ir svetingi šeimininkai. Ūkis toliau netoli ežero, erdvios apylinkės. Atvykus  vaikams patiko pajodinėti  asiliuku. Aplinkui laisvai vaikšto vištos, galima palesinti. Yra pavėsinė, tad ir gimtadienį susiorganizuoti patogu. Puiki galimybė jodinėti arkliais. Organizuoja ir stovyklas.",
     image: "💑"
   }
 ];
