@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin, Clock, Users } from "lucide-react";
@@ -6,14 +5,13 @@ import heroImage from "@/assets/hero-banner.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
           src="/lovable-uploads/8f3bf9dc-4ddd-4cae-b7ae-7cd4d7b2a5e4.png" 
           alt="Žirgas rudens gamtoje" 
-          className="w-full h-full object-cover object-center"
-          style={{ objectPosition: "center 30%" }}
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
       </div>

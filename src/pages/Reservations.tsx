@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -6,9 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Check, MapPin, Clock, Euro } from "lucide-react";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { CalendarIcon, Check, MapPin, Clock, Euro } from "lucide-react";
+import { format } from "date-fns";
+import { lt } from "date-fns/locale";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
@@ -46,14 +48,6 @@ const activities = [
     icon: "📸"
   },
   {
-    id: "edukacijos",
-    title: "Edukacijos",
-    price: "nuo 10€ už asmenį",
-    description: "Edukacinės programos mokykloms ir grupėms",
-    duration: "2-4 val",
-    icon: "📚"
-  },
-  {
     id: "kiti-renginiai",
     title: "Kiti renginiai",
     price: "nuo 150€",
@@ -64,8 +58,8 @@ const activities = [
 ];
 
 const Reservations = () => {
-  const [selectedActivities, setSelectedActivities] = useState<string[]>([]);
-  const [additionalPhotoSession, setAdditionalPhotoSession] = useState(false);
+  const [selectedActivity, setSelectedActivity] = useState<string>("");
+  const [selectedDate, setSelectedDate] = useState<Date>();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -80,7 +74,7 @@ const Reservations = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (selectedActivities.length === 0 || !formData.firstName || !formData.email || !formData.phone) {
+    if (!selectedActivity || !selectedDate || !formData.firstName || !formData.email) {
       toast({
         title: "Klaida",
         description: "Prašome užpildyti visus privalomas laukus",
@@ -91,8 +85,8 @@ const Reservations = () => {
 
     // Here you would typically send the data to your backend
     console.log({
-      activities: selectedActivities,
-      additionalPhotoSession,
+      activity: selectedActivity,
+      date: selectedDate,
       ...formData
     });
 
@@ -109,19 +103,6 @@ const Reservations = () => {
       [field]: value
     }));
   };
-
-  const handleActivityToggle = (activityId: string) => {
-    setSelectedActivities(prev => {
-      if (prev.includes(activityId)) {
-        return prev.filter(id => id !== activityId);
-      } else {
-        return [...prev, activityId];
-      }
-    });
-  };
-
-  // Disable additional photo session checkbox if fotosesijos is selected
-  const isPhotoSessionDisabled = selectedActivities.includes("fotosesijos");
 
   if (isSubmitted) {
     return (
@@ -142,8 +123,8 @@ const Reservations = () => {
               <Button 
                 onClick={() => {
                   setIsSubmitted(false);
-                  setSelectedActivities([]);
-                  setAdditionalPhotoSession(false);
+                  setSelectedActivity("");
+                  setSelectedDate(undefined);
                   setFormData({
                     firstName: "",
                     lastName: "",
@@ -174,7 +155,7 @@ const Reservations = () => {
               Rezervuoti laiką
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Pasirinkite norimas veiklas ir užpildykite rezervacijos formą. 
+              Pasirinkite norimą veiklą ir užpildykite rezervacijos formą. 
               Mes susisieksime su jumis patvirtinti rezervaciją.
             </p>
           </div>
@@ -185,7 +166,7 @@ const Reservations = () => {
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary">
-                    1. Pasirinkite veiklas
+                    1. Pasirinkite veiklą
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -195,60 +176,67 @@ const Reservations = () => {
                         key={activity.id}
                         className={cn(
                           "border rounded-xl p-4 cursor-pointer transition-all duration-300 hover:shadow-soft",
-                          selectedActivities.includes(activity.id)
+                          selectedActivity === activity.id
                             ? "border-primary bg-primary/5 shadow-soft"
                             : "border-border hover:border-primary/50"
                         )}
-                        onClick={() => handleActivityToggle(activity.id)}
+                        onClick={() => setSelectedActivity(activity.id)}
                       >
-                        <div className="flex items-start space-x-3">
-                          <Checkbox
-                            checked={selectedActivities.includes(activity.id)}
-                            className="mt-1"
-                          />
-                          <div className="flex-1">
-                            <div className="text-2xl mb-2">{activity.icon}</div>
-                            <h3 className="font-semibold text-foreground mb-1">{activity.title}</h3>
-                            <p className="text-sm text-muted-foreground mb-2">{activity.description}</p>
-                            <div className="flex items-center space-x-4 text-xs text-muted-foreground">
-                              <div className="flex items-center space-x-1">
-                                <Euro className="w-3 h-3" />
-                                <span>{activity.price}</span>
-                              </div>
-                              <div className="flex items-center space-x-1">
-                                <Clock className="w-3 h-3" />
-                                <span>{activity.duration}</span>
-                              </div>
-                            </div>
+                        <div className="text-2xl mb-2">{activity.icon}</div>
+                        <h3 className="font-semibold text-foreground mb-1">{activity.title}</h3>
+                        <p className="text-sm text-muted-foreground mb-2">{activity.description}</p>
+                        <div className="flex items-center space-x-4 text-xs text-muted-foreground">
+                          <div className="flex items-center space-x-1">
+                            <Euro className="w-3 h-3" />
+                            <span>{activity.price}</span>
+                          </div>
+                          <div className="flex items-center space-x-1">
+                            <Clock className="w-3 h-3" />
+                            <span>{activity.duration}</span>
                           </div>
                         </div>
                       </div>
                     ))}
                   </div>
+                </CardContent>
+              </Card>
 
-                  {/* Additional Photo Session Option */}
-                  <div className="mt-6 p-4 border rounded-xl bg-secondary/30">
-                    <div className="flex items-center space-x-3">
-                      <Checkbox
-                        checked={additionalPhotoSession}
-                        onCheckedChange={(checked) => setAdditionalPhotoSession(checked === true)}
-                        disabled={isPhotoSessionDisabled}
-                      />
-                      <div className="flex-1">
-                        <Label className={cn(
-                          "font-medium",
-                          isPhotoSessionDisabled && "text-muted-foreground"
-                        )}>
-                          Papildoma fotosesija veiklos metu (+40€)
-                        </Label>
-                        {isPhotoSessionDisabled && (
-                          <p className="text-sm text-muted-foreground mt-1">
-                            Negalima, kai pasirinktos fotosesijos
-                          </p>
+              {/* Date Selection */}
+              <Card className="shadow-elegant">
+                <CardHeader>
+                  <CardTitle className="font-serif text-2xl text-primary">
+                    2. Pasirinkite norimą datą (gali keistis)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button
+                        variant="outline"
+                        className={cn(
+                          "w-full justify-start text-left font-normal h-12",
+                          !selectedDate && "text-muted-foreground"
                         )}
-                      </div>
-                    </div>
-                  </div>
+                      >
+                        <CalendarIcon className="mr-2 h-4 w-4" />
+                        {selectedDate ? (
+                          format(selectedDate, "PPP", { locale: lt })
+                        ) : (
+                          <span>Pasirinkite datą</span>
+                        )}
+                      </Button>
+                    </PopoverTrigger>
+                    <PopoverContent className="w-auto p-0" align="start">
+                      <Calendar
+                        mode="single"
+                        selected={selectedDate}
+                        onSelect={setSelectedDate}
+                        disabled={(date) => date < new Date()}
+                        initialFocus
+                        className="pointer-events-auto"
+                      />
+                    </PopoverContent>
+                  </Popover>
                 </CardContent>
               </Card>
 
@@ -256,7 +244,7 @@ const Reservations = () => {
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary">
-                    2. Kontaktinė informacija
+                    3. Kontaktinė informacija
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -295,13 +283,12 @@ const Reservations = () => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Telefono numeris *</Label>
+                      <Label htmlFor="phone">Telefono numeris</Label>
                       <Input
                         id="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        required
                         className="h-12"
                       />
                     </div>

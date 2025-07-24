@@ -1,4 +1,3 @@
-
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,7 +12,6 @@ const Contacts = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
     subject: "",
     message: ""
   });
@@ -21,16 +19,6 @@ const Contacts = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
-      toast({
-        title: "Klaida",
-        description: "Prašome užpildyti visus privalomas laukus",
-        variant: "destructive"
-      });
-      return;
-    }
-    
     // Here you would typically send the message to your backend
     console.log("Contact form submitted:", formData);
     
@@ -43,7 +31,6 @@ const Contacts = () => {
     setFormData({
       name: "",
       email: "",
-      phone: "",
       subject: "",
       message: ""
     });
@@ -187,28 +174,16 @@ const Contacts = () => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Telefono numeris *</Label>
+                      <Label htmlFor="email">El. paštas *</Label>
                       <Input
-                        id="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleInputChange("phone", e.target.value)}
+                        id="email"
+                        type="email"
+                        value={formData.email}
+                        onChange={(e) => handleInputChange("email", e.target.value)}
                         required
                         className="h-12"
                       />
                     </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="email">El. paštas *</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange("email", e.target.value)}
-                      required
-                      className="h-12"
-                    />
                   </div>
 
                   <div className="space-y-2">
