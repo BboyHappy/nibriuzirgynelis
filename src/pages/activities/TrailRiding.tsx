@@ -8,7 +8,7 @@ const TrailRiding = () => {
   const faqItems = [
     {
       question: "Ar reikia mokėti joti?",
-      answer: "Taip, žygiams reikia bent minimalaus jojimo patirties. Jei esate pradedantysis, rekomenduojame pirmiau paimti keletą pamokų."
+      answer: "answer: Ne, joti mokėti nereikia – žygiai pritaikyti ir pradedantiesiems."
     },
     {
       question: "Kiek trunka žygis?",
@@ -24,7 +24,7 @@ const TrailRiding = () => {
     },
     {
       question: "Ar yra amžiaus apribojimai?",
-      answer: "Žygiuose dalyvauti gali asmenys nuo 12 metų. Vaikams iki 16 metų privalomas suaugusiojo palydovas."
+      answer: "Žygiuose dalyvauti gali asmenys nuo 2 metų. Vaikams iki 16 metų privalomas suaugusiojo palydovas."
     }
   ];
 
