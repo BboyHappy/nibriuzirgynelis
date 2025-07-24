@@ -5,10 +5,11 @@ import { Star, X } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Audra Kazlauskienė",
+    name: "Marija Tamkevičiutė",
     location: "Kaunas",
     rating: 5,
-    text: "Nuostabi patirtis su visa šeima! Vaikai pirmą kartą sėdo ant žirgo ir buvo sužavėti. Instruktoriai labai kantrūs ir profesionalūs. Tikrai grįšime dar kartą!",
+    text: "Dėkojame už nuostabų laiką Nibrių žirgynėlis  už be galo draugiškus gyvūnus (o jų visa įvairovė: avytės, žirgai, vištos, žąsys, antys, kalakutai, haskiai..) atskiras ačiū žąsims, nesitikėjome, kad bus tokios draugiškos (net vaikai galėjo glostyti). Labai maloni nuostabi šeimininkų pora 🤗❤️ Dėkojame už šiltą priėmimą ir nuoširdų rūpestį.
+",
     image: "👩‍👧‍👦"
   },
   {
