@@ -105,7 +105,7 @@ const Footer = () => {
               <Clock size={16} className="mt-1 text-primary-foreground/60" />
               <div className="text-sm">
                 <p className="text-primary-foreground/80">Kiekvieną dieną</p>
-                <p className="text-primary-foreground font-medium">9:00 – 19:00</p>
+                <p className="text-primary-foreground font-medium">8:00 – 21:00</p>
               </div>
             </div>
             <div className="mt-6">
