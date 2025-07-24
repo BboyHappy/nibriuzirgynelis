@@ -74,7 +74,7 @@ Mūsų fotosesijos – tai ypatinga patirtis gamtos apsuptyje, leidžianti įam�
 
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-Fotosesijose dalyvauja ramūs, žmonių draugijos įpratę gyvūnai: žirgai, poniai, ožiukai ir kiti ūkio gyventojai. Jie yra puikiai prižiūrimi, socialūs ir puikiai jaučiasi objektyvo dėmesio centre.
+Fotosesijas galima užsisakyti kartu su edukacijomis. Fotosesijose dalyvauja ramūs, žmonių draugijos įpratę gyvūnai: žirgai, poniai, ožiukai ir kiti ūkio gyventojai. Jie yra puikiai prižiūrimi, socialūs ir puikiai jaučiasi objektyvo dėmesio centre.
 
 
                   </p>
