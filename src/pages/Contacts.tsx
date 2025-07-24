@@ -124,7 +124,7 @@ const Contacts = () => {
                       <h3 className="font-semibold text-foreground mb-1">Darbo laikas</h3>
                       <p className="text-foreground/80">
                         Pirmadienisē-sekmadienisē<br />
-                        9:00 - 19:00
+                        8:00 - 21:00
                       </p>
                     </div>
                   </div>
