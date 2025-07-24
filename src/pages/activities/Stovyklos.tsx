@@ -9,23 +9,23 @@ const Stovyklos = () => {
   const faqItems = [
     {
       question: "Kokiam amžiui skirtos stovyklos?",
-      answer: "Mūsų stovyklos skirtos vaikams nuo 7 iki 16 metų. Formuojame grupes pagal amžių ir patirtį."
+      answer: "Mūsų stovyklos skirtos vaikams nuo 7 iki 18 metų. Formuojame grupes pagal amžių ir patirtį."
     },
     {
       question: "Ar reikia mokėti joti?",
       answer: "Ne, stovyklose mokome nuo pat pradžių. Patyręs vaikams taip pat surengisime sudėtingesnių veiklų."
     },
     {
-      question: "Kiek vaikai gyvena stovykloje?",
-      answer: "Dienos stovyklos - vaikai grįžta namo vakare. Taip pat turime savaitgalio stovyklas su nakvyne."
+      question: "Kur vaikai gyvena stovykloje?",
+      answer: "Vaikai gyvena arba palapinėse, arba namelyje su lovomis – priklausomai nuo stovyklos tipo ir oro sąlygų."
     },
     {
       question: "Kokios veiklos laukia stovykloje?",
       answer: "Jojimo pamokos, žirgo priežiūra, gamtos pažinimas, kūrybiškumo valandėlės ir sportinės veiklos."
     },
     {
-      question: "Ar yra medicinos darbuotojas?",
-      answer: "Taip, stovyklos metu visada yra kvalifikuotas medicinos darbuotojas."
+      question: "Ar yra maitinimas?",
+      answer: "Taip, į kainą įskaičiuoti pusryčiai, pietūs ir vakarienė. Skanų maistą tiekiame iš vietinio miestelio restorano. Be to, galime prisitaikyti prie jūsų poreikių ir specialių užsakymų."
     }
   ];
 
