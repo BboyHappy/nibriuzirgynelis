@@ -47,7 +47,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-primary-foreground/90">Darbo laikas</p>
-                  <p className="text-primary-foreground font-semibold">9:00–19:00</p>
+                  <p className="text-primary-foreground font-semibold">8:00–21:00</p>
                 </div>
               </div>
 
