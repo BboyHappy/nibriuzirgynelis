@@ -45,7 +45,7 @@ const Edukacijos = () => {
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary-foreground mb-4">
-              Edukacijos
+              Edukacijos su jojimu
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-8">
               Susipažinkite su ūkio gyvūnais ir sužinokite apie jų gyvenimą
