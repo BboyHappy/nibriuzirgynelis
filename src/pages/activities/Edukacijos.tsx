@@ -72,13 +72,15 @@ const Edukacijos = () => {
                     <strong>Atvykus 3 ir daugiau žmonių – kaina 10 eurų žmogui.</strong>
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Edukacija su jojimu – tai beveik valandos laiko susipažinimas su ūkio gyvūnais: 
-                    žirgais, avimis, ožkomis, paukščiais, asile. Jų šukavimas, maitinimas, faktų apie 
-                    juos sužinojimas. Po edukacijos laukia žirgo balnojimas ir trumpas jojimas.
+Tai maždaug valandos trukmės patirtis, kurios metu susipažinsite su mūsų ūkio gyvūnais – žirgais, avimis, ožkomis, paukščiais bei asilu. Dalyviai turės progą juos šukuoti, maitinti ir sužinoti įdomių faktų apie kiekvieną gyventoją.
+
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Joti gali visi iki 90 kg. 10 eurų kaina nepriklauso nuo to ar žmogus jodinėja. 
-                    Po edukacijos – laisvas laikas mūsų pavėsinėje. Vasaros metu galima naudotis ir irklentėmis.
+Po pažinties su gyvūnais vyksta žirgo balnojimas ir trumpas jojimas. Net jei nuspręsite nejodinėti, edukacijos kaina – 10 € – išlieka ta pati.
+
+Pasibaigus edukacijai, kviečiame pailsėti mūsų pavėsinėje. Šiltuoju metų laiku taip pat siūlome pasimėgauti vandens pramogomis – galima naudotis irklentėmis.
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed text-accent">
                     <strong>Nuolaida gimtadienių šventėms, kai atvyksta 10 vaikų, o tėveliai nejodinėja.</strong>
