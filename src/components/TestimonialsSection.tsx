@@ -8,7 +8,7 @@ const testimonials = [
     name: "Marija Tamkevičiutė",
     location: "Kaunas",
     rating: 5,
-    text: "",
+    text: "Dėkojame už nuostabų laiką Nibrių žirgynėlis  už be galo draugiškus gyvūnus (o jų visa įvairovė: avytės, žirgai, vištos, žąsys, antys, kalakutai, haskiai..) atskiras ačiū žąsims, nesitikėjome, kad bus tokios draugiškos (net vaikai galėjo glostyti). Labai maloni nuostabi šeimininkų pora 🤗❤️ Dėkojame už šiltą priėmimą ir nuoširdų rūpestį.",
     image: "👩‍👧‍👦"
   },
   {
