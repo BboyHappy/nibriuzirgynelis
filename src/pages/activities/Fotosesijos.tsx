@@ -74,14 +74,14 @@ Mūsų fotosesijos – tai ypatinga patirtis gamtos apsuptyje, leidžianti įam�
 
                   </p>
                   <p className="text-foreground/80 leading-relaxed mb-6">
-                    Fotosesijos vyksta su ramiais ir draugiškais gyvūnais - žirgais, 
-                    pončikais, ožiukais ir kitais ūkio gyventojais. Kiekvienas gyvūnas 
-                    yra gerai išauklėtas ir pripratęs prie žmonių.
+Fotosesijose dalyvauja ramūs, žmonių draugijos įpratę gyvūnai: žirgai, poniai, ožiukai ir kiti ūkio gyventojai. Jie yra puikiai prižiūrimi, socialūs ir puikiai jaučiasi objektyvo dėmesio centre.
+
+
                   </p>
                   <p className="text-foreground/80 leading-relaxed">
-                    Mūsų fotografė specializuojasi gyvūnų fotografijoje ir sugebės 
-                    pagauti autentiškas emocijas bei sukurti nepamirštamų kadrų. 
-                    Fotosesijoms parenkame gražiausias vietas mūsų teritorijoje.
+Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, pasirūpins, kad kiekvienas kadras būtų gyvas. Fotosesijoms parenkame pačias gražiausias mūsų teritorijos vietas, kurios dar labiau sustiprina šios patirties žavesį.
+
+
                   </p>
                 </div>
               </CardContent>
