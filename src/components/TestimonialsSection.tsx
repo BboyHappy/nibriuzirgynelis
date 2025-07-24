@@ -6,18 +6,18 @@ const testimonials = [
   {
     id: 1,
     name: "Marija Tamkevičiutė",
-    location: "Kaunas",
+    location: "Vilnius",
     rating: 5,
     text: "Dėkojame už nuostabų laiką Nibrių žirgynėlis  už be galo draugiškus gyvūnus (o jų visa įvairovė: avytės, žirgai, vištos, žąsys, antys, kalakutai, haskiai..) atskiras ačiū žąsims, nesitikėjome, kad bus tokios draugiškos (net vaikai galėjo glostyti). Labai maloni nuostabi šeimininkų pora 🤗❤️ Dėkojame už šiltą priėmimą ir nuoširdų rūpestį.",
     image: "👩‍👧‍👦"
   },
   {
     id: 2,
-    name: "Mindaugas Petrauskas", 
+    name: "Daiva Brazdziuniene", 
     location: "Vilnius",
     rating: 5,
-    text: "Žygis Nemuno kilpų parke buvo tiesiog fantastiškas! Gamta, žirgai, puiki organizacija. Rekomenduoju visiems, kurie ieško aktyvaus poilsio gamtoje.",
-    image: "👨‍💼"
+    text: "Mano šešiametė buvo dienos stovykloje. 35 € 9–17 val. su maitinimu. Labai patiko, daug veiklos ir įspūdžių! Labai rekomenduoju!",
+    image: "👩"
   },
   {
     id: 3,
