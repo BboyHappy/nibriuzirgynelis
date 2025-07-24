@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
@@ -8,6 +8,11 @@ import { cn } from "@/lib/utils";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const navigation = [
     { name: "Pagrindinis", href: "/" },
@@ -29,6 +34,7 @@ const Header = () => {
   ];
 
   const isActivePage = (href: string) => location.pathname === href;
+  const isActiveSection = (submenu: any[]) => submenu?.some(item => location.pathname === item.href);
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
@@ -52,8 +58,9 @@ const Header = () => {
                 {item.submenu ? (
                   <div className="relative">
                     <button className={cn(
-                      "text-foreground hover:text-primary transition-colors font-medium",
-                      "group-hover:text-primary"
+                      "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
+                      "group-hover:text-primary",
+                      isActiveSection(item.submenu) && "bg-primary text-primary-foreground border-2 border-primary"
                     )}>
                       {item.name}
                     </button>
@@ -63,7 +70,10 @@ const Header = () => {
                           <Link
                             key={subitem.name}
                             to={subitem.href}
-                            className="block px-4 py-3 text-sm text-foreground hover:text-primary hover:bg-accent/50 transition-colors"
+                            className={cn(
+                              "block px-4 py-3 text-sm text-foreground hover:text-primary hover:bg-accent/50 transition-colors",
+                              isActivePage(subitem.href) && "bg-primary/10 text-primary font-semibold"
+                            )}
                           >
                             {subitem.name}
                           </Link>
@@ -75,8 +85,8 @@ const Header = () => {
                   <Link
                     to={item.href}
                     className={cn(
-                      "text-foreground hover:text-primary transition-colors font-medium",
-                      isActivePage(item.href) && "text-primary font-semibold"
+                      "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
+                      isActivePage(item.href) && "bg-primary text-primary-foreground border-2 border-primary"
                     )}
                   >
                     {item.name}
@@ -127,13 +137,21 @@ const Header = () => {
                 <div key={item.name}>
                   {item.submenu ? (
                     <div>
-                      <div className="px-4 py-2 font-medium text-foreground">{item.name}</div>
+                      <div className={cn(
+                        "px-4 py-2 font-medium text-foreground",
+                        isActiveSection(item.submenu) && "text-primary font-semibold"
+                      )}>
+                        {item.name}
+                      </div>
                       <div className="pl-4 space-y-1">
                         {item.submenu.map((subitem) => (
                           <Link
                             key={subitem.name}
                             to={subitem.href}
-                            className="block px-4 py-2 text-sm text-muted-foreground hover:text-primary"
+                            className={cn(
+                              "block px-4 py-2 text-sm text-muted-foreground hover:text-primary",
+                              isActivePage(subitem.href) && "text-primary font-semibold"
+                            )}
                             onClick={() => setIsMenuOpen(false)}
                           >
                             {subitem.name}

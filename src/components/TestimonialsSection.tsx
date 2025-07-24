@@ -1,6 +1,7 @@
 
 import { useState } from "react";
-import { Star, X } from "lucide-react";
+import { Star, X, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
@@ -16,7 +17,7 @@ const testimonials = [
     name: "Daiva Brazdziuniene", 
     location: "Vilnius",
     rating: 5,
-    text: "Mano šešiametė buvo dienos stovykloje. 35 € 9–17 val. su maitinimu. Labai patiko, daug veiklos ir įspūdžių! Labai rekomenduoju!",
+    text: "Mano šešiametė buvo dienos stovykloje. 35 € 9–17 val. su maitinimu. Labai patiko, daug veiklos ir įspūdžių! Labai rekomenduoju!",
     image: "👩"
   },
   {
@@ -106,13 +107,33 @@ const TestimonialsSection = () => {
   return (
     <section className="py-20 bg-gradient-nature">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
-            Ką sako mūsų svečiai
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Kiekvienas atsiliepimas mums primena, kodėl mes taip mylime savo darbą
-          </p>
+        <div className="text-center mb-12 flex items-center justify-between">
+          <div className="flex-1">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
+              Ką sako mūsų svečiai
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Kiekvienas atsiliepimas mums primena, kodėl mes taip mylime savo darbą
+            </p>
+          </div>
+          <div className="hidden md:block">
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="whitespace-nowrap"
+            >
+              <a
+                href="https://maps.google.com/place/data=!4m2!3m1!1s0x46e7b2e5b5b5b5b5:0x5b5b5b5b5b5b5b5b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
+              >
+                Skaityti daugiau atsiliepimų Google Maps
+                <ExternalLink className="w-4 h-4 ml-2" />
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -146,6 +167,26 @@ const TestimonialsSection = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Mobile Google Reviews Button */}
+        <div className="text-center mt-8 md:hidden">
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="w-full"
+          >
+            <a
+              href="https://maps.google.com/place/data=!4m2!3m1!1s0x46e7b2e5b5b5b5b5:0x5b5b5b5b5b5b5b5b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center"
+            >
+              Skaityti daugiau atsiliepimų Google Maps
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </a>
+          </Button>
         </div>
 
         {/* Photo Gallery */}

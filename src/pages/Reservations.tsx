@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -6,11 +7,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { CalendarIcon, Check, MapPin, Clock, Euro } from "lucide-react";
-import { format } from "date-fns";
-import { lt } from "date-fns/locale";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Check, Euro, Clock } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
@@ -48,6 +46,14 @@ const activities = [
     icon: "📸"
   },
   {
+    id: "edukacijos",
+    title: "Edukacijos",
+    price: "10€ už žmogų",
+    description: "Susipažinimas su ūkio gyvūnais ir jų priežiūra",
+    duration: "1-2 val",
+    icon: "🎓"
+  },
+  {
     id: "kiti-renginiai",
     title: "Kiti renginiai",
     price: "nuo 150€",
@@ -58,8 +64,8 @@ const activities = [
 ];
 
 const Reservations = () => {
-  const [selectedActivity, setSelectedActivity] = useState<string>("");
-  const [selectedDate, setSelectedDate] = useState<Date>();
+  const [selectedActivities, setSelectedActivities] = useState<string[]>([]);
+  const [additionalPhotoSession, setAdditionalPhotoSession] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -74,7 +80,7 @@ const Reservations = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!selectedActivity || !selectedDate || !formData.firstName || !formData.email) {
+    if (selectedActivities.length === 0 || !formData.firstName || !formData.email || !formData.phone) {
       toast({
         title: "Klaida",
         description: "Prašome užpildyti visus privalomas laukus",
@@ -85,8 +91,8 @@ const Reservations = () => {
 
     // Here you would typically send the data to your backend
     console.log({
-      activity: selectedActivity,
-      date: selectedDate,
+      activities: selectedActivities,
+      additionalPhotoSession,
       ...formData
     });
 
@@ -103,6 +109,18 @@ const Reservations = () => {
       [field]: value
     }));
   };
+
+  const handleActivityToggle = (activityId: string) => {
+    setSelectedActivities(prev => {
+      if (prev.includes(activityId)) {
+        return prev.filter(id => id !== activityId);
+      } else {
+        return [...prev, activityId];
+      }
+    });
+  };
+
+  const isPhotoSessionSelected = selectedActivities.includes("fotosesijos");
 
   if (isSubmitted) {
     return (
@@ -123,8 +141,8 @@ const Reservations = () => {
               <Button 
                 onClick={() => {
                   setIsSubmitted(false);
-                  setSelectedActivity("");
-                  setSelectedDate(undefined);
+                  setSelectedActivities([]);
+                  setAdditionalPhotoSession(false);
                   setFormData({
                     firstName: "",
                     lastName: "",
@@ -155,7 +173,7 @@ const Reservations = () => {
               Rezervuoti laiką
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Pasirinkite norimą veiklą ir užpildykite rezervacijos formą. 
+              Pasirinkite norimas veiklas ir užpildykite rezervacijos formą. 
               Mes susisieksime su jumis patvirtinti rezervaciją.
             </p>
           </div>
@@ -166,7 +184,7 @@ const Reservations = () => {
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary">
-                    1. Pasirinkite veiklą
+                    1. Pasirinkite veiklas
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -176,13 +194,20 @@ const Reservations = () => {
                         key={activity.id}
                         className={cn(
                           "border rounded-xl p-4 cursor-pointer transition-all duration-300 hover:shadow-soft",
-                          selectedActivity === activity.id
+                          selectedActivities.includes(activity.id)
                             ? "border-primary bg-primary/5 shadow-soft"
                             : "border-border hover:border-primary/50"
                         )}
-                        onClick={() => setSelectedActivity(activity.id)}
+                        onClick={() => handleActivityToggle(activity.id)}
                       >
-                        <div className="text-2xl mb-2">{activity.icon}</div>
+                        <div className="flex items-start justify-between mb-2">
+                          <div className="text-2xl">{activity.icon}</div>
+                          <Checkbox 
+                            checked={selectedActivities.includes(activity.id)}
+                            onCheckedChange={() => handleActivityToggle(activity.id)}
+                            className="mt-1"
+                          />
+                        </div>
                         <h3 className="font-semibold text-foreground mb-1">{activity.title}</h3>
                         <p className="text-sm text-muted-foreground mb-2">{activity.description}</p>
                         <div className="flex items-center space-x-4 text-xs text-muted-foreground">
@@ -198,45 +223,32 @@ const Reservations = () => {
                       </div>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
 
-              {/* Date Selection */}
-              <Card className="shadow-elegant">
-                <CardHeader>
-                  <CardTitle className="font-serif text-2xl text-primary">
-                    2. Pasirinkite norimą datą (gali keistis)
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <Popover>
-                    <PopoverTrigger asChild>
-                      <Button
-                        variant="outline"
+                  {/* Additional Photo Session Option */}
+                  <div className="mt-6 p-4 border border-border rounded-xl bg-card">
+                    <div className="flex items-center space-x-3">
+                      <Checkbox 
+                        id="additionalPhotoSession"
+                        checked={additionalPhotoSession}
+                        onCheckedChange={(checked) => setAdditionalPhotoSession(checked === true)}
+                        disabled={isPhotoSessionSelected}
+                      />
+                      <Label 
+                        htmlFor="additionalPhotoSession"
                         className={cn(
-                          "w-full justify-start text-left font-normal h-12",
-                          !selectedDate && "text-muted-foreground"
+                          "font-medium",
+                          isPhotoSessionSelected && "text-muted-foreground"
                         )}
                       >
-                        <CalendarIcon className="mr-2 h-4 w-4" />
-                        {selectedDate ? (
-                          format(selectedDate, "PPP", { locale: lt })
-                        ) : (
-                          <span>Pasirinkite datą</span>
-                        )}
-                      </Button>
-                    </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0" align="start">
-                      <Calendar
-                        mode="single"
-                        selected={selectedDate}
-                        onSelect={setSelectedDate}
-                        disabled={(date) => date < new Date()}
-                        initialFocus
-                        className="pointer-events-auto"
-                      />
-                    </PopoverContent>
-                  </Popover>
+                        Papildoma fotosesija veiklos metu (+40€)
+                      </Label>
+                    </div>
+                    {isPhotoSessionSelected && (
+                      <p className="text-sm text-muted-foreground mt-2 ml-7">
+                        Pasirinkus fotosesijų veiklą, papildoma fotosesija nereikalinga
+                      </p>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
 
@@ -244,7 +256,7 @@ const Reservations = () => {
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary">
-                    3. Kontaktinė informacija
+                    2. Kontaktinė informacija
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -283,12 +295,13 @@ const Reservations = () => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Telefono numeris</Label>
+                      <Label htmlFor="phone">Telefono numeris *</Label>
                       <Input
                         id="phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
+                        required
                         className="h-12"
                       />
                     </div>
@@ -316,7 +329,7 @@ const Reservations = () => {
                       id="additionalInfo"
                       value={formData.additionalInfo}
                       onChange={(e) => handleInputChange("additionalInfo", e.target.value)}
-                      placeholder="Jūsų patirtis su žirgais, specialūs poreikiai, klausimai..."
+                      placeholder="Jūsų patirtis su žirgais, pageidaujama data, specialūs poreikiai, klausimai..."
                       rows={4}
                     />
                   </div>

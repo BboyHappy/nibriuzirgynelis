@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -40,7 +41,7 @@ const activities = [
     id: 5,
     title: "Edukacijos",
     description: "Susipažinimas su ūkio gyvūnais ir jų priežiūra",
-    image: "/lovable-uploads/995c3440-5bb5-4b1b-ab97-60b66717b70e.png",
+    image: "/lovable-uploads/0747d877-85d6-4cb9-a38c-1b6e47494913.png",
     href: "/veiklos/edukacijos",
     price: "10€/žmogui"
   },
