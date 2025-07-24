@@ -154,7 +154,7 @@ const TestimonialsSection = () => {
             <h3 className="font-serif text-2xl font-bold text-primary mb-2">
               Mūsų nuotraukos
             </h3>
-            <p className="text-muted-foreground">Tikros akimirkos iš mūsų veiklų</p>
+            <p className="text-muted-foreground">Akimirkos iš mūsų veiklų</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
