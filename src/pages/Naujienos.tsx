@@ -13,7 +13,7 @@ const Naujienos = () => {
       date: "2025-07-22",
       image: "/lovable-uploads/eef99467-2c4d-41ab-88c0-5c7106d76501.png",
       excerpt: "",
-      content: "Laukiame mažų ir didelių – mišri grupė nuo 3 metų iki kiek tik norėsite! 😊 Veiklų netrūks visiems: mažieji jojimo džiaugsmą patirs ant asilės Simos, o vyresni galės pajodinėti žirgais. Jeigu orai palankūs – maudynės ir vandens mūšiai garantuoti! Taip pat susipažinsime su avytėmis, ožiukais, maitinsime žąsiukus ir tyrinėsime gamtą Nemuno kilpų regioniniame parke. 🕘 Atvykimas – 9:00 🕔 Išvykimas – 17:00 🍽 Kaina vaikui – 35 € (įskaičiuoti pietūs ir užkandžiai) 👫 Grupėje – 10–14 vaikų, tad dėmesio užteks kiekvienam! 📍Vieta: Nemuno g. 10, Nibriai, Jiezno sen., Prienų r. 📞 Registracija: 0606 43952",
+      content: `Laukiame mažų ir didelių – mišri grupė nuo 3 metų iki kiek tik norėsite! 😊 Veiklų netrūks visiems: mažieji jojimo džiaugsmą patirs ant asilės Simos, o vyresni galės pajodinėti žirgais. Jeigu orai palankūs – maudynės ir vandens mūšiai garantuoti! Taip pat susipažinsime su avytėmis, ožiukais, maitinsime žąsiukus ir tyrinėsime gamtą Nemuno kilpų regioniniame parke. 🕘 Atvykimas – 9:00 🕔 Išvykimas – 17:00 🍽 Kaina vaikui – 35 € (įskaičiuoti pietūs ir užkandžiai) 👫 Grupėje – 10–14 vaikų, tad dėmesio užteks kiekvienam! 📍Vieta: Nemuno g. 10, Nibriai, Jiezno sen., Prienų r. 📞 Registracija: 0606 43952`,
       readTime: "Stovykla vyks liepos 29"
     },
     {
@@ -22,7 +22,7 @@ const Naujienos = () => {
       date: "2025-07-26",
       image: "/lovable-uploads/77a9d6b6-9d33-4614-b4a5-098fa3c9e2c5.png",
       excerpt: "",
-      content: "🎉 Džiaugiamės galėdami pristatyti naująją „Nibrių žirgynėlio" svetainę! 🌿 Čia rasite visą informaciją apie mūsų siūlomas pramogas 🐴, fotosesijas 📸, stovyklas 🎒 ir renginius 🎈 💻 Apsilankykite, sekite naujienas 📰 ir susisiekite greitai bei patogiai 📞✉️!",
+      content: `🎉 Džiaugiamės galėdami pristatyti naująją „Nibrių žirgynėlio" svetainę! 🌿 Čia rasite visą informaciją apie mūsų siūlomas pramogas 🐴, fotosesijas 📸, stovyklas 🎒 ir renginius 🎈 💻 Apsilankykite, sekite naujienas 📰 ir susisiekite greitai bei patogiai 📞✉️!`,
       readTime: "Skaityti daugiau"
     },
     {
@@ -31,7 +31,7 @@ const Naujienos = () => {
       date: "2025-07-02",
       image: "/lovable-uploads/ef2df6ac-955f-4d7e-9ad6-5317ca6744f9.png",
       excerpt: "",
-      content: "Smagiai leidžiame vasaros dienas su nuostabiais vaikais – prisijunk ir tu! Liko viena vieta į rugpjūčio 4–8 d. stovyklą, o į rugpjūčio 11–13 d. stovyklą dar turime daugiau vietų. Stovyklų metu vaikai: 🐴 Jodinės ir prižiūrės žirgus | 🐐 Dalyvaus veiklose su ožkytėmis, avelėmis ir viščiukais | 🌿 Keliaus į žygius, žais žaidimus, plauks irklentėmis ir mėgausis kaimo gamta bei maudynėmis | 📍Vieta: Nibriai, Prienų r. | 👧 Grupėje iki 15 vaikų | 💰 Kaina: 3 d. – 170 €, 5 d. – 240 € | 📞 Registracija: +370 606 43952",
+      content: `Smagiai leidžiame vasaros dienas su nuostabiais vaikais – prisijunk ir tu! Liko viena vieta į rugpjūčio 4–8 d. stovyklą, o į rugpjūčio 11–13 d. stovyklą dar turime daugiau vietų. Stovyklų metu vaikai: 🐴 Jodinės ir prižiūrės žirgus | 🐐 Dalyvaus veiklose su ožkytėmis, avelėmis ir viščiukais | 🌿 Keliaus į žygius, žais žaidimus, plauks irklentėmis ir mėgausis kaimo gamta bei maudynėmis | 📍Vieta: Nibriai, Prienų r. | 👧 Grupėje iki 15 vaikų | 💰 Kaina: 3 d. – 170 €, 5 d. – 240 € | 📞 Registracija: +370 606 43952`,
       readTime: "Stovyklos vyks rugpjūčio 4–8 d. ir 11-13 d."
     }
   ];
