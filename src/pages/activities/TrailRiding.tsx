@@ -149,29 +149,28 @@ Puikiai tinka pradedantiesiems – lengvas maršrutas per mišką ir beržyną l
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Nemuno kilpų žygis</h3>
-                    <p className="text-muted-foreground text-sm mb-4">4-5 valandos</p>
+                    <h3 className="font-semibold text-foreground mb-2">Žygis iki piliakalnio</h3>
+                    <p className="text-muted-foreground text-sm mb-4">3-4 valandos</p>
                     <p className="text-foreground/80">
-                      Pamatysime nuostabius Nemuno vingius ir aplanksime 
-                      gražiausias parko vietas su pietų pertrauka.
+                      Keliausime per Nemuno kilpų regioninį parką iki senojo piliakalnio, įsikūrusio ant Nemuno kranto.
                     </p>
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Saulėlydžio žygis</h3>
+                    <h3 className="font-semibold text-foreground mb-2"> Žygis per miškus ir sodybas</h3>
                     <p className="text-muted-foreground text-sm mb-4">2-3 valandos</p>
                     <p className="text-foreground/80">
-                      Romantiškassaulėlydžio žygis su sustojimais 
-                      gražiausiose vietose fotografijoms.
+Keliausime miško takais per apylinkes, grožėsimės laukų ir miškų gamta bei aplankysime gražias kaimo sodybas.
+
                     </p>
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
-                    <h3 className="font-semibold text-foreground mb-2">Visos dienos žygis</h3>
-                    <p className="text-muted-foreground text-sm mb-4">5-6 valandos</p>
+                    <h3 className="font-semibold text-foreground mb-2">Kiti žygiai</h3>
+                    <p className="text-muted-foreground text-sm mb-4">1-? valandos</p>
                     <p className="text-foreground/80">
-                      Pilno pasinėrimo žygis su pietu gamtoje ir 
-                      daugiausiai įspūdingiausių vietų.
+                      Organizuojame įvairaus ilgio ir sudėtingumo žygius.
+Dėl naujausios informacijos sekite mus socialiniuose tinkluose. Taip pat galime suorganizuoti žygį pagal jūsų pageidavimus.
                     </p>
                   </div>
                 </div>
