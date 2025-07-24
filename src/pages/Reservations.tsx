@@ -231,7 +231,7 @@ const Reservations = () => {
                     <div className="flex items-center space-x-3">
                       <Checkbox
                         checked={additionalPhotoSession}
-                        onCheckedChange={setAdditionalPhotoSession}
+                        onCheckedChange={(checked) => setAdditionalPhotoSession(checked === true)}
                         disabled={isPhotoSessionDisabled}
                       />
                       <div className="flex-1">
