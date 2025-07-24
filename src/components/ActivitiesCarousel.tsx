@@ -1,176 +1,146 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ChevronLeft, ChevronRight, Clock, Users, MapPin, Utensils } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const activities = [
   {
     id: 1,
     title: "Jojimo pamokos",
-    description: "Individualios pamokos pradedantiesiems ir pažengusiems jojikams",
-    image: "/lovable-uploads/8a500812-80f3-4e42-89f7-337695758600.png",
-    href: "/veiklos/jojimo-pamokos",
-    price: "nuo 25€"
+    description: "Individualios pamokos pradedantiesiems ir pažengusiems. Mokome saugaus bendravimo su žirgais.",
+    image: "/lovable-uploads/d1860f45-3d54-41d6-a0b8-de7b5926b354.png",
+    duration: "45-60 min",
+    price: "nuo 25€",
+    participants: "1-2 asmenys",
+    link: "/veiklos/jojimo-pamokos"
   },
   {
     id: 2,
     title: "Žygiai",
-    description: "Žygiai Nemuno kilpų regioniniame parke",
+    description: "Nepamirštami žygiai Nemuno kilpų regioniniame parke su mūsų patikimais žirgais.",
     image: "/lovable-uploads/0c8f72f0-64d5-4680-8f0c-c83111bf5298.png",
-    href: "/veiklos/zygiai",
-    price: "Kaina priklauso nuo žygio"
+    duration: "1-6 val",
+    price: "pagal susitarimą",
+    participants: "grupės",
+    link: "/veiklos/zygiai"
   },
   {
     id: 3,
     title: "Stovyklos",
-    description: "Smagios vasaros stovyklos gamtoje su žirgais",
+    description: "Nepamiršamos vasaros stovyklos vaikams su žirgais, gamtos pažinimu ir smagiais nuotykiais.",
     image: "/lovable-uploads/66ff45ea-6901-482a-ae10-53331ae1901c.png",
-    href: "/veiklos/stovyklos",
-    price: "nuo 35€/diena"
+    duration: "3-5 dienos",
+    price: "nuo 35€/dienai",
+    participants: "vaikai",
+    features: ["Maistas įskaičiuotas", "Edukacinės veiklos"],
+    featuresIcons: [Utensils, Users],
+    link: "/veiklos/stovyklos"
   },
   {
     id: 4,
     title: "Fotosesijos",
-    description: "Profesionalios fotosesijos su žirgais gamtoje",
+    description: "Profesionalios fotosesijos su žirgais gamtos aplinkoje. Sukuriame nepamirštamas akimirkas.",
     image: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
-    href: "/veiklos/fotosesijos",
-    price: "nuo 30€/val"
+    duration: "1-2 val",
+    price: "nuo 30€",
+    participants: "pagal susitarimą",
+    link: "/veiklos/fotosesijos"
   },
   {
     id: 5,
     title: "Edukacijos",
-    description: "Susipažinimas su ūkio gyvūnais ir jų priežiūra",
-    image: "/lovable-uploads/995c3440-5bb5-4b1b-ab97-60b66717b70e.png",
-    href: "/veiklos/edukacijos",
-    price: "10€/žmogui"
+    description: "Edukacinės programos mokykloms ir grupėms. Mokome gamtos meilės ir atsakingo bendravimo su gyvūnais.",
+    image: "/lovable-uploads/0c0d9394-56af-4886-a3e5-fafb807cf429.png",
+    duration: "2-4 val",
+    price: "nuo 10€/asmeniui",
+    participants: "grupės",
+    link: "/veiklos/edukacijos"
   },
   {
     id: 6,
     title: "Kiti renginiai",
-    description: "Gimtadieniai, klasės išvykos ir specialūs renginiai",
+    description: "Gimtadieniai, įmonių renginiai, mokyklų išvykos ir kiti specialūs renginiai.",
     image: "/lovable-uploads/cf5a81b6-c37a-4f49-bdf9-451ccdb32df3.png",
-    href: "/veiklos/kiti-renginiai",
-    price: "nuo 5/žmogui€"
+    duration: "pagal susitarimą",
+    price: "nuo 150€",
+    participants: "grupės",
+    link: "/veiklos/kiti-renginiai"
   }
 ];
 
 const ActivitiesCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentActivity, setCurrentActivity] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === activities.length - 1 ? 0 : prevIndex + 1
-    );
+  const nextActivity = () => {
+    setCurrentActivity((prev) => (prev + 1) % activities.length);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? activities.length - 1 : prevIndex - 1
-    );
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
+  const prevActivity = () => {
+    setCurrentActivity((prev) => (prev - 1 + activities.length) % activities.length);
   };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-gradient-nature">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
-            Mūsų siūlomos veiklos
+            Mūsų veiklos
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Pasirinkite jums tinkamiausią veiklą ir leiskitės į nuotykį su mūsų žirgais
+            Atraskite įvairias pramogas ir veiklas Nibrių žirgynėlyje
           </p>
         </div>
 
         <div className="relative">
-          {/* Carousel Container */}
-          <div className="overflow-hidden rounded-2xl">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {activities.map((activity) => (
-                <div key={activity.id} className="w-full flex-shrink-0">
-                  <div className="relative h-[500px] md:h-[600px]">
-                    <img 
-                      src={activity.image}
-                      alt={activity.title}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
-                    
-                    {/* Content */}
-                    <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                      <div className="max-w-2xl">
-                        <div className="mb-4">
-                          <span className="inline-block bg-sand text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-                            {activity.price}
-                          </span>
-                        </div>
-                        <h3 className="font-serif text-2xl md:text-4xl font-bold text-primary-foreground mb-4">
-                          {activity.title}
-                        </h3>
-                        <p className="text-lg text-primary-foreground/90 mb-6 leading-relaxed">
-                          {activity.description}
-                        </p>
-                        <Button asChild variant="hero" size="lg">
-                          <Link to={activity.href}>Plačiau</Link>
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary-foreground/20 backdrop-blur-sm hover:bg-primary-foreground/30 rounded-full p-3 transition-all duration-300 transform hover:scale-110"
-          >
-            <ChevronLeft className="w-6 h-6 text-primary-foreground" />
-          </button>
-          
-          <button
-            onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary-foreground/20 backdrop-blur-sm hover:bg-primary-foreground/30 rounded-full p-3 transition-all duration-300 transform hover:scale-110"
-          >
-            <ChevronRight className="w-6 h-6 text-primary-foreground" />
-          </button>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center space-x-2 mt-8">
-            {activities.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? 'bg-primary w-8' 
-                    : 'bg-primary/30 hover:bg-primary/50'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <div className="bg-gradient-warm rounded-2xl p-8 md:p-12 shadow-elegant">
-            <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-4">
-              Pasiruošę naujiems nuotykiams?
-            </h3>
-            <p className="text-lg text-foreground/80 mb-6 max-w-md mx-auto">
-              Rezervuokite savo laiką dabar ir patirkite nepamirštamą jojimo patirtį
-            </p>
-            <Button asChild variant="default" size="lg">
-              <Link to="/rezervacijos">Rezervuoti laiką</Link>
+          {/* Carousel Controls */}
+          <div className="absolute top-1/2 -translate-y-1/2 left-0 -ml-6 md:-ml-12">
+            <Button variant="outline" size="icon" onClick={prevActivity}>
+              <ChevronLeft className="w-6 h-6" />
+              <span className="sr-only">Previous</span>
             </Button>
           </div>
+          <div className="absolute top-1/2 -translate-y-1/2 right-0 -mr-6 md:-mr-12">
+            <Button variant="outline" size="icon" onClick={nextActivity}>
+              <ChevronRight className="w-6 h-6" />
+              <span className="sr-only">Next</span>
+            </Button>
+          </div>
+
+          {/* Activity Card */}
+          <Card className="shadow-elegant max-w-lg mx-auto overflow-hidden">
+            <div className="md:flex">
+              <div className="relative md:w-1/2">
+                <img
+                  src={activities[currentActivity].image}
+                  alt={activities[currentActivity].title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+              </div>
+              <CardContent className="p-6 md:w-1/2">
+                <h3 className="font-serif text-2xl font-bold text-primary mb-3">
+                  {activities[currentActivity].title}
+                </h3>
+                <p className="text-foreground/80 leading-relaxed mb-4">
+                  {activities[currentActivity].description}
+                </p>
+                <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-4">
+                  <div className="flex items-center space-x-2">
+                    <Clock className="w-4 h-4" />
+                    <span>{activities[currentActivity].duration}</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Users className="w-4 h-4" />
+                    <span>{activities[currentActivity].participants}</span>
+                  </div>
+                </div>
+                <Button asChild variant="default">
+                  <Link to={activities[currentActivity].link}>Sužinoti daugiau</Link>
+                </Button>
+              </CardContent>
+            </div>
+          </Card>
         </div>
       </div>
     </section>
