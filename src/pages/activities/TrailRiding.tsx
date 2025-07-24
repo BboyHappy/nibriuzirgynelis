@@ -12,7 +12,7 @@ const TrailRiding = () => {
     },
     {
       question: "Kiek trunka žygis?",
-      answer: "Žygių trukmė priklauso nuo pasirinkto maršruto - nuo 2 valandų iki visos dienos žygio su pietų pertrauka."
+      answer: "Žygių trukmė priklauso nuo pasirinkto maršruto - nuo 1 valandos iki visos dienos žygio su pietų pertrauka."
     },
     {
       question: "Kas atsitiks, jei bus blogas oras?",
@@ -94,7 +94,7 @@ Ilgesnių žygių metu sustosime gražiausiose vietose trumpai poilsio pertrauk�
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Trukmė</h3>
-                  <p className="text-muted-foreground text-sm">2-6 valandos</p>
+                  <p className="text-muted-foreground text-sm">1-6 valandų</p>
                 </CardContent>
               </Card>
               
@@ -104,7 +104,7 @@ Ilgesnių žygių metu sustosime gražiausiose vietose trumpai poilsio pertrauk�
                     <Users className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Grupės dydis</h3>
-                  <p className="text-muted-foreground text-sm">2-8 žmonės</p>
+                  <p className="text-muted-foreground text-sm">2-15 žmonės</p>
                 </CardContent>
               </Card>
               
@@ -124,7 +124,7 @@ Ilgesnių žygių metu sustosime gražiausiose vietose trumpai poilsio pertrauk�
                     <Award className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-2">Nuotraukos</h3>
-                  <p className="text-muted-foreground text-sm">Įtrauktos</p>
+                  <p className="text-muted-foreground text-sm">Galima užsisakyti</p>
                 </CardContent>
               </Card>
             </div>
@@ -140,10 +140,11 @@ Ilgesnių žygių metu sustosime gražiausiose vietose trumpai poilsio pertrauk�
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Trumpas žygis</h3>
-                    <p className="text-muted-foreground text-sm mb-4">2-3 valandos</p>
+                    <p className="text-muted-foreground text-sm mb-4">iki 1 valandos</p>
                     <p className="text-foreground/80">
-                      Idealus pradedantiesiems. Važinėsime ramiais takais per mišką 
-                      ir pievų pakraščiais su gražiais vaizdais.
+Puikiai tinka pradedantiesiems – lengvas maršrutas per mišką ir beržyną link netoliese esančių senųjų kapinaičių.
+
+
                     </p>
                   </div>
                   
