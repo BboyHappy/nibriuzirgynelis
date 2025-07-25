@@ -32,11 +32,11 @@ const testimonials = [
 
 const galleryImages = [
   {
-    src: "/lovable-uploads/d0bf3150-6cb0-472d-b52d-8e9709f84c97.png",
+    src: "/lovable-uploads/0dde3f9e-434f-415e-bdec-446c9bae5878.png",
     alt: "Žirgai pievoje"
   },
   {
-    src: "/lovable-uploads/c1bb5dea-de9c-4267-94fe-c0bf76a39c99.png",
+    src: "/lovable-uploads/ae56f810-1bb6-4d66-9310-46cd1b11cc09.png",
     alt: "Bendravimas su žirgu"
   },
   {
@@ -124,7 +124,7 @@ const TestimonialsSection = () => {
               className="whitespace-nowrap"
             >
               <a
-                href="https://maps.google.com/place/data=!4m2!3m1!1s0x46e7b2e5b5b5b5b5:0x5b5b5b5b5b5b5b5b"
+                href="https://share.google/TEE5WiqtcqaCOW9SN"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
@@ -178,7 +178,7 @@ const TestimonialsSection = () => {
             className="w-full"
           >
             <a
-              href="https://maps.google.com/place/data=!4m2!3m1!1s0x46e7b2e5b5b5b5b5:0x5b5b5b5b5b5b5b5b"
+              href="https://share.google/TEE5WiqtcqaCOW9SN"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center"

@@ -5,7 +5,6 @@ import AboutSection from "@/components/AboutSection";
 import ActivitiesCarousel from "@/components/ActivitiesCarousel";
 import NewsPreview from "@/components/NewsPreview";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import Naujienos from "./Naujienos";
 
 const Home = () => {
   return (
@@ -15,9 +14,6 @@ const Home = () => {
       <ActivitiesCarousel />
       <NewsPreview />
       <TestimonialsSection />
-      <div id="news-section">
-        <Naujienos />
-      </div>
     </Layout>
   );
 };

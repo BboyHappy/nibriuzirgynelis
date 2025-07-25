@@ -1,48 +1,10 @@
+
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
-import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
 
 const Contacts = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would typically send the message to your backend
-    console.log("Contact form submitted:", formData);
-    
-    toast({
-      title: "Žinutė išsiųsta!",
-      description: "Dėkojame už jūsų žinutę. Atsakysime kuo greičiau.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: ""
-    });
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({
-      ...prev,
-      [field]: value
-    }));
-  };
-
   return (
     <Layout>
       {/* Hero Section */}
@@ -59,12 +21,12 @@ const Contacts = () => {
         </div>
       </section>
 
-      {/* Contact Info & Form */}
+      {/* Contact Info */}
       <section className="py-20 bg-gradient-nature">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div className="space-y-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Contact Information */}
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl text-primary flex items-center">
@@ -79,10 +41,10 @@ const Contacts = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Adresas</h3>
-                    <p className="text-foreground/80">
-                      Nemuno 10, Prienu raj<br />
-                      Nibriai, 59420 Prienų rajonas
-                    </p>
+                      <p className="text-foreground/80">
+                        Nemuno 10, Prienu raj<br />
+                        Nibriai, 59420 Prienų rajonas
+                      </p>
                     </div>
                   </div>
 
@@ -152,69 +114,6 @@ const Contacts = () => {
                 </CardContent>
               </Card>
             </div>
-
-            {/* Contact Form */}
-            <Card className="shadow-elegant">
-              <CardHeader>
-                <CardTitle className="font-serif text-2xl text-primary">
-                  Parašykite mums
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Vardas *</Label>
-                      <Input
-                        id="name"
-                        value={formData.name}
-                        onChange={(e) => handleInputChange("name", e.target.value)}
-                        required
-                        className="h-12"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">El. paštas *</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => handleInputChange("email", e.target.value)}
-                        required
-                        className="h-12"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="subject">Tema</Label>
-                    <Input
-                      id="subject"
-                      value={formData.subject}
-                      onChange={(e) => handleInputChange("subject", e.target.value)}
-                      placeholder="Pvz., Klausimas dėl jojimo pamokų"
-                      className="h-12"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Žinutė *</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => handleInputChange("message", e.target.value)}
-                      placeholder="Parašykite savo žinutę..."
-                      required
-                      rows={6}
-                    />
-                  </div>
-
-                  <Button type="submit" variant="hero" size="lg" className="w-full">
-                    Siųsti žinutę
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -257,7 +156,7 @@ const Contacts = () => {
                     </div>
                   </div>
                 </div>
-                  <div className="bg-gradient-warm rounded-xl p-8 text-center">
+                <div className="bg-gradient-warm rounded-xl p-8 text-center">
                   <a 
                     href="https://maps.app.goo.gl/rA13CwSXSixu2pLP8" 
                     target="_blank" 

@@ -9,21 +9,21 @@ const newsItems = [
     title: "Dienos stovykla liepos 29!",
     date: "2025-07-22",
     excerpt: "Laukiame mažų ir didelių – mišri grupė nuo 3 metų iki kiek tik norėsite! Veiklų netrūks visiems.",
-    image: "/lovable-uploads/c1bb5dea-de9c-4267-94fe-c0bf76a39c99.png"
+    image: "/lovable-uploads/53a0e99b-cf5e-4ab0-8313-7215c1d9964e.png"
   },
   {
     id: 2,
     title: "Nauja svetainė!",
     date: "2025-07-26",
     excerpt: "Džiaugiamės galėdami pristatyti naująją Nibrių žirgynėlio svetainę!",
-    image: "/lovable-uploads/d0bf3150-6cb0-472d-b52d-8e9709f84c97.png"
+    image: "/lovable-uploads/0dde3f9e-434f-415e-bdec-446c9bae5878.png"
   },
   {
     id: 3,
     title: "🌞 Vasaros nuotykiai Nibrių žirgynėlyje!",
     date: "2025-07-02",
     excerpt: "Smagiai leidžiame vasaros dienas su nuostabiais vaikais – prisijunk ir tu!",
-    image: "/lovable-uploads/38646c9a-03d4-4093-a77f-ddb70ad1ecb0.png"
+    image: "/lovable-uploads/9133e5ca-1d68-4589-9831-c23b035287ca.png"
   }
 ];
 
@@ -83,7 +83,7 @@ const NewsPreview = () => {
 
         <div className="text-center">
           <Button asChild variant="default" size="lg">
-            <a href="#news-section" className="inline-flex items-center">
+            <a href="/naujienos" className="inline-flex items-center">
               Visos naujienos
               <ArrowRight className="w-4 h-4 ml-2" />
             </a>
