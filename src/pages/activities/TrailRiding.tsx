@@ -123,8 +123,8 @@ Ilgesni킬 탑ygi킬 metu sustosime gra탑iausiose vietose trumpai poilsio pertrauk�
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground mb-2">Nuotraukos</h3>
-                  <p className="text-muted-foreground text-sm">Galima u탑sisakyti</p>
+                  <h3 className="font-semibold text-foreground mb-2">Fotosesija</h3>
+                  <p className="text-muted-foreground text-sm">Galima u탑sisakyti papildomai</p>
                 </CardContent>
               </Card>
             </div>
