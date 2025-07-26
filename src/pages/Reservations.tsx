@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -8,9 +7,10 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Check, Euro, Clock } from "lucide-react";
+import { Check, Euro, Clock, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
+import { supabase } from "@/integrations/supabase/client";
 
 const activities = [
   {
@@ -66,6 +66,7 @@ const activities = [
 const Reservations = () => {
   const [selectedActivities, setSelectedActivities] = useState<string[]>([]);
   const [additionalPhotoSession, setAdditionalPhotoSession] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -77,7 +78,7 @@ const Reservations = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (selectedActivities.length === 0 || !formData.firstName || !formData.email || !formData.phone) {
@@ -89,18 +90,52 @@ const Reservations = () => {
       return;
     }
 
-    // Here you would typically send the data to your backend
-    console.log({
-      activities: selectedActivities,
-      additionalPhotoSession,
-      ...formData
-    });
+    setIsSubmitting(true);
 
-    setIsSubmitted(true);
-    toast({
-      title: "Rezervacija sėkminga!",
-      description: "Mes susisieksime su jumis per 24 valandas patvirtinti rezervaciją",
-    });
+    try {
+      const selectedActivityNames = selectedActivities.map(id => 
+        activities.find(activity => activity.id === id)?.title || id
+      );
+
+      const reservationData = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
+        selectedActivities: selectedActivityNames,
+        participants: formData.participants,
+        additionalInfo: formData.additionalInfo,
+        additionalPhotoSession
+      };
+
+      console.log("Sending reservation data:", reservationData);
+
+      const { data, error } = await supabase.functions.invoke('send-reservation-email', {
+        body: reservationData
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      console.log("Email sent successfully:", data);
+
+      setIsSubmitted(true);
+      toast({
+        title: "Rezervacija sėkminga!",
+        description: "Mes susisieksime su jumis per 24 valandas patvirtinti rezervaciją",
+      });
+
+    } catch (error: any) {
+      console.error("Error sending reservation:", error);
+      toast({
+        title: "Klaida",
+        description: "Nepavyko išsiųsti rezervacijos. Bandykite dar kartą arba susisiekite tiesiogiai.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -135,8 +170,8 @@ const Reservations = () => {
                 Rezervacija gauta!
               </h2>
               <p className="text-foreground/80 mb-6">
-                Dėkojame už jūsų rezervaciją. Mes susisieksime su jumis per 24 valandas 
-                patvirtinti jūsų rezervaciją ir aptarti detales.
+                Dėkojame už jūsų rezervaciją. Patvirtinimo laiškas išsiųstas į jūsų el. paštą. 
+                Mes susisieksime su jumis per 24 valandas patvirtinti jūsų rezervaciją ir aptarti detales.
               </p>
               <Button 
                 onClick={() => {
@@ -343,8 +378,21 @@ const Reservations = () => {
 
               {/* Submit Button */}
               <div className="text-center">
-                <Button type="submit" variant="hero" size="lg" className="w-full md:w-auto px-12">
-                  Rezervuoti
+                <Button 
+                  type="submit" 
+                  variant="hero" 
+                  size="lg" 
+                  className="w-full md:w-auto px-12"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Siunčiama...
+                    </>
+                  ) : (
+                    "Rezervuoti"
+                  )}
                 </Button>
                 <p className="text-sm text-muted-foreground mt-4">
                   * Privalomi laukai. Mes susisieksime su jumis per 24 valandas patvirtinti rezervaciją.
