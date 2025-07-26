@@ -245,7 +245,7 @@ const Reservations = () => {
                           isPhotoSessionSelected && "text-muted-foreground"
                         )}
                       >
-                        Papildoma fotosesija veiklos metu (+40€)
+                        Papildoma profesionali fotosesija veiklos metu (+40€)
                       </Label>
                     </div>
                     {isPhotoSessionSelected && (
