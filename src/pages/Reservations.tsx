@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Check, Euro, Clock, Loader2 } from "lucide-react";
+import { Check, Euro, Clock, Loader2, AlertCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 import { supabase } from "@/integrations/supabase/client";
@@ -76,6 +76,10 @@ const Reservations = () => {
     additionalInfo: ""
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [emailStatus, setEmailStatus] = useState<{
+    userEmailSent: boolean;
+    adminEmailSent: boolean;
+  } | null>(null);
   const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -118,19 +122,41 @@ const Reservations = () => {
         throw error;
       }
 
-      console.log("Email sent successfully:", data);
+      console.log("Email function response:", data);
+
+      // Store email status for display
+      setEmailStatus({
+        userEmailSent: data?.userEmailSent || false,
+        adminEmailSent: data?.adminEmailSent || false
+      });
 
       setIsSubmitted(true);
-      toast({
-        title: "Rezervacija sėkminga!",
-        description: "Mes susisieksime su jumis per 24 valandas patvirtinti rezervaciją",
-      });
+
+      // Show appropriate toast based on email delivery status
+      if (data?.userEmailSent && data?.adminEmailSent) {
+        toast({
+          title: "Rezervacija sėkminga!",
+          description: "Patvirtinimo laiškas išsiųstas į jūsų el. paštą. Susisieksime su jumis per 24 valandas.",
+        });
+      } else if (data?.userEmailSent) {
+        toast({
+          title: "Rezervacija gauta!",
+          description: "Patvirtinimo laiškas išsiųstas. Administratoriai informuoti atskirai.",
+        });
+      } else if (data?.success) {
+        toast({
+          title: "Rezervacija gauta!",
+          description: "Jūsų rezervacija apdorota. Susisieksime su jumis netrukus.",
+        });
+      } else {
+        throw new Error("Email delivery failed");
+      }
 
     } catch (error: any) {
       console.error("Error sending reservation:", error);
       toast({
-        title: "Klaida",
-        description: "Nepavyko išsiųsti rezervacijos. Bandykite dar kartą arba susisiekite tiesiogiai.",
+        title: "Rezervacijos klaida",
+        description: "Nepavyko išsiųsti rezervacijos. Bandykite dar kartą arba susisiekite telefonu.",
         variant: "destructive"
       });
     } finally {
@@ -169,13 +195,48 @@ const Reservations = () => {
               <h2 className="font-serif text-2xl font-bold text-primary mb-4">
                 Rezervacija gauta!
               </h2>
-              <p className="text-foreground/80 mb-6">
-                Dėkojame už jūsų rezervaciją. Patvirtinimo laiškas išsiųstas į jūsų el. paštą. 
-                Mes susisieksime su jumis per 24 valandas patvirtinti jūsų rezervaciją ir aptarti detales.
-              </p>
+              <div className="mb-6">
+                <p className="text-foreground/80 mb-4">
+                  Dėkojame už jūsų rezervaciją. Susisieksime su jumis per 24 valandas patvirtinti jūsų rezervaciją ir aptarti detales.
+                </p>
+                
+                {/* Email delivery status */}
+                {emailStatus && (
+                  <div className="text-sm space-y-2 p-4 bg-gray-50 rounded-lg">
+                    <div className="flex items-center justify-center space-x-2">
+                      {emailStatus.userEmailSent ? (
+                        <>
+                          <Check className="w-4 h-4 text-green-600" />
+                          <span className="text-green-700">Patvirtinimo laiškas išsiųstas</span>
+                        </>
+                      ) : (
+                        <>
+                          <AlertCircle className="w-4 h-4 text-orange-500" />
+                          <span className="text-orange-700">Laukiame el. pašto gavimo</span>
+                        </>
+                      )}
+                    </div>
+                    <div className="flex items-center justify-center space-x-2">
+                      {emailStatus.adminEmailSent ? (
+                        <>
+                          <Check className="w-4 h-4 text-green-600" />
+                          <span className="text-green-700">Administratoriai informuoti</span>
+                        </>
+                      ) : (
+                        <>
+                          <AlertCircle className="w-4 h-4 text-orange-500" />
+                          <span className="text-orange-700">Pranešimas administratoriams siunčiamas</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+              
               <Button 
                 onClick={() => {
                   setIsSubmitted(false);
+                  setEmailStatus(null);
                   setSelectedActivities([]);
                   setAdditionalPhotoSession(false);
                   setFormData({
