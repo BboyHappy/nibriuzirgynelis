@@ -1,10 +1,10 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Reservations from "./pages/Reservations";
 import Contacts from "./pages/Contacts";
 import RidingLessons from "./pages/activities/RidingLessons";
 import TrailRiding from "./pages/activities/TrailRiding";
@@ -25,7 +25,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/rezervacijos" element={<Reservations />} />
           <Route path="/kontaktai" element={<Contacts />} />
           <Route path="/veiklos/jojimo-pamokos" element={<RidingLessons />} />
           <Route path="/veiklos/zygiai" element={<TrailRiding />} />
