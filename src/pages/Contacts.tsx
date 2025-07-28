@@ -70,10 +70,10 @@ const Contacts = () => {
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">El. paštas</h3>
                       <a 
-                        href="mailto:triusiulis@gmail.com" 
+                        href="mailto:baranauskaite_raminta@yahoo.com" 
                         className="text-foreground/80 hover:text-primary transition-colors"
                       >
-                        triusiulis@gmail.com
+                        baranauskaite_raminta@yahoo.com
                       </a>
                     </div>
                   </div>
@@ -108,7 +108,7 @@ const Contacts = () => {
                       <a href="tel:+37060643952">Skambinti dabar</a>
                     </Button>
                     <Button asChild variant="outline" className="flex-1">
-                      <a href="mailto:triusiulis@gmail.com">Siųsti el. laišką</a>
+                      <a href="mailto:baranauskaite_raminta@yahoo.com">Siųsti el. laišką</a>
                     </Button>
                   </div>
                 </CardContent>

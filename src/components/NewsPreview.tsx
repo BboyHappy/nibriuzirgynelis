@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const newsItems = [
   {
@@ -28,13 +29,6 @@ const newsItems = [
 ];
 
 const NewsPreview = () => {
-  const scrollToNews = () => {
-    const newsSection = document.querySelector('#news-section');
-    if (newsSection) {
-      newsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,8 +45,7 @@ const NewsPreview = () => {
           {newsItems.map((item) => (
             <Card 
               key={item.id} 
-              className="shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 cursor-pointer"
-              onClick={scrollToNews}
+              className="shadow-elegant hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2"
             >
               <div className="relative h-48 overflow-hidden rounded-t-xl">
                 <img 
@@ -73,8 +66,10 @@ const NewsPreview = () => {
                 <p className="text-foreground/80 text-sm line-clamp-3 mb-4">
                   {item.excerpt}
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
-                  Skaityti daugiau
+                <Button asChild variant="outline" size="sm" className="w-full">
+                  <Link to="/naujienos">
+                    Skaityti daugiau
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -83,10 +78,10 @@ const NewsPreview = () => {
 
         <div className="text-center">
           <Button asChild variant="default" size="lg">
-            <a href="/naujienos" className="inline-flex items-center">
+            <Link to="/naujienos" className="inline-flex items-center">
               Visos naujienos
               <ArrowRight className="w-4 h-4 ml-2" />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
