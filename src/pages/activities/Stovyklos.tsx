@@ -51,7 +51,7 @@ const Stovyklos = () => {
               Nepamiršamos vasaros stovyklos vaikams su žirgais ir gamta
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti vietą</Link>
+              <Link to="/kontaktai">Rezervuoti vietą</Link>
             </Button>
           </div>
         </div>
@@ -182,7 +182,7 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti stovyklos vietą</Link>
+                <Link to="/kontaktai">Rezervuoti stovyklos vietą</Link>
               </Button>
             </div>
           </div>

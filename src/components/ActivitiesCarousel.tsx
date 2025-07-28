@@ -169,7 +169,7 @@ const ActivitiesCarousel = () => {
               Rezervuokite savo laiką dabar ir patirkite nepamirštamą jojimo patirtį
             </p>
             <Button asChild variant="default" size="lg">
-              <Link to="/rezervacijos">Rezervuoti laiką</Link>
+              <Link to="/kontaktai">Rezervuoti laiką</Link>
             </Button>
           </div>
         </div>

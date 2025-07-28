@@ -51,7 +51,7 @@ const RidingLessons = () => {
               Išmokite joti saugioje ir draugiškoje aplinkoje su mūsų patyrusia komanda
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti pamoką</Link>
+              <Link to="/kontaktai">Rezervuoti pamoką</Link>
             </Button>
           </div>
         </div>
@@ -181,7 +181,7 @@ const RidingLessons = () => {
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti jojimo pamoką</Link>
+                <Link to="/kontaktai">Rezervuoti jojimo pamoką</Link>
               </Button>
             </div>
           </div>

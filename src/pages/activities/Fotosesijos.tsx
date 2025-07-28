@@ -51,7 +51,7 @@ const Fotosesijos = () => {
               Profesionalios fotosesijos su žirgais ir kitais gyvūnais nuostabioje gamtos aplinkoje
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti fotosesiją</Link>
+              <Link to="/kontaktai">Rezervuoti fotosesiją</Link>
             </Button>
           </div>
         </div>
@@ -182,7 +182,7 @@ Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, p
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti fotosesiją</Link>
+                <Link to="/kontaktai">Rezervuoti fotosesiją</Link>
               </Button>
             </div>
           </div>

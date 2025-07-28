@@ -110,7 +110,7 @@ const Naujienos = () => {
                       
                       <div className="flex flex-col sm:flex-row gap-4">
                         <Button asChild variant="default" className="flex-1">
-                          <Link to="/rezervacijos" className="inline-flex items-center">
+                          <Link to="/kontaktai" className="inline-flex items-center">
                             Rezervuoti dabar
                             <ArrowRight className="w-4 h-4 ml-2" />
                           </Link>

@@ -50,7 +50,7 @@ const TrailRiding = () => {
               Leiskitės į žygį su žirgais ir atraskite Nemuno kilpų regioninio parko grožį.
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti žygį</Link>
+              <Link to="/kontaktai">Rezervuoti žygį</Link>
             </Button>
           </div>
         </div>
@@ -213,7 +213,7 @@ Dėl naujausios informacijos sekite mus socialiniuose tinkluose. Taip pat galime
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti žygį</Link>
+                <Link to="/kontaktai">Rezervuoti žygį</Link>
               </Button>
             </div>
           </div>

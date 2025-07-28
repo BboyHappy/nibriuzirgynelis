@@ -51,7 +51,7 @@ const KitiRenginiai = () => {
               Gimtadieniai, klasės išvykos ir specialūs renginiai gamtos aplinkoje
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti renginį</Link>
+              <Link to="/kontaktai">Rezervuoti renginį</Link>
             </Button>
           </div>
         </div>
@@ -223,7 +223,7 @@ Siūlome jaukią krikštynų šventę gamtos apsuptyje su gyvūnais, vaikų pram
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti renginį</Link>
+                <Link to="/kontaktai">Rezervuoti renginį</Link>
               </Button>
             </div>
           </div>

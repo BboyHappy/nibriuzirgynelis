@@ -51,7 +51,7 @@ const Edukacijos = () => {
               Susipažinkite su ūkio gyvūnais ir sužinokite apie jų gyvenimą
             </p>
             <Button asChild variant="hero" size="lg">
-              <Link to="/rezervacijos">Rezervuoti edukaciją</Link>
+              <Link to="/kontaktai">Rezervuoti edukaciją</Link>
             </Button>
           </div>
         </div>
@@ -200,7 +200,7 @@ Pasibaigus edukacijai, kviečiame pailsėti mūsų pavėsinėje. Šiltuoju metų
             {/* CTA */}
             <div className="text-center mt-12">
               <Button asChild variant="hero" size="lg" className="px-12">
-                <Link to="/rezervacijos">Rezervuoti edukaciją</Link>
+                <Link to="/kontaktai">Rezervuoti edukaciją</Link>
               </Button>
             </div>
           </div>

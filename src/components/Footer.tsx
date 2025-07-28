@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
             <div className="mt-6">
               <Link 
-                to="/rezervacijos"
+                to="/kontaktai"
                 className="inline-block bg-primary-foreground text-primary px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-foreground/90 transition-colors"
               >
                 Rezervuoti laiką

@@ -28,7 +28,7 @@ const Header = () => {
         { name: "Kiti renginiai", href: "/veiklos/kiti-renginiai" },
       ]
     },
-    { name: "Rezervacijos", href: "/rezervacijos" },
+    { name: "Kontaktai", href: "/kontaktai" },
     { name: "Naujienos", href: "/naujienos" },
     { name: "Kontaktai", href: "/kontaktai" },
   ];
@@ -117,7 +117,7 @@ const Header = () => {
             </a>
             
             <Button asChild variant="hero" size="default" className="hidden md:inline-flex">
-              <Link to="/rezervacijos">Rezervuoti</Link>
+              <Link to="/kontaktai">Rezervuoti</Link>
             </Button>
             
             <button
@@ -175,7 +175,7 @@ const Header = () => {
               ))}
               <div className="px-4 pt-4">
                 <Button asChild variant="hero" size="default" className="w-full">
-                  <Link to="/rezervacijos" onClick={() => setIsMenuOpen(false)}>
+                  <Link to="/kontaktai" onClick={() => setIsMenuOpen(false)}>
                     Rezervuoti
                   </Link>
                 </Button>

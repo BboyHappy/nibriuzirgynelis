@@ -34,7 +34,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button asChild variant="hero" size="lg">
-                <Link to="/rezervacijos">Rezervuoti</Link>
+                <Link to="/kontaktai">Rezervuoti</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="bg-primary-foreground/10 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 <Link to="/veiklos/zygiai">Sužinoti daugiau</Link>
