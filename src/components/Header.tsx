@@ -28,7 +28,7 @@ const Header = () => {
         { name: "Kiti renginiai", href: "/veiklos/kiti-renginiai" },
       ]
     },
-    { name: "Kontaktai", href: "/kontaktai" },
+    { name: "Rezervacijos", href: "/kontaktai" },
     { name: "Naujienos", href: "/naujienos" },
     { name: "Kontaktai", href: "/kontaktai" },
   ];

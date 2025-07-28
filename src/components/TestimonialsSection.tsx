@@ -36,10 +36,6 @@ const galleryImages = [
     alt: "Žirgai pievoje"
   },
   {
-    src: "/lovable-uploads/ae56f810-1bb6-4d66-9310-46cd1b11cc09.png",
-    alt: "Bendravimas su žirgu"
-  },
-  {
     src: "/lovable-uploads/0747d877-85d6-4cb9-a38c-1b6e47494913.png",
     alt: "Vaikai su viščiuku"
   },
@@ -78,10 +74,6 @@ const galleryImages = [
   {
     src: "/lovable-uploads/66ff45ea-6901-482a-ae10-53331ae1901c.png",
     alt: "Stovyklos - vaikai pramogauja"
-  },
-  {
-    src: "/lovable-uploads/77edc4ed-efa7-49d5-b2aa-c62ab59bf99e.png",
-    alt: "Mergaitė su ožkyte - fotosesijos"
   },
   {
     src: "/lovable-uploads/995c3440-5bb5-4b1b-ab97-60b66717b70e.png",
