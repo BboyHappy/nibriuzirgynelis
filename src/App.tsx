@@ -14,6 +14,7 @@ import Edukacijos from "./pages/activities/Edukacijos";
 import KitiRenginiai from "./pages/activities/KitiRenginiai";
 import Naujienos from "./pages/Naujienos";
 import NotFound from "./pages/NotFound";
+import SummerCampPopup from "./components/SummerCampPopup";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <SummerCampPopup />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/kontaktai" element={<Contacts />} />

@@ -7,24 +7,24 @@ import { Link } from "react-router-dom";
 const newsItems = [
   {
     id: 1,
+    title: "Vasaros stovyklos vaikams",
+    date: "2026-02-16",
+    excerpt: "Kviečiame vaikus į nepamirštamas vasaros stovyklas Nemuno kilpų regioniniame parke – jodinėjimas, maudynės, žygiai ir nakvynė glamping palapinėse.",
+    image: "/lovable-uploads/vasaros-stovyklos.png"
+  },
+  {
+    id: 2,
+    title: "Edukacijos grupėms ir klasėms",
+    date: "2026-02-08",
+    excerpt: "Kviečiame darželio grupes ir mokyklos klases atvykti į Nibrių žirgynėlį – susipažinkite su ūkio gyvūnais ir pajodinėkite!",
+    image: "/lovable-uploads/edukacijos-grupems.png"
+  },
+  {
+    id: 3,
     title: "Dienos stovykla liepos 29!",
     date: "2025-07-22",
     excerpt: "Laukiame mažų ir didelių – mišri grupė nuo 3 metų iki kiek tik norėsite! Veiklų netrūks visiems.",
     image: "/lovable-uploads/53a0e99b-cf5e-4ab0-8313-7215c1d9964e.png"
-  },
-  {
-    id: 2,
-    title: "Nauja svetainė!",
-    date: "2025-07-26",
-    excerpt: "Džiaugiamės galėdami pristatyti naująją Nibrių žirgynėlio svetainę!",
-    image: "/lovable-uploads/0dde3f9e-434f-415e-bdec-446c9bae5878.png"
-  },
-  {
-    id: 3,
-    title: "🌞 Vasaros nuotykiai Nibrių žirgynėlyje!",
-    date: "2025-07-02",
-    excerpt: "Smagiai leidžiame vasaros dienas su nuostabiais vaikais – prisijunk ir tu!",
-    image: "/lovable-uploads/9133e5ca-1d68-4589-9831-c23b035287ca.png"
   }
 ];
 

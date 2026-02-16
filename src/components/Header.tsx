@@ -60,7 +60,7 @@ const Header = () => {
                     <button className={cn(
                       "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
                       "group-hover:text-primary",
-                      isActiveSection(item.submenu) && "bg-primary text-primary-foreground border-2 border-primary"
+                      isActiveSection(item.submenu) && "bg-primary text-primary-foreground hover:text-primary-foreground group-hover:text-primary-foreground border-2 border-primary"
                     )}>
                       {item.name}
                     </button>
@@ -86,7 +86,7 @@ const Header = () => {
                     to={item.href}
                     className={cn(
                       "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
-                      isActivePage(item.href) && "bg-primary text-primary-foreground border-2 border-primary"
+                      isActivePage(item.href) && "bg-primary text-primary-foreground hover:text-primary-foreground border-2 border-primary"
                     )}
                   >
                     {item.name}
