@@ -1,4 +1,6 @@
 
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,9 +8,37 @@ import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Facebook, Instagram } from "lucide-react";
 
 const Naujienos = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        document.getElementById(location.hash.slice(1))?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [location.hash]);
+
   const articles = [
     {
-      id: 1,
+      id: "vasaros-stovyklos",
+      title: "Vasaros stovyklos vaikams",
+      date: "2026-02-16",
+      image: "/lovable-uploads/vasaros-stovyklos.png",
+      excerpt: "",
+      content: "Kviečiame vaikus į nepamirštamas vasaros stovyklas mūsų žirgynėlyje, įsikūrusiame nuostabiame Nemuno kilpų regioninio parko kampelyje – ant upės kranto, apsuptame miškų ir pievų.\n\nJau ketvirtus metus kuriame vietą, kur vaikai gali: būti arčiau gamtos, susirasti naujų draugų, patirti tikras kaimiškas vasaras.\n\nKą veiksime? Jodinėsime ir bendrausime su žirgais. Maitinsime ir glostysime avis, ožkas, viščiukus, žąsis ir net asilą. Maudysimės, žaisime vandens karą. Su gelbėjimosi liemenėmis išbandysime irklentes. Grybausime, versime žemuoges ant smilgų. Vakarais kursime laužą ir kepsime zefyrus. Vedžiosime šunis pušyne. Važinėsime dviračiais ir miško paspirtukais. Žaisime tinklinį ir daugybę kitų žaidimų.\n\nIr, žinoma – lakstysime basomis ir valgysime obuolius tiesiai nuo medžio!\n\nKodėl verta rinktis mūsų stovyklą? Nuostabi, saugi gamta toli nuo miesto šurmulio. Nedidelės grupės – daugiau dėmesio kiekvienam vaikui. Draugiški, pilnamečiai ir patyrę vadovai. Skanus, šviežias maistas iš kavinės. Nakvynė 6 m skersmens jaukioje glampingo palapinėje arba savo palapinėse. Galimybė rinktis 2, 3 arba 5 dienų stovyklą.\n\nSTOVYKLŲ DATOS:\n2 dienų stovykla – 80 €: Birželio 15–16, Liepos 6–7 (Puiki proga vaikams, kurie dar niekur nėra nakvoję!)\n3 dienų stovykla – 180 €: Birželio 8–10, Liepos 27–29, Rugpjūčio 10–12, Rugpjūčio 17–19\n5 dienų stovykla – 260 €: Birželio 29 – Liepos 3, Liepos 13–17, Rugpjūčio 3–7\n\nAdresas: Nemuno g. 10, Nibriai, Prienų r.\nRegistracija telefonu: 060643952\n\nKviečiame vaikus patirti vasarą, kuri kvepia pievomis, laužo dūmais ir tikrais nuotykiais!",
+      readTime: "Stovyklos birželį–rugpjūtį"
+    },
+    {
+      id: "edukacijos-grupems",
+      title: "Edukacijos grupėms ir klasėms",
+      date: "2026-02-08",
+      image: "/lovable-uploads/edukacijos-grupems.png",
+      excerpt: "",
+      content: "Artėja pavasaris, tad kviečiame darželio grupes ir mokyklos klases atvykti į Nibrių žirgynėlį. Čia vaikus ir mokytojas pasitiks draugiški ūkio gyvūnai. Vaikai šukuos žirgus ir asilę Simą. Glostys aveles, laikys viščiukus rankose, susipažins su žaismingomis ožkytėmis. Gyvūnus maitinsime ir žinoma visi turės galimybę pajodinėti. Turint laiko galime pasivaikščioti Nemuno kilpų regioniniame parke kartu su ožkyte ir šunimis. Po pramogų vaikus kviečiame suvalgyti pietus mūsų sode, po obelimis. Čia yra pavėsinė, supynės, grilius. Kaina vaikui 10 eurų, auklėtojoms nemokamai. Turime galimybę priimti ir tėvelius. Tikimės sutikti Jus draugiškame šeimos ūkyje Prienų rajone. Pas mus galima sutikti ir gimtadienius, ar tiesiog atvykti su šeima. Telefonas rezervacijai: +37060643952.",
+      readTime: "Edukacijos visus metus"
+    },
+    {
+      id: "dienos-stovykla",
       title: "Dienos stovykla liepos 29!",
       date: "2025-07-22",
       image: "/lovable-uploads/53a0e99b-cf5e-4ab0-8313-7215c1d9964e.png",
@@ -17,7 +47,7 @@ const Naujienos = () => {
       readTime: "Stovykla vyks liepos 29"
     },
     {
-      id: 2,
+      id: "nauja-svetaine",
       title: "Nauja svetainė!",
       date: "2025-07-26",
       image: "/lovable-uploads/0dde3f9e-434f-415e-bdec-446c9bae5878.png",
@@ -26,7 +56,7 @@ const Naujienos = () => {
       readTime: "."
     },
     {
-      id: 3,
+      id: "vasaros-nuotykiai",
       title: "🌞 Vasaros nuotykiai Nibrių žirgynėlyje!",
       date: "2025-07-02",
       image: "/lovable-uploads/9133e5ca-1d68-4589-9831-c23b035287ca.png",
@@ -78,7 +108,7 @@ const Naujienos = () => {
           <div className="max-w-4xl mx-auto">
             <div className="space-y-12">
               {articles.map((article) => (
-                <Card key={article.id} className="shadow-elegant overflow-hidden">
+                <Card key={article.id} id={article.id} className="shadow-elegant overflow-hidden">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     {/* Image */}
                     <div className="relative h-64 lg:h-full">
@@ -104,7 +134,7 @@ const Naujienos = () => {
                         {article.title}
                       </h2>
                       
-                      <p className="text-foreground/80 leading-relaxed mb-6">
+                      <p className="text-foreground/80 leading-relaxed mb-6 whitespace-pre-line">
                         {article.content}
                       </p>
                       
