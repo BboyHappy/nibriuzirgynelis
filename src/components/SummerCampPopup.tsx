@@ -16,7 +16,7 @@ const SummerCampPopup = () => {
 
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 15000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
