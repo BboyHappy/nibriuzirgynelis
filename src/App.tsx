@@ -1,5 +1,16 @@
 
+import posthog from "posthog-js";
 import { Toaster } from "@/components/ui/toaster";
+
+posthog.init("phc_m7EbGmyaPkayZenZsO82OljPBzbgYUJz8QInHwBU7xb", {
+  api_host: "https://us.i.posthog.com",
+  autocapture: true,
+  capture_pageview: true,
+  capture_pageleave: true,
+  session_recording: {
+    recordCrossOriginIframes: true,
+  },
+});
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
