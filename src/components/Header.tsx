@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoHorizontal from "@/assets/logo-horizontal.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,14 +42,8 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-hero rounded-full flex items-center justify-center shadow-soft">
-              <span className="text-2xl font-bold text-primary-foreground">N</span>
-            </div>
-            <div>
-              <h1 className="font-serif text-xl font-bold text-primary">Nibrių Žirgynėlis</h1>
-              <p className="text-sm text-muted-foreground">Jojimo mokykla</p>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logoHorizontal} alt="Nibrių Žirgynėlis" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

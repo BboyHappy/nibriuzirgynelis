@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import logoWhite from "@/assets/logo-horizontal-white.png";
 
 const Footer = () => {
   return (
@@ -8,15 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo & Description */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary-foreground/20 rounded-full flex items-center justify-center">
-                <span className="text-lg font-bold">N</span>
-              </div>
-              <div>
-                <h3 className="font-serif text-lg font-bold">Nibrių Žirgynėlis</h3>
-                <p className="text-sm text-primary-foreground/80">Jojimo mokykla</p>
-              </div>
-            </div>
+            <img src={logoWhite} alt="Nibrių Žirgynėlis" className="h-12 w-auto" />
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Šeimos jojimo mokykla ir gyvūnų ūkis, siūlantis aktyvų poilsį gamtoje 
               Nemuno kilpų regioniniame parke.
