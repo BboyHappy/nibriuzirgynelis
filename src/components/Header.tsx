@@ -133,8 +133,8 @@ const Header = () => {
                   {item.submenu ? (
                     <div>
                       <div className={cn(
-                        "px-4 py-2 font-medium text-foreground",
-                        isActiveSection(item.submenu) && "text-primary font-semibold"
+                        "px-4 py-2 font-medium text-white/80",
+                        isActiveSection(item.submenu) && "text-white font-semibold"
                       )}>
                         {item.name}
                       </div>
@@ -144,8 +144,8 @@ const Header = () => {
                             key={subitem.name}
                             to={subitem.href}
                             className={cn(
-                              "block px-4 py-2 text-sm text-muted-foreground hover:text-primary",
-                              isActivePage(subitem.href) && "text-primary font-semibold"
+                              "block px-4 py-2 text-sm text-white/60 hover:text-white",
+                              isActivePage(subitem.href) && "text-white font-semibold"
                             )}
                             onClick={() => setIsMenuOpen(false)}
                           >
@@ -158,8 +158,8 @@ const Header = () => {
                     <Link
                       to={item.href}
                       className={cn(
-                        "block px-4 py-2 text-foreground hover:text-primary transition-colors",
-                        isActivePage(item.href) && "text-primary font-semibold"
+                        "block px-4 py-2 text-white/80 hover:text-white transition-colors",
+                        isActivePage(item.href) && "text-white font-semibold"
                       )}
                       onClick={() => setIsMenuOpen(false)}
                     >
