@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoHorizontal from "@/assets/logo-horizontal.png";
+import logoWhite from "@/assets/logo-horizontal-white.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,12 +38,12 @@ const Header = () => {
   const isActiveSection = (submenu: any[]) => submenu?.some(item => location.pathname === item.href);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
+    <header className="sticky top-0 z-50 bg-[#405222] backdrop-blur-sm border-b border-[#405222] shadow-soft">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logoHorizontal} alt="Nibrių Žirgynėlis" className="h-14 w-auto" />
+            <img src={logoWhite} alt="Nibrių Žirgynėlis" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,9 +53,9 @@ const Header = () => {
                 {item.submenu ? (
                   <div className="relative">
                     <button className={cn(
-                      "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
-                      "group-hover:text-primary",
-                      isActiveSection(item.submenu) && "bg-primary text-primary-foreground hover:text-primary-foreground group-hover:text-primary-foreground border-2 border-primary"
+                      "text-white/80 hover:text-white transition-colors font-medium px-3 py-2 rounded-lg",
+                      "group-hover:text-white",
+                      isActiveSection(item.submenu) && "bg-white/20 text-white hover:text-white group-hover:text-white border border-white/30"
                     )}>
                       {item.name}
                     </button>
@@ -80,8 +80,8 @@ const Header = () => {
                   <Link
                     to={item.href}
                     className={cn(
-                      "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
-                      isActivePage(item.href) && "bg-primary text-primary-foreground hover:text-primary-foreground border-2 border-primary"
+                      "text-white/80 hover:text-white transition-colors font-medium px-3 py-2 rounded-lg",
+                      isActivePage(item.href) && "bg-white/20 text-white hover:text-white border border-white/30"
                     )}
                   >
                     {item.name}
@@ -97,7 +97,7 @@ const Header = () => {
               href="https://www.instagram.com/nibriu.zirgynelis/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-accent text-primary hover:text-primary/80 transition-colors"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-white/10 text-white/80 hover:text-white transition-colors"
             >
               <Instagram size={24} />
             </a>
@@ -106,7 +106,7 @@ const Header = () => {
               href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-accent text-primary hover:text-primary/80 transition-colors"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-white/10 text-white/80 hover:text-white transition-colors"
             >
               <Facebook size={24} />
             </a>
@@ -116,7 +116,7 @@ const Header = () => {
             </Button>
             
             <button
-              className="lg:hidden p-2 rounded-lg hover:bg-accent"
+              className="lg:hidden p-2 rounded-lg hover:bg-white/10 text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -126,15 +126,15 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-sm">
+          <div className="lg:hidden border-t border-white/20 bg-[#405222]">
             <nav className="py-4 space-y-2">
               {navigation.map((item) => (
                 <div key={item.name}>
                   {item.submenu ? (
                     <div>
                       <div className={cn(
-                        "px-4 py-2 font-medium text-foreground",
-                        isActiveSection(item.submenu) && "text-primary font-semibold"
+                        "px-4 py-2 font-medium text-white/80",
+                        isActiveSection(item.submenu) && "text-white font-semibold"
                       )}>
                         {item.name}
                       </div>
@@ -144,8 +144,8 @@ const Header = () => {
                             key={subitem.name}
                             to={subitem.href}
                             className={cn(
-                              "block px-4 py-2 text-sm text-muted-foreground hover:text-primary",
-                              isActivePage(subitem.href) && "text-primary font-semibold"
+                              "block px-4 py-2 text-sm text-white/60 hover:text-white",
+                              isActivePage(subitem.href) && "text-white font-semibold"
                             )}
                             onClick={() => setIsMenuOpen(false)}
                           >
@@ -158,8 +158,8 @@ const Header = () => {
                     <Link
                       to={item.href}
                       className={cn(
-                        "block px-4 py-2 text-foreground hover:text-primary transition-colors",
-                        isActivePage(item.href) && "text-primary font-semibold"
+                        "block px-4 py-2 text-white/80 hover:text-white transition-colors",
+                        isActivePage(item.href) && "text-white font-semibold"
                       )}
                       onClick={() => setIsMenuOpen(false)}
                     >
