@@ -53,9 +53,9 @@ const Header = () => {
                 {item.submenu ? (
                   <div className="relative">
                     <button className={cn(
-                      "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
-                      "group-hover:text-primary",
-                      isActiveSection(item.submenu) && "bg-primary text-primary-foreground hover:text-primary-foreground group-hover:text-primary-foreground border-2 border-primary"
+                      "text-white/80 hover:text-white transition-colors font-medium px-3 py-2 rounded-lg",
+                      "group-hover:text-white",
+                      isActiveSection(item.submenu) && "bg-white/20 text-white hover:text-white group-hover:text-white border border-white/30"
                     )}>
                       {item.name}
                     </button>
@@ -80,8 +80,8 @@ const Header = () => {
                   <Link
                     to={item.href}
                     className={cn(
-                      "text-foreground hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg",
-                      isActivePage(item.href) && "bg-primary text-primary-foreground hover:text-primary-foreground border-2 border-primary"
+                      "text-white/80 hover:text-white transition-colors font-medium px-3 py-2 rounded-lg",
+                      isActivePage(item.href) && "bg-white/20 text-white hover:text-white border border-white/30"
                     )}
                   >
                     {item.name}
@@ -97,7 +97,7 @@ const Header = () => {
               href="https://www.instagram.com/nibriu.zirgynelis/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-accent text-primary hover:text-primary/80 transition-colors"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-white/10 text-white/80 hover:text-white transition-colors"
             >
               <Instagram size={24} />
             </a>
@@ -106,7 +106,7 @@ const Header = () => {
               href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-accent text-primary hover:text-primary/80 transition-colors"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-white/10 text-white/80 hover:text-white transition-colors"
             >
               <Facebook size={24} />
             </a>
@@ -116,7 +116,7 @@ const Header = () => {
             </Button>
             
             <button
-              className="lg:hidden p-2 rounded-lg hover:bg-accent"
+              className="lg:hidden p-2 rounded-lg hover:bg-white/10 text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -126,7 +126,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden border-t border-border bg-background/95 backdrop-blur-sm">
+          <div className="lg:hidden border-t border-white/20 bg-[#405222]">
             <nav className="py-4 space-y-2">
               {navigation.map((item) => (
                 <div key={item.name}>
