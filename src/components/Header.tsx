@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Facebook, Instagram } from "lucide-react";
 import { cn } from "@/lib/utils";
-import logoHorizontal from "@/assets/logo-horizontal.png";
+import logoWhite from "@/assets/logo-horizontal-white.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,12 +38,12 @@ const Header = () => {
   const isActiveSection = (submenu: any[]) => submenu?.some(item => location.pathname === item.href);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
+    <header className="sticky top-0 z-50 bg-[#405222] backdrop-blur-sm border-b border-[#405222] shadow-soft">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logoHorizontal} alt="Nibrių Žirgynėlis" className="h-14 w-auto" />
+            <img src={logoWhite} alt="Nibrių Žirgynėlis" className="h-14 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
