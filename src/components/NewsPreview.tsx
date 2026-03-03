@@ -52,6 +52,7 @@ const NewsPreview = () => {
                   src={item.image}
                   alt={item.title}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               </div>
