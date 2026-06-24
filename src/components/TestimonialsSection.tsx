@@ -217,6 +217,7 @@ const TestimonialsSection = () => {
             <div className="relative max-w-4xl max-h-[90vh] mx-4">
               <button
                 onClick={closeLightbox}
+                aria-label="Uždaryti"
                 className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
               >
                 <X size={20} />
