@@ -132,6 +132,7 @@ const ActivitiesCarousel = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
+            aria-label="Ankstesnė skaidrė"
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-primary-foreground/20 backdrop-blur-sm hover:bg-primary-foreground/30 rounded-full p-3 transition-all duration-300 transform hover:scale-110"
           >
             <ChevronLeft className="w-6 h-6 text-primary-foreground" />
@@ -139,6 +140,7 @@ const ActivitiesCarousel = () => {
           
           <button
             onClick={nextSlide}
+            aria-label="Kita skaidrė"
             className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary-foreground/20 backdrop-blur-sm hover:bg-primary-foreground/30 rounded-full p-3 transition-all duration-300 transform hover:scale-110"
           >
             <ChevronRight className="w-6 h-6 text-primary-foreground" />
@@ -146,10 +148,12 @@ const ActivitiesCarousel = () => {
 
           {/* Dots Indicator */}
           <div className="flex justify-center space-x-2 mt-8">
-            {activities.map((_, index) => (
+            {activities.map((activity, index) => (
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
+                aria-label={`Pereiti į skaidrę ${index + 1}: ${activity.title}`}
+                aria-current={index === currentIndex ? "true" : undefined}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentIndex 
                     ? 'bg-primary w-8' 
