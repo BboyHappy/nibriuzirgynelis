@@ -28,7 +28,7 @@ All colors MUST be HSL.
 
     /* Soft sage muted tones */
     --muted: 120 15% 92%;
-    --muted-foreground: 140 15% 45%;
+    --muted-foreground: 140 15% 32%;
 
     /* Warm earth accent */
     --accent: 35 25% 85%;
