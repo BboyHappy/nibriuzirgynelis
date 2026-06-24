@@ -12,8 +12,11 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/8f3bf9dc-4ddd-4cae-b7ae-7cd4d7b2a5e4.png" 
           alt="Žirgas rudens gamtoje" 
+          width={1920}
+          height={1280}
           className="w-full h-full object-cover object-center"
           fetchPriority="high"
+          decoding="async"
           style={{ objectPosition: "50% 20%" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-transparent"></div>
