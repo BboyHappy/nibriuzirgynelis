@@ -1,5 +1,6 @@
 
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -31,6 +32,11 @@ const Fotosesijos = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Fotosesijos su žirgais ir ūkio gyvūnais gamtoje – nuo 30€"
+        description="Profesionalios fotosesijos su žirgais, ožkomis ir kitais gyvūnais Nemuno kilpų regioniniame parke. Šeimoms, poroms, vaikams. Kaina nuo 30€/val."
+        path="/veiklos/fotosesijos"
+      />
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

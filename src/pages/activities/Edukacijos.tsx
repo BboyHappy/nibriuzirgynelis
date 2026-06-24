@@ -1,5 +1,6 @@
 
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -31,6 +32,11 @@ const Edukacijos = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Edukacijos su ūkio gyvūnais grupėms ir klasėms – 10€/asm."
+        description="Edukacinės programos darželiams ir mokyklų klasėms: susipažinimas su žirgais, ožkomis, avimis, šukavimas, maitinimas ir jojimas. Kaina 10€ asmeniui."
+        path="/veiklos/edukacijos"
+      />
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

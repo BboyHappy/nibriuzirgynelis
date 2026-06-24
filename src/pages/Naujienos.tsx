@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -68,6 +69,11 @@ const Naujienos = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Naujienos – Nibrių žirgynėlis"
+        description="Aktualios Nibrių žirgynėlio naujienos: vasaros stovyklos vaikams, edukacijos grupėms, renginiai ir pasiūlymai Prienų rajone."
+        path="/naujienos"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

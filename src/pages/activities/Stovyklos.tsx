@@ -1,5 +1,6 @@
 
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -31,6 +32,11 @@ const Stovyklos = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Vaikų vasaros stovyklos su žirgais – Nibrių žirgynėlis"
+        description="2, 3 ir 5 dienų vaikų stovyklos prie Nemuno: jojimas, maudynės, žygiai, gyvūnai ir nakvynė glamping palapinėse. Kainos nuo 80€."
+        path="/veiklos/stovyklos"
+      />
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
