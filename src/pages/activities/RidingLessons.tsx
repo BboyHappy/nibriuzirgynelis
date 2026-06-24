@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -29,8 +30,24 @@ const RidingLessons = () => {
     }
   ];
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+  };
+
   return (
     <Layout>
+      <SEO
+        title="Jojimo pamokos pradedantiesiems ir pažengusiems – nuo 25€"
+        description="Individualios ir grupinės jojimo pamokos Prienų rajone. Pamoka trunka 45–60 min., kainos nuo 25€. Mokome nuo 6 metų amžiaus saugiai ir profesionaliai."
+        path="/veiklos/jojimo-pamokos"
+        jsonLd={faqJsonLd}
+      />
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

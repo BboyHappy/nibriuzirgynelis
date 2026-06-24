@@ -1,5 +1,6 @@
 
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
@@ -7,6 +8,11 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 const Contacts = () => {
   return (
     <Layout>
+      <SEO
+        title="Kontaktai – Nibrių žirgynėlis Prienų rajone"
+        description="Susisiekite su Nibrių žirgynėliu: telefonas +370 606 43952, Nemuno g. 10, Nibriai, Prienų r. Darbo laikas kasdien 8:00–21:00."
+        path="/kontaktai"
+      />
       {/* Hero Section */}
       <section className="bg-gradient-hero py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

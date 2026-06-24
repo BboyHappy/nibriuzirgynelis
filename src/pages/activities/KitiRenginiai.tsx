@@ -1,5 +1,6 @@
 
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -31,6 +32,11 @@ const KitiRenginiai = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Gimtadieniai, klasių išvykos ir šventės žirgyne"
+        description="Vaikų gimtadieniai, klasių išvykos, mergvakariai, giminės susitikimai Nibrių žirgynėlyje. Priimame iki 40 žmonių grupes – nuo 5€ asmeniui."
+        path="/veiklos/kiti-renginiai"
+      />
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">

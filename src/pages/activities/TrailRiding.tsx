@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -30,6 +31,11 @@ const TrailRiding = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Žygiai žirgais Nemuno kilpų regioniniame parke"
+        description="Žygiai žirgais Nemuno kilpų regioniniame parke – pritaikyti pradedantiesiems ir pažengusiems. Nuo 1 valandos iki visos dienos maršrutų gamtoje."
+        path="/veiklos/zygiai"
+      />
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
