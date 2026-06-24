@@ -1,0 +1,20 @@
+# Nibrių Žirgynėlis
+
+> Žirgynėlis gamtoje prie Jiezno (Prienų r.), kur galima pajodinėti, dalyvauti vaikų stovyklose, edukacijose su ūkio gyvūnais, fotosesijose ir surengti šventę.
+
+Nibrių Žirgynėlis siūlo jojimo pamokas pradedantiesiems ir pažengusiems, žygius Nemuno kilpų regioniniame parke, dienos ir nakvynės stovyklas vaikams, edukacijas su ūkio gyvūnais, fotosesijas su žirgais ir kitus renginius gamtoje.
+
+## Pages
+
+- [Pagrindinis](/): Apžvalga, veiklos ir atsiliepimai.
+- [Naujienos](/naujienos): Aktualūs įvykiai, stovyklos ir pranešimai.
+- [Kontaktai](/kontaktai): Adresas, telefonas, el. paštas, darbo laikas.
+
+## Veiklos
+
+- [Jojimo pamokos](/veiklos/jojimo-pamokos): Individualios pamokos pradedantiesiems ir pažengusiems.
+- [Žygiai](/veiklos/zygiai): Žygiai žirgais Nemuno kilpų regioniniame parke.
+- [Stovyklos](/veiklos/stovyklos): Dienos ir nakvynės vasaros stovyklos vaikams.
+- [Fotosesijos](/veiklos/fotosesijos): Profesionalios fotosesijos su žirgais gamtoje.
+- [Edukacijos](/veiklos/edukacijos): Susipažinimas su ūkio gyvūnais ir jų priežiūra.
+- [Kiti renginiai](/veiklos/kiti-renginiai): Gimtadieniai, klasės išvykos ir specialios šventės.
