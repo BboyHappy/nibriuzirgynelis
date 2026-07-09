@@ -23,7 +23,7 @@ const activities = [
   {
     id: "stovyklos",
     title: "Stovyklos",
-    price: "nuo 35€ už dieną",
+    price: "nuo 80€ (2 dienos)",
     description: "Nepamiršamos vasaros stovyklos vaikams su žirgais ir gamta",
     duration: "Pagal susitarimą",
     icon: "⛺"
