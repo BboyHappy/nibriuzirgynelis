@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="space-y-4">
             <img src={logoWhite} alt="Nibrių Žirgynėlis" className="h-12 w-auto" />
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
+            <p className="text-primary-foreground text-sm leading-relaxed">
               Šeimos jojimo mokykla ir gyvūnų ūkis, siūlantis aktyvų poilsį gamtoje 
               Nemuno kilpų regioniniame parke.
             </p>
@@ -22,37 +22,37 @@ const Footer = () => {
             <nav className="space-y-2">
               <Link 
                 to="/veiklos/jojimo-pamokos" 
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                className="block text-primary-foreground hover:text-primary-foreground transition-colors text-sm"
               >
                 Jojimo pamokos
               </Link>
               <Link 
                 to="/veiklos/zygiai" 
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                className="block text-primary-foreground hover:text-primary-foreground transition-colors text-sm"
               >
                 Žygiai
               </Link>
               <Link 
                 to="/veiklos/stovyklos" 
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                className="block text-primary-foreground hover:text-primary-foreground transition-colors text-sm"
               >
                 Stovyklos
               </Link>
               <Link 
                 to="/veiklos/fotosesijos" 
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                className="block text-primary-foreground hover:text-primary-foreground transition-colors text-sm"
               >
                 Fotosesijos
               </Link>
               <Link 
                 to="/veiklos/edukacijos" 
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                className="block text-primary-foreground hover:text-primary-foreground transition-colors text-sm"
               >
                 Edukacijos
               </Link>
               <Link 
                 to="/veiklos/kiti-renginiai" 
-                className="block text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                className="block text-primary-foreground hover:text-primary-foreground transition-colors text-sm"
               >
                 Kiti renginiai
               </Link>
@@ -64,26 +64,26 @@ const Footer = () => {
             <h4 className="font-semibold text-lg mb-4">Kontaktai</h4>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <MapPin size={16} className="mt-1 text-primary-foreground/60" />
+                <MapPin size={16} className="mt-1 text-primary-foreground/80" />
                 <div className="text-sm">
-                  <p className="text-primary-foreground/80">Nemuno 10, Prienu raj</p>
-                  <p className="text-primary-foreground/80">Nibriai, 59420 Prienų rajonas</p>
+                  <p className="text-primary-foreground">Nemuno 10, Prienu raj</p>
+                  <p className="text-primary-foreground">Nibriai, 59420 Prienų rajonas</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-primary-foreground/60" />
+                <Phone size={16} className="text-primary-foreground/80" />
                 <a 
                   href="tel:+37060643952" 
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  className="text-sm text-primary-foreground hover:text-primary-foreground"
                 >
                   +370 606 43952
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-primary-foreground/60" />
+                <Mail size={16} className="text-primary-foreground/80" />
                 <a 
                   href="mailto:barauskaite_raminta@yahoo.com" 
-                  className="text-sm text-primary-foreground/80 hover:text-primary-foreground"
+                  className="text-sm text-primary-foreground hover:text-primary-foreground"
                 >
                   barauskaite_raminta@yahoo.com
                 </a>
@@ -95,9 +95,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-lg mb-4">Darbo laikas</h4>
             <div className="flex items-start space-x-3">
-              <Clock size={16} className="mt-1 text-primary-foreground/60" />
+              <Clock size={16} className="mt-1 text-primary-foreground/80" />
               <div className="text-sm">
-                <p className="text-primary-foreground/80">Kiekvieną dieną</p>
+                <p className="text-primary-foreground">Kiekvieną dieną</p>
                 <p className="text-primary-foreground font-medium">8:00 – 21:00</p>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-6 text-center">
-          <p className="text-sm text-primary-foreground/60">
+          <p className="text-sm text-primary-foreground/80">
             © 2025 Nibrių Žirgynėlis. Visos teisės saugomos.
           </p>
         </div>

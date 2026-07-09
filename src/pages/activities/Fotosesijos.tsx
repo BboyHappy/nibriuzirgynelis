@@ -74,17 +74,17 @@ const Fotosesijos = () => {
                   Apie fotosesijas
                 </h2>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Mūsų fotosesijos – tai ypatinga patirtis gamtos apsuptyje, leidžianti įamžinti šiltas akimirkas kartu su gyvūnais. Siūlome profesionalias fotosesijas šeimoms, vaikams, poroms ar individualiai – kiekvienai progai, kuriai norisi jaukumo ir autentiškumo.
 
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Fotosesijas galima užsisakyti kartu su edukacijomis. Fotosesijose dalyvauja ramūs, žmonių draugijos įpratę gyvūnai: žirgai, poniai, ožiukai ir kiti ūkio gyventojai. Jie yra puikiai prižiūrimi, socialūs ir puikiai jaučiasi objektyvo dėmesio centre.
 
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed">
+                  <p className="text-foreground leading-relaxed">
 Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, pasirūpins, kad kiekvienas kadras būtų gyvas. Fotosesijoms parenkame pačias gražiausias mūsų teritorijos vietas, kurios dar labiau sustiprina šios patirties žavesį.
 
 
@@ -148,7 +148,7 @@ Mūsų fotografai, turintys patirties gyvūnų ir žmonių emocijų fiksavime, p
                   {faqItems.map((item, index) => (
                     <div key={index} className="border-b border-border last:border-0 pb-4 last:pb-0">
                       <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                      <p className="text-foreground/80">{item.answer}</p>
+                      <p className="text-foreground">{item.answer}</p>
                     </div>
                   ))}
                 </div>

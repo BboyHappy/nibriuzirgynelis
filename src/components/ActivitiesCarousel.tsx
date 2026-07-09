@@ -154,7 +154,7 @@ const ActivitiesCarousel = () => {
                 onClick={() => goToSlide(index)}
                 aria-label={`Pereiti į skaidrę ${index + 1}: ${activity.title}`}
                 aria-current={index === currentIndex ? "true" : undefined}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`min-w-6 min-h-6 w-6 h-6 rounded-full transition-all duration-300 ${
                   index === currentIndex 
                     ? 'bg-primary w-8' 
                     : 'bg-primary/30 hover:bg-primary/50'
@@ -170,7 +170,7 @@ const ActivitiesCarousel = () => {
             <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-4">
               Pasiruošę naujiems nuotykiams?
             </h3>
-            <p className="text-lg text-foreground/80 mb-6 max-w-md mx-auto">
+            <p className="text-lg text-foreground mb-6 max-w-md mx-auto">
               Rezervuokite savo laiką dabar ir patirkite nepamirštamą jojimo patirtį
             </p>
             <Button asChild variant="default" size="lg">

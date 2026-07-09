@@ -143,7 +143,7 @@ const TestimonialsSection = () => {
               </div>
 
               {/* Text */}
-              <p className="text-foreground/80 mb-6 leading-relaxed italic">
+              <p className="text-foreground mb-6 leading-relaxed italic">
                 "{testimonial.text}"
               </p>
 

@@ -74,21 +74,21 @@ const Edukacijos = () => {
                   Apie edukaciją
                 </h2>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
                     <strong>Atvykus 3 ir daugiau žmonių – kaina 10 eurų žmogui.</strong>
                   </p>
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Tai maždaug valandos trukmės patirtis, kurios metu susipažinsite su mūsų ūkio gyvūnais – žirgais, avimis, ožkomis, paukščiais bei asilu. Dalyviai turės progą juos šukuoti, maitinti ir sužinoti įdomių faktų apie kiekvieną gyventoją.
 
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Po pažinties su gyvūnais vyksta žirgo balnojimas ir trumpas jojimas. Net jei nuspręsite nejodinėti, edukacijos kaina – 10 € – išlieka ta pati.
 
 Pasibaigus edukacijai, kviečiame pailsėti mūsų pavėsinėje. Šiltuoju metų laiku taip pat siūlome pasimėgauti vandens pramogomis – galima naudotis irklentėmis.
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed text-accent">
+                  <p className="text-foreground leading-relaxed text-accent">
                     <strong>Nuolaida gimtadienių šventėms, kai atvyksta 10 vaikų, o tėveliai nejodinėja.</strong>
                   </p>
                 </div>
@@ -150,7 +150,7 @@ Pasibaigus edukacijai, kviečiame pailsėti mūsų pavėsinėje. Šiltuoju metų
                   {faqItems.map((item, index) => (
                     <div key={index} className="border-b border-border last:border-0 pb-4 last:pb-0">
                       <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                      <p className="text-foreground/80">{item.answer}</p>
+                      <p className="text-foreground">{item.answer}</p>
                     </div>
                   ))}
                 </div>
