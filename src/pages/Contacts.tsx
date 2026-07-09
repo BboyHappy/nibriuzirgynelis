@@ -107,7 +107,7 @@ const Contacts = () => {
                   </h3>
                   <p className="text-foreground mb-4">
                     Rezervacijoms ir skubiems klausimams skambinkite tiesiogiai. 
-                    Elektroninę paštu gautas žinutes atsakome per 24 valandas.
+                    Į elektroniniu paštu gautas žinutes atsakome per 24 valandas.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <Button asChild variant="default" className="flex-1">
