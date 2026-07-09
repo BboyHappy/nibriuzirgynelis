@@ -97,7 +97,8 @@ const Header = () => {
               href="https://www.instagram.com/nibriu.zirgynelis/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-[#405222]/10 text-[#405222] hover:text-[#405222] transition-colors"
+              aria-label="Instagram"
+              className="hidden sm:flex min-h-12 min-w-12 items-center justify-center rounded-lg hover:bg-[#405222]/10 text-[#405222] hover:text-[#405222] transition-colors"
             >
               <Instagram size={24} />
             </a>
@@ -106,7 +107,8 @@ const Header = () => {
               href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-[#405222]/10 text-[#405222] hover:text-[#405222] transition-colors"
+              aria-label="Facebook"
+              className="hidden sm:flex min-h-12 min-w-12 items-center justify-center rounded-lg hover:bg-[#405222]/10 text-[#405222] hover:text-[#405222] transition-colors"
             >
               <Facebook size={24} />
             </a>
@@ -116,8 +118,10 @@ const Header = () => {
             </Button>
             
             <button
-              className="lg:hidden p-2 rounded-lg hover:bg-[#405222]/10 text-[#405222]"
+              className="lg:hidden min-h-12 min-w-12 flex items-center justify-center rounded-lg hover:bg-[#405222]/10 text-[#405222]"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label={isMenuOpen ? "Uždaryti meniu" : "Atidaryti meniu"}
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
