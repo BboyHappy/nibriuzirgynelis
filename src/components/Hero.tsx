@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/lovable-uploads/8f3bf9dc-4ddd-4cae-b7ae-7cd4d7b2a5e4.png" 
+          src="/lovable-uploads/8f3bf9dc-4ddd-4cae-b7ae-7cd4d7b2a5e4.webp" 
           alt="Žirgas rudens gamtoje" 
           width={1920}
           height={1280}
