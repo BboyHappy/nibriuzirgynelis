@@ -165,20 +165,20 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">1 dienos stovykla</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">35€</p>
-                    <p className="text-sm text-muted-foreground">už dieną</p>
+                    <h3 className="font-semibold text-foreground mb-2">2 dienų stovykla</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">80€</p>
+                    <p className="text-sm text-muted-foreground">2 dienos</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">3-dienų stovykla</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">170€</p>
+                    <h3 className="font-semibold text-foreground mb-2">3 dienų stovykla</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">180€</p>
                     <p className="text-sm text-muted-foreground">3 dienos</p>
                   </div>
                   
                   <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                    <h3 className="font-semibold text-foreground mb-2">5-dienų stovykla</h3>
-                    <p className="text-3xl font-bold text-primary mb-2">240€</p>
+                    <h3 className="font-semibold text-foreground mb-2">5 dienų stovykla</h3>
+                    <p className="text-3xl font-bold text-primary mb-2">260€</p>
                     <p className="text-sm text-muted-foreground">5 dienos</p>
                   </div>
                 </div>
