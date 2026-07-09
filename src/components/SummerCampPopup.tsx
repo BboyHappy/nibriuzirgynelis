@@ -60,7 +60,7 @@ const SummerCampPopup = () => {
           <DialogTitle className="font-serif text-2xl font-bold text-primary mb-3">
             Nepamirštama Vasara Vaikams!
           </DialogTitle>
-          <p className="text-foreground/80 leading-relaxed mb-6">
+          <p className="text-foreground leading-relaxed mb-6">
             Kviečiame į stovyklas Nemuno kilpų parke. Jodinėjimas, maudynės, žygiai ir 
             nakvynė glamping palapinėse. Rinktis galima 2, 3 arba 5 dienų stovyklą!
           </p>

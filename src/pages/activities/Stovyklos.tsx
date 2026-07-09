@@ -74,17 +74,17 @@ const Stovyklos = () => {
                   Apie stovyklas
                 </h2>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Mūsų stovyklos – tai galimybė vaikams smagiai ir prasmingai leisti laiką gamtoje. Kasdienybę čia praturtina jodinėjimo pamokos, žaidimai, bendravimas su gyvūnais ir pažintis su kaimo gyvenimu.
 
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Kiekviena stovykla turi savo temą – vaikai ne tik mokosi joti, bet ir dalyvauja edukacijose, kūrybinėse dirbtuvėse, žaidžia komandos formavimo žaidimus ir patiria vasariškų nuotykių.
 
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed">
+                  <p className="text-foreground leading-relaxed">
 Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų saugumu, užtikrina individualų dėmesį ir šiltą bendravimo atmosferą.
 
 
@@ -148,7 +148,7 @@ Stovyklą veda patyrę instruktoriai bei auklėtojai, kurie rūpinasi vaikų sau
                   {faqItems.map((item, index) => (
                     <div key={index} className="border-b border-border last:border-0 pb-4 last:pb-0">
                       <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                      <p className="text-foreground/80">{item.answer}</p>
+                      <p className="text-foreground">{item.answer}</p>
                     </div>
                   ))}
                 </div>

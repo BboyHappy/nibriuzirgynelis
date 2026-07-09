@@ -73,16 +73,16 @@ const TrailRiding = () => {
                   Apie žygius
                 </h2>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
                     Mūsų žygiai su žirgais – tai nepamirštama patirtis tyrinėjant Nemuno kilpų regioninio parko grožį iš žirgo balno.
 Keliausime lėtu žingsniu per senvages, miško takelius ir pievų pakraščius – ten, kur nepasiektų jokie automobiliai.
 Dažnai kartu keliauja ir mūsų draugiški šunys, tad kompanija – tik dar jaukesnė!
                   </p>
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
                    Kiekvienas žygis unikalus, nes maršrutą pritaikome pagal metų laiką, orą ir grupės poreikius.
 Pavasarį ir vasarą lydės žydinčios pievos, rudenį – spalvoti lapai, o žiemą – tylus sniego kraštovaizdis.
                   </p>
-                  <p className="text-foreground/80 leading-relaxed">
+                  <p className="text-foreground leading-relaxed">
                     Visus žygius lydi mūsų instruktorius, kuris ne tik užtikrina saugumą, bet ir papasakoja įdomybių apie gamtą, vietovės istoriją bei žirgus.
 Ilgesnių žygių metu sustosime gražiausiose vietose trumpai poilsio pertraukėlei.
 
@@ -147,7 +147,7 @@ Ilgesnių žygių metu sustosime gražiausiose vietose trumpai poilsio pertrauk�
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Trumpas žygis</h3>
                     <p className="text-muted-foreground text-sm mb-4">iki 1 valandos</p>
-                    <p className="text-foreground/80">
+                    <p className="text-foreground">
 Puikiai tinka pradedantiesiems – lengvas maršrutas per mišką ir beržyną link netoliese esančių senųjų kapinaičių.
 
 
@@ -157,7 +157,7 @@ Puikiai tinka pradedantiesiems – lengvas maršrutas per mišką ir beržyną l
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Žygis iki piliakalnio</h3>
                     <p className="text-muted-foreground text-sm mb-4">3-4 valandos</p>
-                    <p className="text-foreground/80">
+                    <p className="text-foreground">
                       Keliausime per Nemuno kilpų regioninį parką iki senojo piliakalnio, įsikūrusio ant Nemuno kranto.
                     </p>
                   </div>
@@ -165,7 +165,7 @@ Puikiai tinka pradedantiesiems – lengvas maršrutas per mišką ir beržyną l
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2"> Žygis per miškus ir sodybas</h3>
                     <p className="text-muted-foreground text-sm mb-4">2-3 valandos</p>
-                    <p className="text-foreground/80">
+                    <p className="text-foreground">
 Keliausime miško takais per apylinkes, grožėsimės laukų ir miškų gamta bei aplankysime gražias kaimo sodybas.
 
                     </p>
@@ -174,7 +174,7 @@ Keliausime miško takais per apylinkes, grožėsimės laukų ir miškų gamta be
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Kiti žygiai</h3>
                     <p className="text-muted-foreground text-sm mb-4">1-? valandos</p>
-                    <p className="text-foreground/80">
+                    <p className="text-foreground">
                       Organizuojame įvairaus ilgio ir sudėtingumo žygius.
 Dėl naujausios informacijos sekite mus socialiniuose tinkluose. Taip pat galime suorganizuoti žygį pagal jūsų pageidavimus.
                     </p>
@@ -195,7 +195,7 @@ Dėl naujausios informacijos sekite mus socialiniuose tinkluose. Taip pat galime
                   {faqItems.map((item, index) => (
                     <div key={index} className="border-b border-border last:border-0 pb-4 last:pb-0">
                       <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                      <p className="text-foreground/80">{item.answer}</p>
+                      <p className="text-foreground">{item.answer}</p>
                     </div>
                   ))}
                 </div>
@@ -211,7 +211,7 @@ Dėl naujausios informacijos sekite mus socialiniuose tinkluose. Taip pat galime
               </CardHeader>
               <CardContent>
                 <div className="text-center p-6 bg-gradient-warm rounded-xl">
-                  <p className="text-lg text-foreground/80">Kaina priklauso nuo žygio.</p>
+                  <p className="text-lg text-foreground">Kaina priklauso nuo žygio.</p>
                 </div>
               </CardContent>
             </Card>

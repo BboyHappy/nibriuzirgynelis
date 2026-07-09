@@ -64,7 +64,7 @@ const NewsPreview = () => {
                 <h3 className="font-serif text-xl font-bold text-primary mb-3 line-clamp-2">
                   {item.title}
                 </h3>
-                <p className="text-foreground/80 text-sm line-clamp-3 mb-4">
+                <p className="text-foreground text-sm line-clamp-3 mb-4">
                   {item.excerpt}
                 </p>
                 <Button asChild variant="outline" size="sm" className="w-full">

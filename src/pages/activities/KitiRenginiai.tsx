@@ -74,17 +74,17 @@ const KitiRenginiai = () => {
                   Apie renginius
                 </h2>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Mūsų teritorija – puiki vieta ypatingoms progoms! Čia galite švęsti gimtadienius, krikštynas, organizuoti mokyklos išvykas ar net surengti giminės susitikimą gamtos apsuptyje – drauge su žirgais ir kitais mūsų ūkio gyvūnais.
 
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
 Kiekvienas renginys yra unikalus, todėl lanksčiai prisitaikome prie jūsų poreikių ir idėjų. Galime pasiūlyti įvairių veiklų: jojimo pamokas, žirgų priežiūros užsiėmimus, gamtos pažinimo žaidimus ar lengvas sportines rungtis vaikams ir suaugusiems.
 
 
                   </p>
-                  <p className="text-foreground/80 leading-relaxed">
+                  <p className="text-foreground leading-relaxed">
 Turime erdvią teritoriją, dengtus pastatus blogam orui bei visas sąlygas, kad šventė būtų sklandi ir kupina įspūdžių. Mūsų komanda pasirūpins, kad jūsų renginys būtų ne tik smagus, bet ir įsimintinas!
 
                   </p>
@@ -146,14 +146,14 @@ Turime erdvią teritoriją, dengtus pastatus blogam orui bei visas sąlygas, kad
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Gimtadieniai</h3>
-                    <p className="text-foreground/80 text-sm">
+                    <p className="text-foreground text-sm">
                       Nepamirštami gimtadieniai su žirgais, žaidimais ir smagiais aktyvumais visiems amžiams.
                     </p>
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Krikštynos</h3>
-                    <p className="text-foreground/80 text-sm">
+                    <p className="text-foreground text-sm">
 Siūlome jaukią krikštynų šventę gamtos apsuptyje su gyvūnais, vaikų pramogomis ir ramybe artimųjų rate.
 
 
@@ -162,14 +162,14 @@ Siūlome jaukią krikštynų šventę gamtos apsuptyje su gyvūnais, vaikų pram
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Mokyklos išvykos</h3>
-                    <p className="text-foreground/80 text-sm">
+                    <p className="text-foreground text-sm">
                       Edukacinės išvykos su pažintiniais užsiėmimais apie gamtą ir gyvūnus.
                     </p>
                   </div>
                   
                   <div className="bg-gradient-warm rounded-xl p-6">
                     <h3 className="font-semibold text-foreground mb-2">Mergvakario / Berniukų vakarai</h3>
-                    <p className="text-foreground/80 text-sm">
+                    <p className="text-foreground text-sm">
                       Originalūs ir smagūs mergvakario ar berniukų vakarai gamtos aplinkoje.
                     </p>
                   </div>
@@ -189,7 +189,7 @@ Siūlome jaukią krikštynų šventę gamtos apsuptyje su gyvūnais, vaikų pram
                   {faqItems.map((item, index) => (
                     <div key={index} className="border-b border-border last:border-0 pb-4 last:pb-0">
                       <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                      <p className="text-foreground/80">{item.answer}</p>
+                      <p className="text-foreground">{item.answer}</p>
                     </div>
                   ))}
                 </div>

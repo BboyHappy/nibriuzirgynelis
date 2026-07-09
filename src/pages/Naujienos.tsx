@@ -141,7 +141,7 @@ const Naujienos = () => {
                         {article.title}
                       </h2>
                       
-                      <p className="text-foreground/80 leading-relaxed mb-6 whitespace-pre-line">
+                      <p className="text-foreground leading-relaxed mb-6 whitespace-pre-line">
                         {article.content}
                       </p>
                       

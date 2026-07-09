@@ -91,7 +91,7 @@ const ServicesSection = () => {
                   <h3 className="font-serif text-xl font-bold text-primary mb-2">
                     {activity.title}
                   </h3>
-                  <p className="text-foreground/80 text-sm mb-4">
+                  <p className="text-foreground text-sm mb-4">
                     {activity.description}
                   </p>
                 </div>

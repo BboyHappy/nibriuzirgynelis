@@ -170,7 +170,7 @@ const ActivitiesCarousel = () => {
             <h3 className="font-serif text-2xl md:text-3xl font-bold text-primary mb-4">
               Pasiruošę naujiems nuotykiams?
             </h3>
-            <p className="text-lg text-foreground/80 mb-6 max-w-md mx-auto">
+            <p className="text-lg text-foreground mb-6 max-w-md mx-auto">
               Rezervuokite savo laiką dabar ir patirkite nepamirštamą jojimo patirtį
             </p>
             <Button asChild variant="default" size="lg">

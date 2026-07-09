@@ -85,17 +85,17 @@ const RidingLessons = () => {
                   Apie jojimo pamokas
                 </h2>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
                     Mūsų jojimo pamokos skirtos visiems - nuo visiškai pradedančiųjų iki pažengusių jojikų, 
                     norinčių tobulinti savo įgūdžius. Kiekviena pamoka vyksta saugioje aplinkoje su 
                     kvalifikuotais instruktoriais ir ramiais, gerai išlavintais žirgais.
                   </p>
-                  <p className="text-foreground/80 leading-relaxed mb-6">
+                  <p className="text-foreground leading-relaxed mb-6">
                     Pradedantieji mokysis pagrindinių jojimo principų: kaip sėsti ant žirgo, valdyti 
                     pavadžius, išlaikyti pusiausvyrą ir bendrauti su žirgu. Pažengusieji galės tobulinti 
                     techniką, mokytis šuolių ar kitų jojimo elementų.
                   </p>
-                  <p className="text-foreground/80 leading-relaxed">
+                  <p className="text-foreground leading-relaxed">
                     Kiekviena pamoka prasideda nuo žirgo paruošimo ir baigiasi jo priežiūra - 
                     tai svarbi dalis mokymosi proceso, padedanti suprasti žirgo poreikius ir elgesį.
                   </p>
@@ -158,7 +158,7 @@ const RidingLessons = () => {
                   {faqItems.map((item, index) => (
                     <div key={index} className="border-b border-border last:border-0 pb-4 last:pb-0">
                       <h3 className="font-semibold text-foreground mb-2">{item.question}</h3>
-                      <p className="text-foreground/80">{item.answer}</p>
+                      <p className="text-foreground">{item.answer}</p>
                     </div>
                   ))}
                 </div>

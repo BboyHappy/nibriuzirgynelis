@@ -53,7 +53,7 @@ const Header = () => {
                 {item.submenu ? (
                   <div className="relative">
                     <button className={cn(
-                      "text-[#405222]/80 hover:text-[#405222] transition-colors font-medium px-3 py-2 rounded-lg",
+                      "text-[#405222] hover:text-[#405222] transition-colors font-medium px-3 py-2 rounded-lg",
                       "group-hover:text-[#405222]",
                       isActiveSection(item.submenu) && "bg-[#405222]/10 text-[#405222] hover:text-[#405222] group-hover:text-[#405222] border border-[#405222]/30"
                     )}>
@@ -80,7 +80,7 @@ const Header = () => {
                   <Link
                     to={item.href}
                     className={cn(
-                      "text-[#405222]/80 hover:text-[#405222] transition-colors font-medium px-3 py-2 rounded-lg",
+                      "text-[#405222] hover:text-[#405222] transition-colors font-medium px-3 py-2 rounded-lg",
                       isActivePage(item.href) && "bg-[#405222]/10 text-[#405222] hover:text-[#405222] border border-[#405222]/30"
                     )}
                   >
@@ -97,7 +97,7 @@ const Header = () => {
               href="https://www.instagram.com/nibriu.zirgynelis/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-[#405222]/10 text-[#405222]/80 hover:text-[#405222] transition-colors"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-[#405222]/10 text-[#405222] hover:text-[#405222] transition-colors"
             >
               <Instagram size={24} />
             </a>
@@ -106,7 +106,7 @@ const Header = () => {
               href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex p-2 rounded-lg hover:bg-[#405222]/10 text-[#405222]/80 hover:text-[#405222] transition-colors"
+              className="hidden sm:flex p-2 rounded-lg hover:bg-[#405222]/10 text-[#405222] hover:text-[#405222] transition-colors"
             >
               <Facebook size={24} />
             </a>
@@ -133,7 +133,7 @@ const Header = () => {
                   {item.submenu ? (
                     <div>
                       <div className={cn(
-                        "px-4 py-2 font-medium text-[#405222]/80",
+                        "px-4 py-2 font-medium text-[#405222]",
                         isActiveSection(item.submenu) && "text-[#405222] font-semibold"
                       )}>
                         {item.name}
@@ -144,7 +144,7 @@ const Header = () => {
                             key={subitem.name}
                             to={subitem.href}
                             className={cn(
-                              "block px-4 py-2 text-sm text-[#405222]/60 hover:text-[#405222]",
+                              "block px-4 py-2 text-sm text-[#405222]/90 hover:text-[#405222]",
                               isActivePage(subitem.href) && "text-[#405222] font-semibold"
                             )}
                             onClick={() => setIsMenuOpen(false)}
@@ -158,7 +158,7 @@ const Header = () => {
                     <Link
                       to={item.href}
                       className={cn(
-                        "block px-4 py-2 text-[#405222]/80 hover:text-[#405222] transition-colors",
+                        "block px-4 py-2 text-[#405222] hover:text-[#405222] transition-colors",
                         isActivePage(item.href) && "text-[#405222] font-semibold"
                       )}
                       onClick={() => setIsMenuOpen(false)}

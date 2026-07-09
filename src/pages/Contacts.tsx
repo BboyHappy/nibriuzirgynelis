@@ -47,7 +47,7 @@ const Contacts = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Adresas</h3>
-                      <p className="text-foreground/80">
+                      <p className="text-foreground">
                         Nemuno 10, Prienu raj<br />
                         Nibriai, 59420 Prienų rajonas
                       </p>
@@ -62,7 +62,7 @@ const Contacts = () => {
                       <h3 className="font-semibold text-foreground mb-1">Telefonas</h3>
                       <a 
                         href="tel:+37060643952" 
-                        className="text-foreground/80 hover:text-primary transition-colors"
+                        className="text-foreground hover:text-primary transition-colors"
                       >
                         +370 606 43952
                       </a>
@@ -77,7 +77,7 @@ const Contacts = () => {
                       <h3 className="font-semibold text-foreground mb-1">El. paštas</h3>
                       <a 
                         href="mailto:barauskaite_raminta@yahoo.com" 
-                        className="text-foreground/80 hover:text-primary transition-colors"
+                        className="text-foreground hover:text-primary transition-colors"
                       >
                         barauskaite_raminta@yahoo.com
                       </a>
@@ -90,7 +90,7 @@ const Contacts = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">Darbo laikas</h3>
-                      <p className="text-foreground/80">
+                      <p className="text-foreground">
                         Pirmadienio-sekmadienio<br />
                         8:00 - 21:00
                       </p>
@@ -105,7 +105,7 @@ const Contacts = () => {
                   <h3 className="font-serif text-xl font-bold text-primary mb-4">
                     Greitas atsakymas
                   </h3>
-                  <p className="text-foreground/80 mb-4">
+                  <p className="text-foreground mb-4">
                     Rezervacijoms ir skubiems klausimams skambinkite tiesiogiai. 
                     Elektroninę paštu gautas žinutes atsakome per 24 valandas.
                   </p>
@@ -143,22 +143,22 @@ const Contacts = () => {
                   <h3 className="font-serif text-2xl font-bold text-primary mb-4">
                     Nibrių žirgynėlis
                   </h3>
-                  <p className="text-foreground/80 mb-6">
+                  <p className="text-foreground mb-6">
                     Esame lengvai randami išvažiavę iš Kauno link Prienų. 
                     Pasukus į Nibrių kaimą, pamatysite mūsų ženklus.
                   </p>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground/80">40 km nuo Kauno</span>
+                      <span className="text-foreground">40 km nuo Kauno</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground/80">15 km nuo Prienų</span>
+                      <span className="text-foreground">15 km nuo Prienų</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-foreground/80">Nemuno kilpų reg. parke</span>
+                      <span className="text-foreground">Nemuno kilpų reg. parke</span>
                     </div>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ const Contacts = () => {
                   >
                     <div className="text-6xl mb-4">🗺️</div>
                     <h4 className="font-semibold text-foreground mb-2">Atidaryti žemėlapyje</h4>
-                    <p className="text-foreground/80 text-sm">
+                    <p className="text-foreground text-sm">
                       Nemuno 10, Prienu raj<br />
                       Nibriai, 59420 Prienų rajonas
                     </p>
